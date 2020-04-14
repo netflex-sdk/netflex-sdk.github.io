@@ -3,7 +3,7 @@
 
 > SDK for the Netflex Content API and platform
 
-[GitHub](https://github.com/netflex-sdk/sdk/)
+[GitHub](https://github.com/netflex-sdk/)
 [Get Started](netflex-sdk.github.io/master/README.md)
 
 ![color](#f0f0f0)
