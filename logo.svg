@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 256 256" version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+  <title>Artboard</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+      <stop stop-color="#5D89EC" offset="0%"></stop>
+      <stop stop-color="#9557D4" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <circle id="background" fill="url(#linearGradient-1)" cx="128" cy="128" r="128"></circle>
+    <g id="logo" transform="translate(128.000000, 128.000000) rotate(45.000000) translate(-128.000000, -128.000000) translate(44.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+      <rect id="Rectangle-2" x="79" y="0" width="10" height="66"></rect>
+      <rect id="Rectangle-2-Copy-3" x="79" y="102" width="10" height="66"></rect>
+      <rect id="Rectangle-2-Copy" x="102" y="79" width="66" height="10"></rect>
+      <rect id="Rectangle-2-Copy-2" x="0" y="79" width="66" height="10"></rect>
+    </g>
+  </g>
+</svg>
