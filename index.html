@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Documentation | Netflex SDK</title>
+  <title>Document</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Documentation for the Netflex SDK and support packages">
+  <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
   <div id="app">
-    Please wait...
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
-  <script>
+  <script defer>
     window.$docsify = {
       name: 'Netflex SDK',
-      auto2top: true,
-      relativePath: true,
+      repo: 'https://github.com/netflex-sdk',
       search: 'auto',
       maxLevel: 4,
       subMaxLevel: 5,
-      logo: 'https://d3lnipq2e3xuc0.cloudfront.net/media/rc/600x160/1558450751/banner-alt.png',
-      repo: 'https://github.com/netflex-sdk',
-      loadSidebar: 'netflex-sdk.github.io/master/_sidebar.md',
-      coverpage: 'netflex-sdk.github.io/master/_coverpage.md',
-      homepage: 'netflex-sdk.github.io/master/README.md',
-      basePath: 'https://raw.githubusercontent.com/netflex-sdk/',
-      remoteMarkdown: {
-        tag: 'remoteMarkdownUrl'
+      basepath: '/',
+      logo: '/assets/banner.png',
+      auto2top: true,
+      relativePath: true,
+      homepage: '/docs/introduction.md',
+      loadSidebar: 'docs/_sidebar.md',
+      coverpage: 'docs/_coverpage.md',
+      notFoundPage: 'docs/_404.md',
+      'flexible-alerts': {
+        note: {
+          label: "Notice"
+        },
+        tip: {
+          label: "Tip"
+        },
+        warning: {
+          label: "Warning"
+        },
+        danger: {
+          label: "Danger"
+        }
       }
     }
+
+    window.addEventListener("keydown", function (e) {
+      var search = document.querySelector('input[type="search"]')
+      if (search && e.which == 70 && (e.ctrlKey || e.metaKey)) {
+        e.preventDefault()
+        search.focus()
+      }
+    })
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script defer src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+  <script defer src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script defer src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
+
 </html>
