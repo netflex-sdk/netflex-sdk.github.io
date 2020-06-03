@@ -1,6 +1,7 @@
 * Documentation
   * [Introduction](/docs/intro.md)
   * [Installation](/docs/installation.md)
+  * [Architecture](/docs/architecture.md)
   * [Command Line Interface](/docs/cli.md)
   * [Netflex API](/docs/api.md)
   * [Routing](/docs/routing.md)
