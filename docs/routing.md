@@ -29,6 +29,9 @@ The custom controller **MUST** inherit from the `Netflex\Pages\Controllers\Contr
 
 A custom controller can define a number of sub-routes. Those routes will also be automatically be registered. This can be usefull when you have a template that should both list a resource, and also be able to display one specific resource, e.g. a Model.
 
+> [!NOTE]
+> To be able to use the inline editing and preview features of Netflexapp, your controller **MUST** provide a index route (/)
+
 If you want to override the default 'index' route for a controller, you **MUST** override the route in the controller configuration.
 
 ```php
