@@ -5,6 +5,7 @@
   * [Command Line Interface](/docs/cli.md)
   * [Netflex API](/docs/api.md)
   * [Routing](/docs/routing.md)
+  * [Navigation](/docs/nav.md)
   * [Models](/docs/models.md)
   * [Foundation](/docs/foundation.md)
   * [Internationalization](/docs/i18n.md)
