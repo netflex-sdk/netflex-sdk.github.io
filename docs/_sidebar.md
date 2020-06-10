@@ -4,6 +4,8 @@
   * [Architecture](/docs/architecture.md)
   * [Command Line Interface](/docs/cli.md)
   * [Netflex API](/docs/api.md)
+  * [Media Preset](/docs/media.md)
+  * [Netflex Components](/docs/components.md)
   * [Routing](/docs/routing.md)
   * [Navigation](/docs/nav.md)
   * [Models](/docs/models.md)
