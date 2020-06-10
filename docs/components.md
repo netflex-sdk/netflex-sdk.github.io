@@ -16,6 +16,7 @@ The preferred method of configuring the background image component, is through t
 
 |Name|Description|Required|Default|
 |----|-----------|--------|-------|
+|class|Determines which class to generate the styles for|
 |area|Load image from file defined in content area|If src is not defined|
 |alt|HTML alt attribute when unable to load the image||
 |title|HTML title attribute||
@@ -33,6 +34,26 @@ The preferred method of configuring the background image component, is through t
 **Example:**
 
 ```html
+<x-background-image
+  class="main-banner"
+  src="1590000000/main-banner.jpg"
+  preset="banner"
+  title="My Awesome Banner!"
+  alt="Picture of the awesome banner"
+/>
+
+<div class="main-banner"></div>
+
+<!-- You can also implement it like this to only scope the styling to the specific child element -->
+
+<x-background-image
+  src="1590000000/main-banner.jpg"
+  preset="banner"
+  title="My Awesome Banner!"
+  alt="Picture of the awesome banner"
+>
+Inner content that will be overlayed on top of the background image
+</x-background-image>
 
 ```
 
@@ -168,7 +189,7 @@ The Image component generates a html img element that loads an image from the Ne
 
 <!-- Example of inline editable image -->
 
-<x-picture
+<x-image
   area="logo-image"
   :mode="Netflex\Pages\Components\Picture::MODE_FIT"
   width="600"
