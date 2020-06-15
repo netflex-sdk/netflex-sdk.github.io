@@ -2,6 +2,8 @@
 
 The `/config/media.php` file is used to configure the various presets for cdn media. This makes it easy to re-use media styles.
 
+All presets inherits from the 'default' preset, so if any parameters are left out, they will inherit its value from the default preset.
+
 ## Example configuration
 
 ```php
