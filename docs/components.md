@@ -68,6 +68,12 @@ The Blocks component is used to display content from a BlockBuilder field.
 |----|-----------|--------|-------|
 |area|Specifies the content area to load the blocks from|Yes||
 
+**Example:**
+
+```html
+<x-blocks area="sections" />
+```
+
 ## Component
 
 This is a wrapper component that lets you use other components dynamically without knowing the component name ahead of time. Can be usefull when controlling what component should be rendered based on user input.
