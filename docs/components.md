@@ -106,12 +106,12 @@ The EditorButton component creates a menu that lets the user customize a content
 |name||*Optional*||
 |label||*Optional*||
 |description||*Optional*||
-|style||*Optional*|`'position: initial;'`|
+|style|Inline styles for the button|*Optional*|`'position: initial;'`|
 |icon||*Optional*||
 |position||*Optional*||
 |field||*Optional*||
 |model||*Optional*||
-|options||*Optional*||
+|options|The selectable options for selectors (key, value pairs)|*Optional*||
 
 **Types:**
 
@@ -145,6 +145,12 @@ The EditorButton component creates a menu that lets the user customize a content
   area="newsfeed"
   type="entries"
   :model="App\Article::class"
+/>
+
+<x-editor-button
+  area="logo_position"
+  type="select"
+  :options="['t' => 'Top', 'b' => 'Bottom]"
 />
 ```
 
