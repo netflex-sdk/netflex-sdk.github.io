@@ -18,18 +18,19 @@ The preferred method of configuring the background image component, is through t
 |----|-----------|--------|-------|
 |class|Determines which class to generate the styles for|
 |area|Load image from file defined in content area|If src is not defined|
-|alt|HTML alt attribute when unable to load the image||
-|title|HTML title attribute||
+|alt|HTML alt attribute when unable to load the image|*Optional*|
+|title|HTML title attribute|*Optional*|
 |src|Loads image from this filename|If area is not defined|
 |mode|Resizing mode||`Picture::MODE_FIT`|
 |width|Overrides the width|If preset is not defined|0|
 |height|Overrides the height|If preset is not defined|0|
 |size|Shorthand for setting both with and height|If preset is not defined or width and height is not defined|{width}x{height}|
-|fill|Only used If mode is `PICTURE::MODE_FILL`|||
-|image-class|The class attribute to set for the image element||
-|picture-class|The class attribute to set ||
+|fill|Only used If mode is `PICTURE::MODE_FILL`|*Optional*||
+|image-class|The class attribute to set for the image element|*Optional*|
+|picture-class|The class attribute to set for the picture element|*Optional*|
 |preset|The Media Preset to use||`default`|
 |direction|Defines the direction for the image when using mode `Picture::MODE_FIT_DIRECTION`||`Picture::DIRECTION_CENTER`|
+|is|Determines what tag to wrap the inner slot in|*Optional*|`div`
 
 **Example:**
 
