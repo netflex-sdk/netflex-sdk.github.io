@@ -5,9 +5,9 @@ This article describes how you can use the built-in helper methods to generate n
 ## Building the navigation tree
 
 In previous versions of the Netflex SDK, you had a global variable named `$navdata` that contained data for generating navigation menus.
-In V2 this is deprecated, and a few new methods have been added to achieve this.
+This was deprecated in V2, and a few new methods have been added to achieve this.
 
-In Netflex SDK v2 we have added a helper function to generate navigation data, simply called `navigation_data`.
+In Netflex SDK v2 we added a helper function to generate navigation data, simply called `navigation_data`.
 It takes a `$parent` id (the id of the page considered parent), and an optional `$type` and `$root` parameter.
 
 It generates a [Collection](https://laravel.com/docs/7.x/collections) object with a simple nested data structure like this:
