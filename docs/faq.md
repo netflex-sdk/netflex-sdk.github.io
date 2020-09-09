@@ -1,5 +1,32 @@
 # FAQ
 
+## How do I migrate from Netflex SDK v2?
+
+Update your `netflex/*` dependencies in your `composer.json` to target `^3.0`.
+
+Then run
+
+```bash
+composer update
+```
+
+## The post-autoload-dump event returned with error code 1
+
+This can happen when a previous auto-discovered package has been removed. As Laravel caches the discovered services and packages.
+
+To fix this, manually remove the cache files:
+
+```bash
+rm storage/sdk/cache/packages.php
+rm storage/sdk/cache/services.php
+```
+
+To permanently fix this for future updates, add the follow as the first item in the `post-autoload-dump`, `post-install-cmd` and `post-update-cmd` array in your `composer.json`
+
+```json
+"rm -f storage/sdk/cache/*.php"
+```
+
 ## MissingCredentialsException when serving project.
 
 See: [Netflex API/Configuration](/docs/api.md?id=configuration)
