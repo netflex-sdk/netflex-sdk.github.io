@@ -42,6 +42,24 @@ use App\Article;
 Article::findOrFail(10000);
 ```
 
+**Fetching a random entry**
+```php
+<?php
+
+use App\Article;
+
+$randomArticle = Article::random();
+```
+
+**Fetching multiple random entries**
+```php
+<?php
+
+use App\Article;
+
+$randomArticles = Article::random(10); // Fetches up to 10 random articles
+```
+
 **Performing a query**
 
 ```php
