@@ -32,7 +32,6 @@ The type field can either be a numeric ID, representing which Template that page
 | `external` | `Netflex\Pages\Page::TYPE_EXTERNAL` | A page that points to an external URL                        |
 | `domain`   | `Netflex\Pages\Page::TYPE_DOMAIN`   | A domain object, used to set a routing domain                |
 | `folder`   | `Netflex\Pages\Page::TYPE_FOLDER`   | A folder representing a nested tree structure for navigation data. |
-|            |                                     |                                                              |
 
 ## Built in components
 
