@@ -22,6 +22,18 @@ It generates a [Collection](https://laravel.com/docs/7.x/collections) object wit
 ];
 ```
 
+## Navigation Data type
+
+The type field can either be a numeric ID, representing which Template that page uses, or a string, representing what kind of navigation data it represents.
+
+| Type       | Constant                            | Description                                                  |
+| ---------- | ----------------------------------- | ------------------------------------------------------------ |
+| `internal` | `Netflex\Pages\Page::TYPE_INTERNAL` | A page that points to a internal page.                       |
+| `external` | `Netflex\Pages\Page::TYPE_EXTERNAL` | A page that points to an external URL                        |
+| `domain`   | `Netflex\Pages\Page::TYPE_DOMAIN`   | A domain object, used to set a routing domain                |
+| `folder`   | `Netflex\Pages\Page::TYPE_FOLDER`   | A folder representing a nested tree structure for navigation data. |
+|            |                                     |                                                              |
+
 ## Built in components
 
 The Pages library adds a built in [Nav component](https://github.com/netflex-sdk/pages/blob/master/src/Components/Nav.php) that generates a simple bootstrap compatible nav menu.
