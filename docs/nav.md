@@ -10,18 +10,7 @@ This was deprecated in V2, and a few new methods have been added to achieve this
 In Netflex SDK v2 we added a helper function to generate navigation data, simply called `navigation_data`.
 It takes a `$parent` id (the id of the page considered parent), and an optional `$type` and `$root` parameter.
 
-It resolves to a [Collection](https://laravel.com/docs/7.x/collections) of `Netflex\Pages\NavigationData` objects with a simple nested data structure like this:
-
-```php
-(object) [
-  'id' => 10000,        // Page ID
-  'url' => '/',         // Page URL
-  'target' => '_blank', // Link target type
-  'type' => 12345,      // Template ID or type code
-  'children' => ...     // Collection of child NavigationData objects of this page with the same data structure
-  'page' => ...         // Resolves to the actual Netflex\Pages\Page object that the NavigationData instance relates to
-];
-```
+It new resolves to a [Collection](https://laravel.com/docs/7.x/collections) of `Netflex\Pages\NavigationData` objects.
 
 ## NavigationData
 
