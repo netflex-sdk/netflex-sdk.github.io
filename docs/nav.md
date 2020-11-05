@@ -10,7 +10,7 @@ This was deprecated in V2, and a few new methods have been added to achieve this
 In Netflex SDK v2 we added a helper function to generate navigation data, simply called `navigation_data`.
 It takes a `$parent` id (the id of the page considered parent), and an optional `$type` and `$root` parameter.
 
-It generates a [Collection](https://laravel.com/docs/7.x/collections) object with a simple nested data structure like this:
+It resolves to a [Collection](https://laravel.com/docs/7.x/collections) of `Netflex\Pages\NavigationData` objects with a simple nested data structure like this:
 
 ```php
 (object) [
@@ -18,22 +18,45 @@ It generates a [Collection](https://laravel.com/docs/7.x/collections) object wit
   'url' => '/',         // Page URL
   'target' => '_blank', // Link target type
   'type' => 12345,      // Template ID or type code
-  'children' => ...     // Collection of children of this page with the same data structure
+  'children' => ...     // Collection of child NavigationData objects of this page with the same data structure
+  'page' => ...         // Resolves to the actual Netflex\Pages\Page object that the NavigationData instance relates to
 ];
 ```
 
-## Navigation Data type
+## NavigationData
 
 > [!NOTE]
 > The constants are only available from `netflex/pages` version 3.1.2 and later.
 
-The type field can either be a numeric ID, representing which Template that page uses, or a string, representing what kind of navigation data it represents.
+The type field is a string that represents what kind of navigation data it represents.
 
-| Type       | Constant                            | Description                                                  |
-| ---------- | ----------------------------------- | ------------------------------------------------------------ |
-| `internal` | `Netflex\Pages\Page::TYPE_INTERNAL` | A page that points to a internal page.                       |
-| `external` | `Netflex\Pages\Page::TYPE_EXTERNAL` | A page that points to an external URL                        |
-| `domain`   | `Netflex\Pages\Page::TYPE_DOMAIN`   | A domain object, used to set a routing domain                |
+The NavigationData can alse be resolved directly on the NavigationData class by using it's static method:
+
+```php
+<?php
+
+use Netflex\Pages\NavigationData;
+
+$navigationData = NavigationData::get();
+```
+
+You may also resolve navigation data for a specific page using the `navigationData` instance method:
+
+```php
+<?php
+
+use Netflex\Pages\Page;
+
+$page = Page::find(10000);
+$navigationData = $page->navigationData();
+```
+
+| Type       | Constant                            | Description                                                        |
+| ---------- | ----------------------------------- | ------------------------------------------------------------------ |
+| `page`     | `Netflex\Pages\Page::TYPE_PAGE`     | A regular Netflex page                                             |
+| `internal` | `Netflex\Pages\Page::TYPE_INTERNAL` | A page that points to a internal page.                             |
+| `external` | `Netflex\Pages\Page::TYPE_EXTERNAL` | A page that points to an external URL                              |
+| `domain`   | `Netflex\Pages\Page::TYPE_DOMAIN`   | A domain object, used to set a routing domain                      |
 | `folder`   | `Netflex\Pages\Page::TYPE_FOLDER`   | A folder representing a nested tree structure for navigation data. |
 
 ## Built in components
