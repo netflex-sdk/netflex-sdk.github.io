@@ -24,6 +24,9 @@ It generates a [Collection](https://laravel.com/docs/7.x/collections) object wit
 
 ## Navigation Data type
 
+> [!NOTE]
+> The constants are only available from `netflex/pages` version 3.1.2 and later.
+
 The type field can either be a numeric ID, representing which Template that page uses, or a string, representing what kind of navigation data it represents.
 
 | Type       | Constant                            | Description                                                  |
