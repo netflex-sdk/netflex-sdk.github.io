@@ -10,6 +10,16 @@ Then run
 composer update
 ```
 
+## BindingResolutionException target class App\\Http\\Controllers\\{{ ControllerName }} does not exist
+
+This exception can occur when navigating to a Netflex defined route if the template of the page has defined a custom controller, but the controller class that it points to doesn't exist in your project.
+
+To fix this, implement the controller:
+
+```bash
+php artisan make:controller --custom {{ ControllerName }}
+```
+
 ## The post-autoload-dump event returned with error code 1
 
 This can happen when a previous auto-discovered package has been removed. As Laravel caches the discovered services and packages.
