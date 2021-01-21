@@ -3,6 +3,7 @@
   * [Installation](/docs/installation.md)
   * [Architecture](/docs/architecture.md)
   * [Command Line Interface](/docs/cli.md)
+  * [SDK API reference](/docs/api/index.html)
   * [Netflex API](/docs/api.md)
   * [Media Preset](/docs/media.md)
   * [Netflex Components](/docs/components.md)

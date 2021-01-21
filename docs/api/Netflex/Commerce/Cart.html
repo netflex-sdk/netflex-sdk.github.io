@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Netflex\Commerce\Cart | Netflex SDK</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Netflex_Commerce_Cart" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Netflex SDK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../Netflex/Commerce.html">Commerce</a></li><li class="backslash">\</li><li>Cart</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Cart
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>Cart</strong>        extends <a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Support/Hooks.html"><abbr title="Netflex\Support\Hooks">Hooks</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Support/Timestamps.html"><abbr title="Netflex\Support\Timestamps">Timestamps</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_hooks">
+                                        protected                                        array
+                </td>
+                <td>$hooks</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/Hooks.html#property_hooks">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_eventHandlers">
+                                        protected                                        Event[]
+                </td>
+                <td>$eventHandlers</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/Events.html#property_eventHandlers">
+<abbr title="Netflex\Support\Events">Events</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                        protected                                        array
+                </td>
+                <td>$timestamps</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/Timestamps.html#property_timestamps">
+<abbr title="Netflex\Support\Timestamps">Timestamps</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attributes">
+                                        protected                                        array
+                </td>
+                <td>$attributes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#property_attributes">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modified">
+                                                                                array
+                </td>
+                <td>$modified</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#property_modified">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                                                                ReactiveObject|ItemCollection|null
+                </td>
+                <td>$parent</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#property_parent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaults">
+                                        protected                                        
+                </td>
+                <td>$defaults</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_readOnlyAttributes">
+                                        protected                                        
+                </td>
+                <td>$readOnlyAttributes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Support/Hooks.html"><abbr title="Netflex\Support\Hooks">Hooks</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addHook">addHook</a>(string $name, callable $callback = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Hooks.html#method_addHook">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performHook">performHook</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Hooks.html#method_performHook">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performHooks">performHooks</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Hooks.html#method_performHooks">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_on">on</a>(string $eventName, callable $handler = null)
+        
+                                            <p>Attaches an event handler for a given event</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Events.html#method_on">
+<abbr title="Netflex\Support\Events">Events</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addEvent">addEvent</a>(<a href="../../Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a> $event)
+        
+                                            <p>Attaches an Event directly</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Events.html#method_addEvent">
+<abbr title="Netflex\Support\Events">Events</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_emit">emit</a>(string $event, mixed $payload = null)
+        
+                                            <p>Emits an event to parent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Events.html#method_emit">
+<abbr title="Netflex\Support\Events">Events</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_trigger">trigger</a>(string $eventName, mixed $payload = null)
+        
+                                            <p>Invokes the event handlers for the given event</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Events.html#method_trigger">
+<abbr title="Netflex\Support\Events">Events</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serializeTimestamp">serializeTimestamp</a>($value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Timestamps.html#method_serializeTimestamp">
+<abbr title="Netflex\Support\Timestamps">Timestamps</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Get the raw attributes</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method_toArray">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $property)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method___get">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $property, mixed $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method___set">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(string $property)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method___isset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(string $key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method___unset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(string $property)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method_offsetExists">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(string $property)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method_offsetGet">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(string $property, mixed $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method_offsetSet">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method_offsetUnset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#method___toString">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(object|array $attributes = [], object|null $parent = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___construct">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(ReactiveObject|ItemCollection|null $parent)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_setParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ReactiveObject|ItemCollection|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_getParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ReactiveObject|ItemCollection|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRootParent">getRootParent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_getRootParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIdAttribute">getIdAttribute</a>(string|int $id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_getIdAttribute">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___debugInfo">__debugInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___debugInfo">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_factory">factory</a>(object|array $attributes = [], object|null $parent = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_factory">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_jsonSerialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTrait">hasTrait</a>($trait)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method_hasTrait">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    CartItemCollection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItemsAttribute">getItemsAttribute</a>(mixed $items = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    ReservationItemCollection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReservationsAttribute">getReservationsAttribute</a>(mixed $items = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_addHook">
+        <div class="location">in <a href="../../Netflex/Support/Hooks.html#method_addHook">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a> at line 15</div>
+        <code>                    <a href="../../Netflex/Support/Hooks.html"><abbr title="Netflex\Support\Hooks">Hooks</abbr></a>
+    <strong>addHook</strong>(string $name, callable $callback = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Support/Hooks.html"><abbr title="Netflex\Support\Hooks">Hooks</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performHook">
+        <div class="location">in <a href="../../Netflex/Support/Hooks.html#method_performHook">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a> at line 30</div>
+        <code>                    void
+    <strong>performHook</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performHooks">
+        <div class="location">in <a href="../../Netflex/Support/Hooks.html#method_performHooks">
+<abbr title="Netflex\Support\Hooks">Hooks</abbr></a> at line 40</div>
+        <code>                    void
+    <strong>performHooks</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_on">
+        <div class="location">in <a href="../../Netflex/Support/Events.html#method_on">
+<abbr title="Netflex\Support\Events">Events</abbr></a> at line 17</div>
+        <code>                    <a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a>
+    <strong>on</strong>(string $eventName, callable $handler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attaches an event handler for a given event</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addEvent">
+        <div class="location">in <a href="../../Netflex/Support/Events.html#method_addEvent">
+<abbr title="Netflex\Support\Events">Events</abbr></a> at line 30</div>
+        <code>                    <a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a>
+    <strong>addEvent</strong>(<a href="../../Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attaches an Event directly</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emit">
+        <div class="location">in <a href="../../Netflex/Support/Events.html#method_emit">
+<abbr title="Netflex\Support\Events">Events</abbr></a> at line 43</div>
+        <code>                    void
+    <strong>emit</strong>(string $event, mixed $payload = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Emits an event to parent</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$payload</td>
+                <td>= null</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_trigger">
+        <div class="location">in <a href="../../Netflex/Support/Events.html#method_trigger">
+<abbr title="Netflex\Support\Events">Events</abbr></a> at line 57</div>
+        <code>                    void
+    <strong>trigger</strong>(string $eventName, mixed $payload = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Invokes the event handlers for the given event</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$payload</td>
+                <td>= null</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serializeTimestamp">
+        <div class="location">in <a href="../../Netflex/Support/Timestamps.html#method_serializeTimestamp">
+<abbr title="Netflex\Support\Timestamps">Timestamps</abbr></a> at line 18</div>
+        <code>                    
+    <strong>serializeTimestamp</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method_toArray">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 30</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the raw attributes</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method___get">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 39</div>
+        <code>                    mixed
+    <strong>__get</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method___set">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 67</div>
+        <code>                    
+    <strong>__set</strong>(string $property, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method___isset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 97</div>
+        <code>                    bool
+    <strong>__isset</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method___unset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 105</div>
+        <code>                    
+    <strong>__unset</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method_offsetExists">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 116</div>
+        <code>                    bool
+    <strong>offsetExists</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method_offsetGet">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 127</div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method_offsetSet">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 137</div>
+        <code>                    mixed
+    <strong>offsetSet</strong>(string $property, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method_offsetUnset">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 146</div>
+        <code>                    void
+    <strong>offsetUnset</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../Netflex/Support/Accessors.html#method___toString">
+<abbr title="Netflex\Support\Accessors">Accessors</abbr></a> at line 154</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___construct">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 30</div>
+        <code>                    
+    <strong>__construct</strong>(object|array $attributes = [], object|null $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|array</td>
+                <td>$attributes</td>
+                <td>= []</td>
+            </tr>
+                    <tr>
+                <td>object|null</td>
+                <td>$parent</td>
+                <td>= null</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_setParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 53</div>
+        <code>                    <a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a>
+    <strong>setParent</strong>(ReactiveObject|ItemCollection|null $parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ReactiveObject|ItemCollection|null</td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_getParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 62</div>
+        <code>                    ReactiveObject|ItemCollection|null
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ReactiveObject|ItemCollection|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootParent">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_getRootParent">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 70</div>
+        <code>                    ReactiveObject|ItemCollection|null
+    <strong>getRootParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ReactiveObject|ItemCollection|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIdAttribute">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_getIdAttribute">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 85</div>
+        <code>                    int
+    <strong>getIdAttribute</strong>(string|int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___debugInfo">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___debugInfo">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 93</div>
+        <code>                    array
+    <strong>__debugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_factory">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_factory">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 109</div>
+        <code>        static            <a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a>
+    <strong>factory</strong>(object|array $attributes = [], object|null $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|array</td>
+                <td>$attributes</td>
+                <td>= []</td>
+            </tr>
+                    <tr>
+                <td>object|null</td>
+                <td>$parent</td>
+                <td>= null</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_jsonSerialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 117</div>
+        <code>                    array
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTrait">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method_hasTrait">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 142</div>
+        <code>        static            
+    <strong>hasTrait</strong>($trait)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$trait</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItemsAttribute">
+        <div class="location">at line 48</div>
+        <code>                    CartItemCollection
+    <strong>getItemsAttribute</strong>(mixed $items = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>CartItemCollection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReservationsAttribute">
+        <div class="location">at line 71</div>
+        <code>                    ReservationItemCollection
+    <strong>getReservationsAttribute</strong>(mixed $items = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ReservationItemCollection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.            <br/>Copyright  <a href="https://www.apility.no" rel="noreferrer noopener" target="_blank">Apility AS</a> © 2021</div></div>
+    </div>
+    </body>
+
+</html>

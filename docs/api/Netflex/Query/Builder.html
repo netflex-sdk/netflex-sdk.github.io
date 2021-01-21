@@ -1,0 +1,2492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Netflex\Query\Builder | Netflex SDK</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Netflex_Query_Builder" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Netflex SDK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../Netflex/Query.html">Query</a></li><li class="backslash">\</li><li>Builder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Builder
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>Builder</strong>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MIN_QUERY_SIZE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MAX_QUERY_SIZE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SPECIAL_CHARS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DIR_ASC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DIR_DESC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VALUE_TYPES</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REPLACEMENT_ENTITIES</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SORTING_DIRS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_EQ</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_NEQ</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_LT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_LTE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_GT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_GTE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OP_LIKE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OPERATORS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_fields">
+                                        protected                                        array
+                </td>
+                <td>$fields</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_relations">
+                                        protected                                        array
+                </td>
+                <td>$relations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_relation_id">
+                                        protected                                        int
+                </td>
+                <td>$relation_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_size">
+                                        protected                                        int
+                </td>
+                <td>$size</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orderBy">
+                                        protected                                        string
+                </td>
+                <td>$orderBy</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sortDir">
+                                        protected                                        string
+                </td>
+                <td>$sortDir</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_query">
+                                        protected                                        array
+                </td>
+                <td>$query</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_respectPublishingStatus">
+                                        protected                                        bool
+                </td>
+                <td>$respectPublishingStatus</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mapper">
+                                        protected                                        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </td>
+                <td>$mapper</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_assoc">
+                                        protected                                        bool
+                </td>
+                <td>$assoc</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_shouldCache">
+                                        protected                                        bool
+                </td>
+                <td>$shouldCache</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cacheKey">
+                                        protected                                        string
+                </td>
+                <td>$cacheKey</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug">
+                                        protected                                        bool
+                </td>
+                <td>$debug</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_appends">
+                                        protected                                        callable[]
+                </td>
+                <td>$appends</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool|null $respectPublishingStatus = true, array|null $query = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $mapper = null, $appends = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheResultsWithKey">cacheResultsWithKey</a>(string $key)
+        
+                                            <p>Cache the results with the given key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRelation">hasRelation</a>(string $relation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escapeValue">escapeValue</a>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value, string $operator = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileTermQuery">compileTermQuery</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileNullQuery">compileNullQuery</a>(string $field)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileScopedQuery">compileScopedQuery</a>(array $args, string $operator = &#039;AND&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileField">compileField</a>(string $field)
+        
+                                            <p>Compiles the field name into something ES can understand</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileWhereQuery">compileWhereQuery</a>(string $field, $operator, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_debug">debug</a>()
+        
+                                            <p>Sets the debug flag of the query
+Making the API reflect the compiled query in the output</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQuery">getQuery</a>(bool $scoped = false)
+        
+                                            <p>Compiles the query and retrieves the query string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequest">getRequest</a>()
+        
+                                            <p>Compiles the query and retrieves the query string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_raw">raw</a>(string $query)
+        
+                                            <p>Performs a raw query, use carefully.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderBy">orderBy</a>(string $field, string $direction = null)
+        
+                                            <p>Sets the field which to order the results by</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderDirection">orderDirection</a>(string $direction)
+        
+                                            <p>Sets the direction to order the results by</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relation">relation</a>(string|null $relation, int|null $relation_id = null)
+        
+                                            <p>Sets the relation for the query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relations">relations</a>(array $relations)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_limit">limit</a>(int $limit)
+        
+                                            <p>Limits the results to $limit amount of hits</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fields">fields</a>(array $fields)
+        
+                                            <p>Sets which fields to retrieve (default: All fields)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_field">field</a>(string $field)
+        
+                                            <p>Adds a field that should be retrieved</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_where">where</a>(...$args)
+        
+                                            <p>Performs a 'where' query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereIn">whereIn</a>(string $field, array $values)
+        
+                                            <p>Queries where field exists in the values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereBetween">whereBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+        
+                                            <p>Queries where field is between $from and $to</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNotBetween">whereNotBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+        
+                                            <p>Queries where field is not between $from and $to</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNot">whereNot</a>(...$args)
+        
+                                            <p>Performs a 'whereNot' query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhere">orWhere</a>(...$args)
+        
+                                            <p>Performs a 'orWhere' query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_andWhere">andWhere</a>(...$args)
+        
+                                            <p>Performs a 'andWhere' query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    PaginatedResult
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paginate">paginate</a>(int $size = 100, int $page = 1)
+        
+                                            <p>Creates a paginated result</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_assoc">assoc</a>(bool $assoc)
+        
+                                            <p>Determines if we should return values as array or object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(int $size = null, int $page = null)
+        
+                                            <p>Retrieves the raw query result from the API</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>()
+        
+                                            <p>Retrieves the results of the query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>Retrieves the first result</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>()
+        
+                                            <p>Retrieves the first result</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>()
+        
+                                            <p>Retrives all results for the given query, ignoring the query limit</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_random">random</a>(int|null $amount = null)
+        
+                                            <p>Returns random results for the given query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ignorePublishingStatus">ignorePublishingStatus</a>()
+        
+                                            <p>Also include unpublished results
+Only applies to entry and page relations</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respectPublishingStatus">respectPublishingStatus</a>($respect = true)
+        
+                                            <p>Only include published results
+Only applies to entry and page relations</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Get the count of items matching the current query</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileQuery">compileQuery</a>(bool $scoped = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileRequest">compileRequest</a>($size = null, $page = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 141</div>
+        <code>                    
+    <strong>__construct</strong>(bool|null $respectPublishingStatus = true, array|null $query = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $mapper = null, $appends = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool|null</td>
+                <td>$respectPublishingStatus</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null</td>
+                <td>$mapper</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$appends</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheResultsWithKey">
+        <div class="location">at line 155</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>cacheResultsWithKey</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cache the results with the given key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRelation">
+        <div class="location">at line 167</div>
+        <code>            protected        bool
+    <strong>hasRelation</strong>(string $relation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escapeValue">
+        <div class="location">at line 177</div>
+        <code>            protected        mixed
+    <strong>escapeValue</strong>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value, string $operator = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileTermQuery">
+        <div class="location">at line 205</div>
+        <code>            protected        string
+    <strong>compileTermQuery</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileNullQuery">
+        <div class="location">at line 214</div>
+        <code>            protected        string
+    <strong>compileNullQuery</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileScopedQuery">
+        <div class="location">at line 224</div>
+        <code>            protected        string
+    <strong>compileScopedQuery</strong>(array $args, string $operator = &#039;AND&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileField">
+        <div class="location">at line 254</div>
+        <code>            protected        string
+    <strong>compileField</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compiles the field name into something ES can understand</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileWhereQuery">
+        <div class="location">at line 270</div>
+        <code>            protected        string
+    <strong>compileWhereQuery</strong>(string $field, $operator, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$operator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidOperatorException</td>
+                <td>If an invalid operator is passed</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_debug">
+        <div class="location">at line 355</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>debug</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the debug flag of the query
+Making the API reflect the compiled query in the output</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuery">
+        <div class="location">at line 368</div>
+        <code>                    string
+    <strong>getQuery</strong>(bool $scoped = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compiles the query and retrieves the query string.</p>                    <p>Used for debugging purposes.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$scoped</td>
+                <td>Determines if the query shouls be compiled in a scoped context.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequest">
+        <div class="location">at line 380</div>
+        <code>                    string
+    <strong>getRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compiles the query and retrieves the query string.</p>                    <p>Used for debugging purposes.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_raw">
+        <div class="location">at line 391</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>raw</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a raw query, use carefully.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderBy">
+        <div class="location">at line 405</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>orderBy</strong>(string $field, string $direction = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the field which to order the results by</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidSortingDirectionException</td>
+                <td>If an invalid $direction is passed</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderDirection">
+        <div class="location">at line 423</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>orderDirection</strong>(string $direction)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the direction to order the results by</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidSortingDirectionException</td>
+                <td>If an invalid $direction is passed</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relation">
+        <div class="location">at line 440</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>relation</strong>(string|null $relation, int|null $relation_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the relation for the query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$relation_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relations">
+        <div class="location">at line 455</div>
+        <code>                    
+    <strong>relations</strong>(array $relations)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$relations</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_limit">
+        <div class="location">at line 470</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>limit</strong>(int $limit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Limits the results to $limit amount of hits</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fields">
+        <div class="location">at line 484</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>fields</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets which fields to retrieve (default: All fields)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_field">
+        <div class="location">at line 499</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>field</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a field that should be retrieved</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_where">
+        <div class="location">at line 518</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>where</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'where' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereIn">
+        <div class="location">at line 546</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>whereIn</strong>(string $field, array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Queries where field exists in the values</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereBetween">
+        <div class="location">at line 559</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>whereBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Queries where field is between $from and $to</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNotBetween">
+        <div class="location">at line 576</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>whereNotBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Queries where field is not between $from and $to</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNot">
+        <div class="location">at line 596</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>whereNot</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'whereNot' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhere">
+        <div class="location">at line 629</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>orWhere</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'orWhere' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidAssignmentException</td>
+                <td>If left hand side of query is not set</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_andWhere">
+        <div class="location">at line 651</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>andWhere</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'andWhere' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidAssignmentException</td>
+                <td>If left hand side of query is not set</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paginate">
+        <div class="location">at line 669</div>
+        <code>                    PaginatedResult
+    <strong>paginate</strong>(int $size = 100, int $page = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a paginated result</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PaginatedResult</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assoc">
+        <div class="location">at line 680</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>assoc</strong>(bool $assoc)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines if we should return values as array or object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$assoc</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">at line 694</div>
+        <code>            protected        object
+    <strong>fetch</strong>(int $size = null, int $page = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the raw query result from the API</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="IndexNotFoundException|\QueryException">QueryException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 729</div>
+        <code>                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
+    <strong>get</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the results of the query</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">at line 747</div>
+        <code>                    object|null
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first result</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">at line 764</div>
+        <code>                    object|null
+    <strong>firstOrFail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first result</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotFoundException</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">at line 777</div>
+        <code>                    Collection
+    <strong>all</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrives all results for the given query, ignoring the query limit</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_random">
+        <div class="location">at line 793</div>
+        <code>                    Collection
+    <strong>random</strong>(int|null $amount = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns random results for the given query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$amount</td>
+                <td>If not provided, will use the current query limit</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignorePublishingStatus">
+        <div class="location">at line 840</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>ignorePublishingStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Also include unpublished results
+Only applies to entry and page relations</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respectPublishingStatus">
+        <div class="location">at line 854</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>respectPublishingStatus</strong>($respect = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Only include published results
+Only applies to entry and page relations</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$respect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line 866</div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the count of items matching the current query</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>QueryException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileQuery">
+        <div class="location">at line 883</div>
+        <code>            protected        string
+    <strong>compileQuery</strong>(bool $scoped = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$scoped</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileRequest">
+        <div class="location">at line 942</div>
+        <code>            protected        string
+    <strong>compileRequest</strong>($size = null, $page = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 973</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.            <br/>Copyright  <a href="https://www.apility.no" rel="noreferrer noopener" target="_blank">Apility AS</a> © 2021</div></div>
+    </div>
+    </body>
+
+</html>

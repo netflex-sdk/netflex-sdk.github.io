@@ -1,0 +1,5354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Netflex\Query\QueryableModel | Netflex SDK</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Netflex_Query_QueryableModel" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Netflex SDK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../Netflex/Query.html">Query</a></li><li class="backslash">\</li><li>QueryableModel</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            QueryableModel
+                
+        </h1>
+    </div>
+
+    <p>    abstract     class
+    <strong>QueryableModel</strong>        implements
+        <abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>, <a target="_blank" rel="noopener" href="https://www.php.net/ArrayAccess">ArrayAccess</a>, <abbr title="Illuminate\Contracts\Support\Jsonable">Jsonable</abbr>, <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>, <abbr title="Illuminate\Contracts\Routing\UrlRoutable">UrlRoutable</abbr>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\Concerns\GuardsAttributes">GuardsAttributes</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\Concerns\HasAttributes">HasAttributes</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\Concerns\HasEvents">HasEvents</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Query/Traits/HasRelation.html"><abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\Concerns\HasTimestamps">HasTimestamps</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\Concerns\HidesAttributes">HidesAttributes</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Query/Traits/ModelMapper.html"><abbr title="Netflex\Query\Traits\ModelMapper">ModelMapper</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Support\Traits\Macroable">Macroable</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CREATED_AT</td>
+                <td class="last">
+                    <p><em>The name of the "created at" column.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UPDATED_AT</td>
+                <td class="last">
+                    <p><em>The name of the "updated at" column.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_defaultOrderByField">
+                                        protected                                        string
+                </td>
+                <td>$defaultOrderByField</td>
+                <td class="last">Determines the default field to order the query by</td>
+                <td><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#property_defaultOrderByField">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultSortDirection">
+                                        protected                                        string
+                </td>
+                <td>$defaultSortDirection</td>
+                <td class="last">Determines the default direction to order the query by</td>
+                <td><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#property_defaultSortDirection">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_perPage">
+                                        protected                                        int
+                </td>
+                <td>$perPage</td>
+                <td class="last">The number of models to return for pagination.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useChunking">
+                                        protected                                        bool
+                </td>
+                <td>$useChunking</td>
+                <td class="last">Determines if QueryableModel::all() calls in queries should chunk the result.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_exists">
+                                                                                bool
+                </td>
+                <td>$exists</td>
+                <td class="last">Indicates if the model exists.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wasRecentlyCreated">
+                                                                                bool
+                </td>
+                <td>$wasRecentlyCreated</td>
+                <td class="last">Indicates if the model was inserted during the current request lifecycle.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_traitInitializers">
+                    static                    protected                                        array
+                </td>
+                <td>$traitInitializers</td>
+                <td class="last">The array of trait initializers that will be called on each new instance.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_booted">
+                    static                    protected                                        array
+                </td>
+                <td>$booted</td>
+                <td class="last">The array of booted models.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attributes">
+                                        protected                                        string
+                </td>
+                <td>$attributes</td>
+                <td class="last">The interal storage of the model data.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_relation">
+                                        protected                                        string
+                </td>
+                <td>$relation</td>
+                <td class="last">The relation associated with the model.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_relationId">
+                                        protected                                        int
+                </td>
+                <td>$relationId</td>
+                <td class="last">The directory_id associated with the model.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryField">
+                                        protected                                        string
+                </td>
+                <td>$primaryField</td>
+                <td class="last">The primary field for the model.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_keyType">
+                                        protected                                        string
+                </td>
+                <td>$keyType</td>
+                <td class="last">The "type" of the primary key ID.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resolvableField">
+                                        protected                                        string
+                </td>
+                <td>$resolvableField</td>
+                <td class="last">The resolvable field associated with the model.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_incrementing">
+                                                                                bool
+                </td>
+                <td>$incrementing</td>
+                <td class="last">Indicates if the IDs are auto-incrementing.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_respectPublishingStatus">
+                                        protected                                        bool
+                </td>
+                <td>$respectPublishingStatus</td>
+                <td class="last">Indicates if we should respect the models publishing status when retrieving it.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_autoPublishes">
+                                        protected                                        bool
+                </td>
+                <td>$autoPublishes</td>
+                <td class="last">Indicates if we should automatically publish the model on save.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dispatcher">
+                    static                    protected                                        Dispatcher
+                </td>
+                <td>$dispatcher</td>
+                <td class="last">The event dispatcher</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cachesResults">
+                                        protected                                        bool
+                </td>
+                <td>$cachesResults</td>
+                <td class="last">Determines if we should cache some results.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelation">getRelation</a>()
+        
+                                            <p>Gets the relation</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelation">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelationId">getRelationId</a>()
+        
+                                            <p>Gets the relation_id</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelationId">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheIdentifier">getCacheIdentifier</a>(mixed $identifier = null)
+        
+                                            <p>Creates a cacheKey</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/HasRelation.html#method_getCacheIdentifier">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllCacheIdentifier">getAllCacheIdentifier</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/HasRelation.html#method_getAllCacheIdentifier">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMapper">getMapper</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/ModelMapper.html#method_getMapper">
+<abbr title="Netflex\Query\Traits\ModelMapper">ModelMapper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeQueryBuilder">makeQueryBuilder</a>($appends = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_makeQueryBuilder">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respectPublishingStatus">respectPublishingStatus</a>()
+        
+                                            <p>Determine if this object respects publishing statuses when performing queries</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_respectPublishingStatus">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disregardingPublishingStatus">disregardingPublishingStatus</a>(bool $disregarding = true)
+        
+                                            <p>Override the publishing status for the model</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_disregardingPublishingStatus">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_field">field</a>(...$args)
+        
+                                            <p>Adds a field that should be retrieved</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_field">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fields">fields</a>(...$args)
+        
+                                            <p>Sets which fields to retrieve (default: All fields)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_fields">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_limit">limit</a>(...$args)
+        
+                                            <p>Limits the results to $limit amount of hits</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_limit">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderBy">orderBy</a>(...$args)
+        
+                                            <p>Sets the field which to order the results by</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_orderBy">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_raw">raw</a>(...$args)
+        
+                                            <p>Performs a raw query, use carefully.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_raw">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_where">where</a>(...$args)
+        
+                                            <p>Performs a 'where' query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_where">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereIn">whereIn</a>(...$args)
+        
+                                            <p>Queries where field exists in the values</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_whereIn">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNot">whereNot</a>(...$args)
+        
+                                            <p>Performs a 'whereNot' query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_whereNot">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereBetween">whereBetween</a>(...$args)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_whereBetween">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNotBetween">whereNotBetween</a>(...$args)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_whereNotBetween">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PaginatedResult
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paginate">paginate</a>(...$args)
+        
+                                            <p>Creates a paginated result</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_paginate">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_maybeMutatesCache">maybeMutatesCache</a>(string $key, bool $shouldCache, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $action)
+        
+                                            <p>Perform an action and mutate the given key if $shouldCache is true</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_maybeMutatesCache">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_maybeCacheResults">maybeCacheResults</a>(string $key, bool $shouldCache)
+        
+                                            <p>Cache the results with the given key if $shouldCache is true</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_maybeCacheResults">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheResults">cacheResults</a>(string $key)
+        
+                                            <p>Cache the results with the given key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_cacheResults">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(...$args)
+        
+                                            <p>Get the count of items matching the current query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_count">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a>|Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_random">random</a>(int $amount = 1)
+        
+                                            <p>Picks random items</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_random">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrimaryField">getPrimaryField</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_getPrimaryField">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResolvableField">getResolvableField</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_getResolvableField">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolvableContext">resolvableContext</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $context)
+        
+                                            <p>Exectures the context if object can be resolved</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_resolvableContext">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>Retrieves the first instance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_first">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>()
+        
+                                            <p>Retrieves the first instance or fails</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_firstOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_last">last</a>()
+        
+                                            <p>Retrieves the latest instance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_last">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Collection|LazyCollection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>()
+        
+                                            <p>Retrieves all instances</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_all">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_chunked">chunked</a>($chunkSize = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_chunked">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|Collection|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>($rawValue, string|null $field = null)
+        
+                                            <p>Resolves an instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveOrFail">resolveOrFail</a>(mixed $resolveBy)
+        
+                                            <p>Resolves an instance or throws an exception</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_resolveOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveMany">resolveMany</a>(array $resolveBy)
+        
+                                            <p>Resolves multiple instances by their primary fields</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_resolveMany">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed|array|Collection $findBy)
+        
+                                            <p>Finds an instance by its primary field</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_find">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(mixed|array $findBy)
+        
+                                            <p>Finds an instance by its primary field or throws an exception</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_findOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Collection
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findMany">findMany</a>(array $findBy)
+        
+                                            <p>Finds multiple instances by their primary fields</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Resolvable.html#method_findMany">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $attributes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performRetrieveRequest">performRetrieveRequest</a>(int|null $relationId = null, mixed $key)
+        
+                                            <p>Retrieves a record by key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performInsertRequest">performInsertRequest</a>(int|null $relationId = null, array $attributes = [])
+        
+                                            <p>Inserts a new record, and returns its id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performUpdateRequest">performUpdateRequest</a>(int|null $relationId = null, mixed $key, array $attributes = [])
+        
+                                            <p>Updates a record</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performDeleteRequest">performDeleteRequest</a>(int|null $relationId = null, mixed $key)
+        
+                                            <p>Deletes a record</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fresh">fresh</a>()
+        
+                                            <p>Reload a fresh model instance from the database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newFromBuilder">newFromBuilder</a>(array $attributes = [])
+        
+                                            <p>Create a new model instance that is existing.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array $attributes = [])
+        
+                                            <p>Saves a new model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newInstance">newInstance</a>(array $attributes = [], bool $exists = false)
+        
+                                            <p>Create a new instance of the given model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTagsAttribute">getTagsAttribute</a>(string|null $tags = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTagsAttribute">setTagsAttribute</a>(array $tags = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrCreate">firstOrCreate</a>(array $query, array $with = [])
+        
+                                            <p>Retrieves the first matching model or creates it</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrNew">firstOrNew</a>(array $attributes = [])
+        
+                                            <p>Retrieves the first model, or creates a new instance if not found</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performUpdate">performUpdate</a>()
+        
+                                            <p>Perform a model update operation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withIgnoredPublishingStatus">withIgnoredPublishingStatus</a>(callable $callback)
+        
+                                            <p>Perform an action with temporary disabled respectPublishingStatus</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performInsert">performInsert</a>()
+        
+                                            <p>Perform a model insert operation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_syncOriginal">syncOriginal</a>()
+        
+                                            <p>Sync the original attributes with the current.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_finishSave">finishSave</a>()
+        
+                                            <p>Perform any actions that are necessary after the model is saved.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>()
+        
+                                            <p>Updates or stores the model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>()
+        
+                                            <p>Delete the model from the database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(mixed|array|Collection ...$identifiers)
+        
+                                            <p>Destroys one or multiple instances by primary key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_performDeleteOnModel">performDeleteOnModel</a>()
+        
+                                            <p>Perform the actual delete query on this model instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replicate">replicate</a>(array $except = null)
+        
+                                            <p>Clone the model into a new, non-existing instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p>Convert the object into something JSON serializable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(array $attributes = [])
+        
+                                            <p>Update the model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOrCreate">updateOrCreate</a>(array $query, array $with = [])
+        
+                                            <p>Updates an exisisting model or creates it</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fill">fill</a>(array $attributes)
+        
+                                            <p>Fill the model with an array of attributes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is">is</a>(<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a> $other)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Convert the model instance to an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toJson">toJson</a>(int $options = 0)
+        
+                                            <p>Convert the model instance to JSON.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRouteKey">getRouteKey</a>()
+        
+                                            <p>Get the value of the model's route key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRouteKeyName">getRouteKeyName</a>()
+        
+                                            <p>Get the route key for the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveRouteBinding">resolveRouteBinding</a>(mixed $rawValue, string|null $field = null)
+        
+                                            <p>Retrieve the model for a bound value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveChildRouteBinding">resolveChildRouteBinding</a>(string $childType, mixed $value, string|null $field)
+        
+                                            <p>Retrieve the child model for a bound value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIncrementing">getIncrementing</a>()
+        
+                                            <p>Get the value indicating whether the IDs are incrementing.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootIfNotBooted">bootIfNotBooted</a>()
+        
+                                            <p>Check if the model needs to be booted and if so, do it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>Bootstrap the model and its traits.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootTraits">bootTraits</a>()
+        
+                                            <p>Boot all of the bootable traits on the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $key)
+        
+                                            <p>Dynamically retrieve attributes on the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $key, mixed $value)
+        
+                                            <p>Dynamically set attributes on the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeTraits">initializeTraits</a>()
+        
+                                            <p>Initialize any initializable traits on the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKey">getKey</a>()
+        
+                                            <p>Get the value of the model's primary key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyName">getKeyName</a>()
+        
+                                            <p>Get the primary key for the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setKeyName">setKeyName</a>(string $key)
+        
+                                            <p>Set the primary key for the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyType">getKeyType</a>()
+        
+                                            <p>Get the auto-incrementing key type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setKeyType">setKeyType</a>(string $type)
+        
+                                            <p>Set the data type for the primary key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearBootedModels">clearBootedModels</a>()
+        
+                                            <p>Clear the list of booted models so they will be re-booted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $parameters)
+        
+                                            <p>Handle dynamic static method calls into the method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Convert the model to its string representation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___wakeup">__wakeup</a>()
+        
+                                            <p>When a model is being unserialized, check if it needs to be booted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_booting">booting</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string $callback)
+        
+                                            <p>Register a booting model event with the dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_booted">booted</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string $callback)
+        
+                                            <p>Register a booted model event with the dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relationLoaded">relationLoaded</a>(string $key)
+        
+                                            <p>Shim to make model compatible with HasAttributes trait</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(string $key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___debugInfo">__debugInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getRelation">
+        <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelation">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 14</div>
+        <code>                    string
+    <strong>getRelation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the relation</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelationId">
+        <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelationId">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 24</div>
+        <code>                    int|null
+    <strong>getRelationId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the relation_id</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheIdentifier">
+        <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getCacheIdentifier">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 36</div>
+        <code>            protected        string
+    <strong>getCacheIdentifier</strong>(mixed $identifier = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a cacheKey</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$identifier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllCacheIdentifier">
+        <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getAllCacheIdentifier">
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 46</div>
+        <code>            protected        
+    <strong>getAllCacheIdentifier</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMapper">
+        <div class="location">in <a href="../../Netflex/Query/Traits/ModelMapper.html#method_getMapper">
+<abbr title="Netflex\Query\Traits\ModelMapper">ModelMapper</abbr></a> at line 12</div>
+        <code>            protected        <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>
+    <strong>getMapper</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeQueryBuilder">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_makeQueryBuilder">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 40</div>
+        <code>        static    protected        Builder
+    <strong>makeQueryBuilder</strong>($appends = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$appends</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respectPublishingStatus">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_respectPublishingStatus">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 92</div>
+        <code>                    bool
+    <strong>respectPublishingStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine if this object respects publishing statuses when performing queries</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disregardingPublishingStatus">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_disregardingPublishingStatus">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 103</div>
+        <code>        static            Builder
+    <strong>disregardingPublishingStatus</strong>(bool $disregarding = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Override the publishing status for the model</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$disregarding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_field">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_field">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 117</div>
+        <code>        static            Builder
+    <strong>field</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a field that should be retrieved</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::field">Builder::field</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fields">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_fields">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 130</div>
+        <code>        static            Builder
+    <strong>fields</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets which fields to retrieve (default: All fields)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::fields">Builder::fields</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_limit">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_limit">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 143</div>
+        <code>        static            Builder
+    <strong>limit</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Limits the results to $limit amount of hits</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::limit">Builder::limit</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderBy">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_orderBy">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 158</div>
+        <code>        static            Builder
+    <strong>orderBy</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the field which to order the results by</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidSortingDirectionException</td>
+                <td>If an invalid $direction is passed</td>
+            </tr>
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::orderBy">Builder::orderBy</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_raw">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_raw">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 171</div>
+        <code>        static            Builder
+    <strong>raw</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a raw query, use carefully.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::raw">Builder::raw</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_where">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_where">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 189</div>
+        <code>        static            Builder
+    <strong>where</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'where' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::where">Builder::where</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereIn">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereIn">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 203</div>
+        <code>        static            Builder
+    <strong>whereIn</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Queries where field exists in the values</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::whereIn">Builder::whereIn</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNot">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereNot">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 221</div>
+        <code>        static            Builder
+    <strong>whereNot</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'whereNot' query</p>                    <p>If a closure is passed as the only argument, a new query scope will be created.
+If $value is omitted, $operator is used as the $value, and the $operator will be set to '='.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::whereNot">Builder::whereNot</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereBetween">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereBetween">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 236</div>
+        <code>        static            
+    <strong>whereBetween</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNotBetween">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereNotBetween">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 251</div>
+        <code>        static            
+    <strong>whereNotBetween</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paginate">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_paginate">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 266</div>
+        <code>        static            PaginatedResult
+    <strong>paginate</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a paginated result</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PaginatedResult</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::paginate">Builder::paginate</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maybeMutatesCache">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_maybeMutatesCache">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 282</div>
+        <code>        static            mixed
+    <strong>maybeMutatesCache</strong>(string $key, bool $shouldCache, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $action)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform an action and mutate the given key if $shouldCache is true</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shouldCache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maybeCacheResults">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_maybeCacheResults">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 299</div>
+        <code>        static            Builder
+    <strong>maybeCacheResults</strong>(string $key, bool $shouldCache)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cache the results with the given key if $shouldCache is true</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shouldCache</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::cacheResultsWithKey">Builder::cacheResultsWithKey</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheResults">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_cacheResults">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 315</div>
+        <code>        static            Builder
+    <strong>cacheResults</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cache the results with the given key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::cacheResultsWithKey">Builder::cacheResultsWithKey</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_count">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 328</div>
+        <code>        static            int
+    <strong>count</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the count of items matching the current query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::count">Builder::count</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_random">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_random">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 339</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a>|Collection
+    <strong>random</strong>(int $amount = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Picks random items</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$amount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a>|Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrimaryField">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_getPrimaryField">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 20</div>
+        <code>            protected        
+    <strong>getPrimaryField</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResolvableField">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_getResolvableField">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 25</div>
+        <code>            protected        
+    <strong>getResolvableField</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolvableContext">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_resolvableContext">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 37</div>
+        <code>        static    protected        mixed
+    <strong>resolvableContext</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $context)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exectures the context if object can be resolved</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_first">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 53</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first instance</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_firstOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 69</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>
+    <strong>firstOrFail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first instance or fails</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotFoundException</td>
+                <td>If not found</td>
+            </tr>
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_last">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_last">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 85</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null
+    <strong>last</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the latest instance</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_all">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 100</div>
+        <code>        static            Collection|LazyCollection
+    <strong>all</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves all instances</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Collection|LazyCollection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_chunked">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_chunked">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 116</div>
+        <code>        static            
+    <strong>chunked</strong>($chunkSize = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$chunkSize</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">at line 761</div>
+        <code>        static            <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|Collection|null
+    <strong>resolve</strong>($rawValue, string|null $field = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves an instance</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$rawValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|Collection|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveOrFail">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_resolveOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 163</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection
+    <strong>resolveOrFail</strong>(mixed $resolveBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves an instance or throws an exception</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$resolveBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ResolutionFailedException</td>
+                <td>If the instance(s) could not be resolved</td>
+            </tr>
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveMany">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_resolveMany">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 180</div>
+        <code>        static            Collection
+    <strong>resolveMany</strong>(array $resolveBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves multiple instances by their primary fields</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$resolveBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_find">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 193</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection|null
+    <strong>find</strong>(mixed|array|Collection $findBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds an instance by its primary field</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|array|Collection</td>
+                <td>$findBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_findOrFail">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 220</div>
+        <code>        static            <a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection
+    <strong>findOrFail</strong>(mixed|array $findBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds an instance by its primary field or throws an exception</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|array</td>
+                <td>$findBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Traits/Resolvable.html"><abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a>|Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotFoundException</td>
+                <td>If the instance(s) could not be found</td>
+            </tr>
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findMany">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Resolvable.html#method_findMany">
+<abbr title="Netflex\Query\Traits\Resolvable">Resolvable</abbr></a> at line 237</div>
+        <code>        static            Collection
+    <strong>findMany</strong>(array $findBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finds multiple instances by their primary fields</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$findBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Collection</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+                    <tr>
+                <td>QueryException</td>
+                <td>On invalid query</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 179</div>
+        <code>                    
+    <strong>__construct</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performRetrieveRequest">
+        <div class="location">at line 194</div>
+        <code>            protected        array|null
+    <strong>performRetrieveRequest</strong>(int|null $relationId = null, mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves a record by key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$relationId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performInsertRequest">
+        <div class="location">at line 206</div>
+        <code>            protected        mixed
+    <strong>performInsertRequest</strong>(int|null $relationId = null, array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inserts a new record, and returns its id</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$relationId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performUpdateRequest">
+        <div class="location">at line 219</div>
+        <code>            protected        void
+    <strong>performUpdateRequest</strong>(int|null $relationId = null, mixed $key, array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates a record</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$relationId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performDeleteRequest">
+        <div class="location">at line 231</div>
+        <code>            protected        bool
+    <strong>performDeleteRequest</strong>(int|null $relationId = null, mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes a record</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$relationId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fresh">
+        <div class="location">at line 241</div>
+        <code>                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|null
+    <strong>fresh</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reload a fresh model instance from the database.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newFromBuilder">
+        <div class="location">at line 267</div>
+        <code>                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>newFromBuilder</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new model instance that is existing.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line 284</div>
+        <code>        static            <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>create</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Saves a new model</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newInstance">
+        <div class="location">at line 300</div>
+        <code>                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>newInstance</strong>(array $attributes = [], bool $exists = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new instance of the given model.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$exists</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTagsAttribute">
+        <div class="location">at line 313</div>
+        <code>                    array
+    <strong>getTagsAttribute</strong>(string|null $tags = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$tags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTagsAttribute">
+        <div class="location">at line 322</div>
+        <code>                    void
+    <strong>setTagsAttribute</strong>(array $tags = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrCreate">
+        <div class="location">at line 334</div>
+        <code>        static            <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>firstOrCreate</strong>(array $query, array $with = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first matching model or creates it</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$with</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrNew">
+        <div class="location">at line 359</div>
+        <code>        static            <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>firstOrNew</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the first model, or creates a new instance if not found</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performUpdate">
+        <div class="location">at line 373</div>
+        <code>            protected        bool
+    <strong>performUpdate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform a model update operation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withIgnoredPublishingStatus">
+        <div class="location">at line 412</div>
+        <code>            protected        mixed
+    <strong>withIgnoredPublishingStatus</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform an action with temporary disabled respectPublishingStatus</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performInsert">
+        <div class="location">at line 427</div>
+        <code>            protected        bool
+    <strong>performInsert</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform a model insert operation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_syncOriginal">
+        <div class="location">at line 463</div>
+        <code>                    $this
+    <strong>syncOriginal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sync the original attributes with the current.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finishSave">
+        <div class="location">at line 476</div>
+        <code>            protected        void
+    <strong>finishSave</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform any actions that are necessary after the model is saved.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line 488</div>
+        <code>                    bool
+    <strong>save</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates or stores the model</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line 515</div>
+        <code>                    bool|null
+    <strong>delete</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete the model from the database.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at line 540</div>
+        <code>        static            bool
+    <strong>destroy</strong>(mixed|array|Collection ...$identifiers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Destroys one or multiple instances by primary key</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|array|Collection</td>
+                <td>...$identifiers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_performDeleteOnModel">
+        <div class="location">at line 559</div>
+        <code>            protected        void
+    <strong>performDeleteOnModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform the actual delete query on this model instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replicate">
+        <div class="location">at line 575</div>
+        <code>                    <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>replicate</strong>(array $except = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clone the model into a new, non-existing instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$except</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">at line 600</div>
+        <code>                    array
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the object into something JSON serializable.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at line 611</div>
+        <code>                    bool
+    <strong>update</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update the model</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOrCreate">
+        <div class="location">at line 627</div>
+        <code>        static            <a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a>
+    <strong>updateOrCreate</strong>(array $query, array $with = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates an exisisting model or creates it</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$with</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fill">
+        <div class="location">at line 655</div>
+        <code>                    $this
+    <strong>fill</strong>(array $attributes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fill the model with an array of attributes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>MassAssignmentException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is">
+        <div class="location">at line 678</div>
+        <code>                    bool
+    <strong>is</strong>(<a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a> $other)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></td>
+                <td>$other</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line 688</div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the model instance to an array.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toJson">
+        <div class="location">at line 701</div>
+        <code>                    string
+    <strong>toJson</strong>(int $options = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the model instance to JSON.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>JsonEncodingException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRouteKey">
+        <div class="location">at line 717</div>
+        <code>                    mixed
+    <strong>getRouteKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the value of the model's route key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRouteKeyName">
+        <div class="location">at line 727</div>
+        <code>                    string
+    <strong>getRouteKeyName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the route key for the model.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveRouteBinding">
+        <div class="location">at line 740</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null
+    <strong>resolveRouteBinding</strong>(mixed $rawValue, string|null $field = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the model for a bound value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$rawValue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotFoundException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveChildRouteBinding">
+        <div class="location">at line 781</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null
+    <strong>resolveChildRouteBinding</strong>(string $childType, mixed $value, string|null $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the child model for a bound value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$childType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIncrementing">
+        <div class="location">at line 791</div>
+        <code>                    bool
+    <strong>getIncrementing</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the value indicating whether the IDs are incrementing.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line 800</div>
+        <code>                    bool
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line 809</div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line 819</div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line 828</div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootIfNotBooted">
+        <div class="location">at line 838</div>
+        <code>            protected        void
+    <strong>bootIfNotBooted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if the model needs to be booted and if so, do it.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">at line 855</div>
+        <code>        static    protected        void
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bootstrap the model and its traits.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootTraits">
+        <div class="location">at line 865</div>
+        <code>        static    protected        void
+    <strong>bootTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Boot all of the bootable traits on the model.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at line 891</div>
+        <code>                    mixed
+    <strong>__get</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dynamically retrieve attributes on the model.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">at line 903</div>
+        <code>                    void
+    <strong>__set</strong>(string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dynamically set attributes on the model.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeTraits">
+        <div class="location">at line 913</div>
+        <code>            protected        void
+    <strong>initializeTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize any initializable traits on the model.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKey">
+        <div class="location">at line 925</div>
+        <code>                    mixed
+    <strong>getKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the value of the model's primary key.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyName">
+        <div class="location">at line 935</div>
+        <code>                    string
+    <strong>getKeyName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the primary key for the model.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKeyName">
+        <div class="location">at line 946</div>
+        <code>                    $this
+    <strong>setKeyName</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the primary key for the model.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyType">
+        <div class="location">at line 958</div>
+        <code>                    string
+    <strong>getKeyType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the auto-incrementing key type.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKeyType">
+        <div class="location">at line 969</div>
+        <code>                    $this
+    <strong>setKeyType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the data type for the primary key.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearBootedModels">
+        <div class="location">at line 981</div>
+        <code>        static            void
+    <strong>clearBootedModels</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear the list of booted models so they will be re-booted.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">at line 993</div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $parameters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handle dynamic static method calls into the method.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 1003</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the model to its string representation.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___wakeup">
+        <div class="location">at line 1013</div>
+        <code>                    void
+    <strong>__wakeup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>When a model is being unserialized, check if it needs to be booted.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_booting">
+        <div class="location">at line 1024</div>
+        <code>        static    protected        void
+    <strong>booting</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register a booting model event with the dispatcher.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_booted">
+        <div class="location">at line 1037</div>
+        <code>        static    protected        void
+    <strong>booted</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register a booted model event with the dispatcher.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relationLoaded">
+        <div class="location">at line 1050</div>
+        <code>            protected        bool
+    <strong>relationLoaded</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Shim to make model compatible with HasAttributes trait</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">at line 1059</div>
+        <code>                    bool
+    <strong>__isset</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___debugInfo">
+        <div class="location">at line 1067</div>
+        <code>                    array
+    <strong>__debugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.            <br/>Copyright  <a href="https://www.apility.no" rel="noreferrer noopener" target="_blank">Apility AS</a> © 2021</div></div>
+    </div>
+    </body>
+
+</html>
