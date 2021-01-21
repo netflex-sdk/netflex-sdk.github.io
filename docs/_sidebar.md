@@ -3,7 +3,7 @@
   * [Installation](/docs/installation.md)
   * [Architecture](/docs/architecture.md)
   * [Command Line Interface](/docs/cli.md)
-  * [SDK API reference](/docs/api/index.html)
+  * [SDK API reference](https://netflex-sdk.github.io/docs/api/index.html)
   * [Netflex API](/docs/api.md)
   * [Media Preset](/docs/media.md)
   * [Netflex Components](/docs/components.md)
@@ -29,4 +29,4 @@
   * [Acknowledgements](/docs/acknowledgements.md)
   * [License](/LICENSE.md)
 <br>
-<small class="copyright">Copyright <a href="https://apility.no" target="_blank">Apility AS</a> &copy; 2020</small>
+<small class="copyright">Copyright <a href="https://apility.no" target="_blank">Apility AS</a> &copy; 2020 - 2021</small>
