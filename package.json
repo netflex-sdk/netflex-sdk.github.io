@@ -3,6 +3,6 @@
   "author": "Thomas Alrek <thomas@apility.no>",
   "license": "MIT",
   "scripts": {
-    "build": "php doctum.phar update doctum.config.php"
+    "build": "rm -rf ./cache && rm -rf ./docs/api/* && php doctum.phar update doctum.config.php"
   }
 }
