@@ -3,6 +3,10 @@
 The Netflex SDK provides a lot of built-in components that integrates with the Netflex API for CDN images and inline editable content etc.
 The components are implemented as [Blade components](https://laravel.com/docs/7.x/blade#components), and can also be used with the new Blade Component Tag syntax.
 
+## API reference
+
+The full technical API reference for `Netflex\Pages\Components` namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Pages/Components.html).
+
 ## BackgroundImage
 
 The BackgroundImage comoponent can be used to create a CSS style tag that generates a responsive background image.

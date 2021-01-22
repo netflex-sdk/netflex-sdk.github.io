@@ -8,6 +8,10 @@ This file determines how routes should be defined in Laravels router. As you can
 
 The RouteServiceProvider is responsible for registering routes in your application. The Netflex provided route service provider works just like Laravels, but it will also automatically register routes for [Pages](https://github.com/netflex-sdk/pages) and [Redirects](https://github.com/netflex-sdk/foundation) defined in Netflexapp.
 
+## API reference
+
+The full technical API reference for the Netflex\Pages namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Pages.html).
+
 ## Registering a route through Netflex
 
 When you create a Page in Netflexapp, its route will automatically be registered in your application (respecting publishing status). For simple pages that only require a simple template to render, you don't need to do anything, it should just work. If a template exists for the given page, it will be rendered.

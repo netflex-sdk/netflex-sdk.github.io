@@ -2,6 +2,9 @@
 
 This article describes how you can use the built-in helper methods to generate navigation menus from Netflex Pages.
 
+## API reference
+
+The full technical API reference for the Netflex\Pages namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Pages.html).
 ## Building the navigation tree
 
 In previous versions of the Netflex SDK, you had a global variable named `$navdata` that contained data for generating navigation menus.

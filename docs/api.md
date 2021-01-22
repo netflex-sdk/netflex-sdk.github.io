@@ -4,6 +4,10 @@ All of the Netflex SDKs packages rely on the core `netflex/api` package to commu
 
 If you want to implement a wrapper for missing features in the SDK, or want to do something that isn't exposed by the built-in packages, you can leverage the Netflex API directly. It will always be available.
 
+## API reference
+
+The full technical API reference for the Netflex\API namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/API.html).
+
 ## Installation
 
 The package is a core depdenency of the Netflex SDK, and will already be provided for you in most common setups. If you are developing a Netflex library, or want to use it in a standalone project, install it using composer.

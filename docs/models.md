@@ -8,6 +8,12 @@ It is implemented with an API that is mostly compatible with [Laravels Eloquent 
 > In its default state, a model will never retrieve unpublished entries when performing a query or search.<br>
 > This can be configured per model.
 
+## API reference
+
+The full technical API reference for the `Netflex\Structure\Model` can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Structure/Model.html).
+
+The full technical API reference for the `Netflex\Query` namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Query.html).
+
 ## Working with models
 
 > [!TIP]
@@ -95,7 +101,7 @@ php artisan make:model Article
 
 ### Manually
 
-To manually create a model, you simply extend the `Netflex\Structure\Model` class, and provide it with your structures ID. A structures ID is equivalent to a database table name in a traditional database backend.
+To manually create a model, you simply extend the [Netflex\Structure\Model](https://netflex-sdk.github.io/docs/api/Netflex/Structure/Model.html) class, and provide it with your structures ID. A structures ID is equivalent to a database table name in a traditional database backend.
 
 ```php
 <?php

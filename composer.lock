@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9b8e0238251af685d02ccdcdfd3d744",
+    "content-hash": "66709a04636f220f9df2dd48fbe7b932",
     "packages": [
         {
             "name": "apility/laravel-ngrok",
@@ -2634,6 +2634,55 @@
                 "source": "https://github.com/netflex-sdk/sdk"
             },
             "time": "2020-11-02T13:35:28+00:00"
+        },
+        {
+            "name": "netflex/structures",
+            "version": "v3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netflex-sdk/structures.git",
+                "reference": "15657f2b189b9be90c2b905b7dceac8cc6142ce8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netflex-sdk/structures/zipball/15657f2b189b9be90c2b905b7dceac8cc6142ce8",
+                "reference": "15657f2b189b9be90c2b905b7dceac8cc6142ce8",
+                "shasum": ""
+            },
+            "require": {
+                "netflex/pages": "^3.0",
+                "netflex/query-builder": "^3.0",
+                "netflex/support": "^3.0",
+                "php": "^7.3"
+            },
+            "replace": {
+                "netflex/structure": "*"
+            },
+            "require-dev": {
+                "illuminate/cache": "^8.0",
+                "illuminate/container": "^8.0",
+                "illuminate/events": "^8.0",
+                "illuminate/filesystem": "^8.0",
+                "illuminate/support": "^8.0",
+                "larapack/dd": "^1.1",
+                "vlucas/phpdotenv": "^3.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Netflex\\Structure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Netflex Structure library",
+            "support": {
+                "issues": "https://github.com/netflex-sdk/structures/issues",
+                "source": "https://github.com/netflex-sdk/structures/tree/v3.0.6"
+            },
+            "time": "2020-12-17T13:50:58+00:00"
         },
         {
             "name": "netflex/support",
