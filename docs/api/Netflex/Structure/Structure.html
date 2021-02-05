@@ -128,14 +128,6 @@
                 <td><small>from&nbsp;<a href="../../Netflex/Support/Accessors.html#property_modified">
 <abbr title="Netflex\Support\Accessors">Accessors</abbr></a></small></td>
             </tr>
-                    <tr>
-                <td class="type" id="property_models">
-                    static                    protected                                        
-                </td>
-                <td>$models</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
             </table>
 
     
@@ -296,7 +288,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;string
+                    static&nbsp;Model
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_resolveModel">resolveModel</a>(mixed $id)
@@ -761,7 +753,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 47</div>
+        <div class="location">at line 50</div>
         <code>            protected        
     <strong>__construct</strong>(array $attributes = [])
         </code>
@@ -790,7 +782,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerModel">
-        <div class="location">at line 58</div>
+        <div class="location">at line 61</div>
         <code>        static            bool
     <strong>registerModel</strong>(string $model)
         </code>
@@ -839,8 +831,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resolveModel">
-        <div class="location">at line 73</div>
-        <code>        static            string
+        <div class="location">at line 79</div>
+        <code>        static            Model
     <strong>resolveModel</strong>(mixed $id)
         </code>
     </h3>
@@ -864,12 +856,21 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>Model</td>
             <td></td>
         </tr>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
@@ -877,7 +878,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_model">
-        <div class="location">at line 82</div>
+        <div class="location">at line 92</div>
         <code>                    string
     <strong>model</strong>()
         </code>
@@ -907,7 +908,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_retrieve">
-        <div class="location">at line 91</div>
+        <div class="location">at line 101</div>
         <code>        static            <a href="../../Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a>|null
     <strong>retrieve</strong>(int $id)
         </code>
@@ -945,7 +946,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getIdAttribute">
-        <div class="location">at line 102</div>
+        <div class="location">at line 112</div>
         <code>                    
     <strong>getIdAttribute</strong>($id)
         </code>
@@ -974,7 +975,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPublishedAttribute">
-        <div class="location">at line 107</div>
+        <div class="location">at line 117</div>
         <code>                    
     <strong>getPublishedAttribute</strong>($published)
         </code>
@@ -1003,7 +1004,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFieldsAttribute">
-        <div class="location">at line 112</div>
+        <div class="location">at line 122</div>
         <code>                    
     <strong>getFieldsAttribute</strong>($fields = [])
         </code>

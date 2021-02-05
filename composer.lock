@@ -2449,16 +2449,16 @@
         },
         {
             "name": "netflex/structures",
-            "version": "v3.2.3",
+            "version": "v3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netflex-sdk/structures.git",
-                "reference": "3c34be965f6d0c2e09342ced201afe64f07813d5"
+                "reference": "6e7d390936a20aa85e712014043d92e7274616d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netflex-sdk/structures/zipball/3c34be965f6d0c2e09342ced201afe64f07813d5",
-                "reference": "3c34be965f6d0c2e09342ced201afe64f07813d5",
+                "url": "https://api.github.com/repos/netflex-sdk/structures/zipball/6e7d390936a20aa85e712014043d92e7274616d4",
+                "reference": "6e7d390936a20aa85e712014043d92e7274616d4",
                 "shasum": ""
             },
             "require": {
@@ -2492,9 +2492,9 @@
             "description": "Netflex Structure library",
             "support": {
                 "issues": "https://github.com/netflex-sdk/structures/issues",
-                "source": "https://github.com/netflex-sdk/structures/tree/v3.2.3"
+                "source": "https://github.com/netflex-sdk/structures/tree/v3.2.4"
             },
-            "time": "2021-02-05T09:35:40+00:00"
+            "time": "2021-02-05T09:57:50+00:00"
         },
         {
             "name": "netflex/support",
