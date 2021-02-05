@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Netflex\Pages\Providers\SEOToolsServiceProvider | Netflex SDK</title>
+    <title>Netflex\Pages\Contracts\MediaUrlResolvable | Netflex SDK</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:Netflex_Pages_Providers_SEOToolsServiceProvider" data-root-path="../../../">
+    <body id="class" data-name="class:Netflex_Pages_Contracts_MediaUrlResolvable" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -61,21 +61,21 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages.html">Pages</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages/Providers.html">Providers</a></li><li class="backslash">\</li><li>SEOToolsServiceProvider</li>
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages.html">Pages</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages/Contracts.html">Contracts</a></li><li class="backslash">\</li><li>MediaUrlResolvable</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            SEOToolsServiceProvider
+            MediaUrlResolvable
                 
         </h1>
     </div>
 
-    <p>        class
-    <strong>SEOToolsServiceProvider</strong>        extends <abbr title="Apility\SEOTools\Providers\SEOToolsServiceProvider">SEOToolsServiceProvider</abbr>
+    <p>        interface
+    <strong>MediaUrlResolvable</strong>
 </p>
 
         
@@ -84,28 +84,32 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_path">
+                                                                                string
+                </td>
+                <td>$path</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method_getPathAttribute">getPathAttribute</a>()
         
-                                            <p>Register the service provider.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_provides">provides</a>()
-        
-                                            <p>{@inheritdoc}</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -115,50 +119,27 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">at line 31</div>
-        <code>                    void
-    <strong>register</strong>()
+                    <h3 id="method_getPathAttribute">
+        <div class="location">at line 12</div>
+        <code>                    string
+    <strong>getPathAttribute</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>Register the service provider.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>string</td>
             <td></td>
         </tr>
     </table>
 
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_provides">
-        <div class="location">at line 116</div>
-        <code>                    
-    <strong>provides</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>{@inheritdoc}</p>                                                </div>
-                <div class="tags">
-            
             
             
                     </div>

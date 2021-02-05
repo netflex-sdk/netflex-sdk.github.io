@@ -11,6 +11,7 @@ It is implemented with an API that is mostly compatible with [Laravels Eloquent 
 ## API reference
 
 The full technical API reference for the `Netflex\Structure\Model` can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Structure/Model.html).
+The full technical API reference for the generic `Netflex\Structure\Entry` can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Structure/Entry.html).
 
 The full technical API reference for the `Netflex\Query` namespace can be [found here](https://netflex-sdk.github.io/docs/api/Netflex/Query.html).
 
@@ -303,3 +304,38 @@ $article = App\Article::find(10000);
 echo $article->category->name;
 ```
 
+## Searching all structures
+
+The Netflex SDK provides a generic Entry model, which can search across all structures. It works excactly like a regular model, but it doesn't specify a $relationId property.
+
+**Example**
+
+```php
+<?php
+
+use Netflex\Structure\Entry;
+
+$entry = Entry::find(10000); // Resolves any entry, regardless of structure
+
+$entries = Entry::where('name', 'like', '*test*')->all(); // Resolves all entries from all structures that contains 'test' in it's name.
+```
+
+## Resolving a generic entry query to a specific model
+
+You can optinally 'register' your models. This will make the generic Entry resolve those specific entries to it's specific model type.
+It is recommended that you register your structures in a ServiceProvider, e.g `App\Providers\AppServiceProvider`, but you can also do it anytime at runtime.
+
+**Example**
+
+```php
+<?php
+
+use Netflex\Structure\Structure;
+use Netflex\Structure\Entry;
+
+use App\Models\Article;
+
+Structure::register(Article::class);
+
+$articlesAndGenericEntries = Entry::all(); // If any of the fetched entries belongs to the Article class' $relationId they will be cast to Article, otherwise they will remain generic Entry objects.
+```

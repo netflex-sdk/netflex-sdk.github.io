@@ -1,5 +1,4 @@
-{
-    
+{    
     "require": {
         "netflex/api": "^3.0",
         "netflex/breadcrumbs": "^2.0",
@@ -14,7 +13,17 @@
         "netflex/scraper": "^1.0",
         "netflex/sdk": "^3.1",
         "netflex/support": "^3.0",
-        "code-lts/doctum": "^5.3",
         "netflex/structures": "^3.0"
+    },
+    "require-dev": {
+        "code-lts/doctum": "^5.3"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "set -e && php doctum.phar update doctum.config.php || true"
+        ],
+        "post-update-cmd": [
+            "set -e && php doctum.phar update doctum.config.php || true"
+        ]
     }
 }
