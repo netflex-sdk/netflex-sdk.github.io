@@ -330,12 +330,17 @@ It is recommended that you register your structures in a ServiceProvider, e.g `A
 ```php
 <?php
 
-use Netflex\Structure\Structure;
 use Netflex\Structure\Entry;
+use Netflex\Structure\Structure;
 
 use App\Models\Article;
 
-Structure::register(Article::class);
+// You can either do
+Article::register();
+// or
+Structure::registerModel(Article::class);
+
+// The end result is the same, so this is just up to your own preferences.
 
 $articlesAndGenericEntries = Entry::all(); // If any of the fetched entries belongs to the Article class' $relationId they will be cast to Article, otherwise they will remain generic Entry objects.
 ```
