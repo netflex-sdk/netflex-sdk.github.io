@@ -13,8 +13,6 @@ The full technical API reference for `Netflex\Pages\MediaPreset` can be [found h
 ```php
 <?php
 
-use Netflex\Pages\Components\Picture;
-
 /**
  *
  */
@@ -33,14 +31,14 @@ return [
 
         'default' => [
 
-            'mode' => Picture::MODE_ORIGINAL,
+            'mode' => MODE_ORIGINAL,
             'resolutions' => ['1x', '2x'],
 
         ],
 
         'banner' => [
 
-          'mode' => Picture::MODE_LANDSCAPE,
+          'mode' => MODE_LANDSCAPE,
           'resolutions' => ['1x', '2x'],
           'size' => [1920, 600],
 
@@ -48,7 +46,7 @@ return [
 
             // Override for specific breakpoints:
             'md' => [
-              'mode' => Picture::MODE_FIT,
+              'mode' => MODE_FIT,
               'resolutions' => ['1x'].
             ],
 

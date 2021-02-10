@@ -25,15 +25,15 @@ The preferred method of configuring the background image component, is through t
 |alt|HTML alt attribute when unable to load the image|*Optional*|
 |title|HTML title attribute|*Optional*|
 |src|Loads image from this filename|If area is not defined|
-|mode|Resizing mode||`Picture::MODE_FIT`|
+|mode|Resizing mode||`MODE_FIT`|
 |width|Overrides the width|If preset is not defined|0|
 |height|Overrides the height|If preset is not defined|0|
 |size|Shorthand for setting both with and height|If preset is not defined or width and height is not defined|{width}x{height}|
-|fill|Only used If mode is `PICTURE::MODE_FILL`|*Optional*||
+|fill|Only used If mode is `MODE_FILL`|*Optional*||
 |image-class|The class attribute to set for the image element|*Optional*|
 |picture-class|The class attribute to set for the picture element|*Optional*|
 |preset|The Media Preset to use||`default`|
-|direction|Defines the direction for the image when using mode `Picture::MODE_FIT_DIRECTION`||`Picture::DIRECTION_CENTER`|
+|direction|Defines the direction for the image when using mode `MODE_FIT_DIR`||`DIR_CENTER`|
 |is|Determines what tag to wrap the inner slot in|*Optional*|`div`
 
 **Example:**
@@ -181,11 +181,11 @@ The Image component generates a html img element that loads an image from the Ne
 |size|Shorthand for setting both with and height|If not width and height is defined|{width}x{height}|
 |width|Overrides the width|If not size is defined|0|
 |height|Overrides the height|If not size is defined|0|
-|mode|Resizing mode|*Optional*|`Picture::MODE_FIT`|`Picture::MODE_EXACT`
+|mode|Resizing mode|*Optional*|`MODE_FIT`|`MODE_EXACT`
 |alt|HTML alt attribute when unable to load the image||
 |title|HTML title attribute||
-|color|Only used If mode is `Picture::MODE_FILL`|||
-|direction|Defines the direction for the image when using mode `Picture::MODE_FIT_DIRECTION`||`Picture::DIRECTION_CENTER`|
+|color|Only used If mode is `MODE_FILL`|||
+|direction|Defines the direction for the image when using mode `MODE_FIT_DIR`||`DIR_CENTER`|
 |src|Loads image from this filename|If area is not defined|
 |class|The class attribute to set for the image element||
 |style|Inline styles ||
@@ -197,7 +197,7 @@ The Image component generates a html img element that loads an image from the Ne
 
 <x-image
   src="1590000000/logo.png"
-  :mode="Netflex\Pages\Components\Picture::MODE_FIT"
+  :mode="MODE_FIT"
   width="600"
   height="600"
   title="My Awesome logo!"
@@ -208,7 +208,7 @@ The Image component generates a html img element that loads an image from the Ne
 
 <x-image
   area="logo-image"
-  :mode="Netflex\Pages\Components\Picture::MODE_FIT"
+  :mode="MODE_FIT"
   width="600"
   height="600"
   title="My Awesome logo!"
@@ -280,15 +280,15 @@ The preferred method of configuring the picture component, is through the use of
 |alt|HTML alt attribute when unable to load the image||
 |title|HTML title attribute||
 |src|Loads image from this filename|If area is not defined|
-|mode|Resizing mode||`Picture::MODE_FIT`|
+|mode|Resizing mode||`MODE_FIT`|
 |width|Overrides the width|If preset is not defined|0|
 |height|Overrides the height|If preset is not defined|0|
 |size|Shorthand for setting both with and height|If preset is not defined or width and height is not defined|{width}x{height}|
-|fill|Only used If mode is `Picture::MODE_FILL`|||
+|fill|Only used If mode is `MODE_FILL`|||
 |image-class|The class attribute to set for the image element||
 |picture-class|The class attribute to set ||
 |preset|The Media Preset to use||`default`|
-|direction|Defines the direction for the image when using mode `Picture::MODE_FIT_DIRECTION`||`Picture::DIRECTION_CENTER`|
+|direction|Defines the direction for the image when using mode `MODE_FIT_DIR`||`DIR_CENTER`|
 
 **Example:**
 
@@ -315,7 +315,7 @@ The preferred method of configuring the picture component, is through the use of
 
 <x-picture
   src="1590000000/main-banner.jpg"
-  :mode="Netflex\Pages\Components\Picture::MODE_FIT"
+  :mode="MODE_FIT"
   width="1920"
   heigt="600"
   title="My Awesome Banner!"
