@@ -60,7 +60,7 @@ It can be used like this:
 <x-nav parent="10000" /> {{-- Generates a navigation menu for children in page 10000 --}}
 ```
 
-Notice that te `parent` attribute is optional, and that if not provided, the navigation menu will generate a menu for all routes.
+Notice that the `parent` attribute is optional, and that if not provided, the navigation menu will generate a menu for all routes.
 
 This component simply uses the data provided by naviation_data to generate the navigation menu recursively.
 

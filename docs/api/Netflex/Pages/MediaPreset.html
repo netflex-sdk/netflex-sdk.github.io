@@ -306,6 +306,28 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;MediaPreset|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;MediaPreset
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(string $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -816,7 +838,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 41</div>
+        <div class="location">at line 42</div>
         <code>                    
     <strong>__construct</strong>($preset = [])
         </code>
@@ -845,7 +867,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">at line 53</div>
+        <div class="location">at line 54</div>
         <code>        static            void
     <strong>register</strong>(string $name, <a href="../../Netflex/Pages/MediaPreset.html"><abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr></a>|array $preset)
         </code>
@@ -889,8 +911,93 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line 68</div>
+        <code>        static            MediaPreset|null
+    <strong>find</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>MediaPreset|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">at line 92</div>
+        <code>        static            MediaPreset
+    <strong>findOrFail</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>MediaPreset</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidPresetException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getModeAttribute">
-        <div class="location">at line 63</div>
+        <div class="location">at line 100</div>
         <code>                    
     <strong>getModeAttribute</strong>($mode = null)
         </code>
@@ -919,7 +1026,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getResolutionsAttribute">
-        <div class="location">at line 72</div>
+        <div class="location">at line 109</div>
         <code>                    
     <strong>getResolutionsAttribute</strong>($resolutions)
         </code>
@@ -948,7 +1055,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMaxWidthAttribute">
-        <div class="location">at line 92</div>
+        <div class="location">at line 129</div>
         <code>                    
     <strong>setMaxWidthAttribute</strong>($maxWidth)
         </code>
@@ -977,7 +1084,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBreakpointsAttribute">
-        <div class="location">at line 102</div>
+        <div class="location">at line 139</div>
         <code>                    array
     <strong>getBreakpointsAttribute</strong>(array $values = [])
         </code>
@@ -1024,7 +1131,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFillAttribute">
-        <div class="location">at line 138</div>
+        <div class="location">at line 175</div>
         <code>                    
     <strong>getFillAttribute</strong>($fill = null)
         </code>
@@ -1053,7 +1160,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSizeAttribute">
-        <div class="location">at line 143</div>
+        <div class="location">at line 180</div>
         <code>                    
     <strong>getSizeAttribute</strong>($size = null)
         </code>
@@ -1082,7 +1189,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getWidthAttribute">
-        <div class="location">at line 170</div>
+        <div class="location">at line 207</div>
         <code>                    
     <strong>getWidthAttribute</strong>()
         </code>
@@ -1101,7 +1208,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getHeightAttribute">
-        <div class="location">at line 175</div>
+        <div class="location">at line 212</div>
         <code>                    
     <strong>getHeightAttribute</strong>()
         </code>
@@ -1120,7 +1227,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMaxWidthAttribute">
-        <div class="location">at line 180</div>
+        <div class="location">at line 217</div>
         <code>                    
     <strong>getMaxWidthAttribute</strong>($maxWidth = 0)
         </code>
@@ -1149,7 +1256,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_jsonSerialize">
-        <div class="location">at line 185</div>
+        <div class="location">at line 222</div>
         <code>                    
     <strong>jsonSerialize</strong>()
         </code>

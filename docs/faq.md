@@ -60,3 +60,38 @@ This can happen if the internal [ElasticSearch](https://www.elastic.co/) index h
 This can be fixed manually by going into Settings in Netflexapp, and performing a "Analyze indexes" action.
 
 ![Netflexapp: Analyze Indexes](../assets/netflexapp_analyze_indexes.png)
+
+## How do I configure a field in a Structure entry?
+
+Fields in a Structure can be configured by setting configuration tags.
+
+> [!WARNING]
+> This is an advanced topic. Misconfiguring this could have unforseen consequences.
+
+![Request lifecycle](../assets/structure_field_tags.png)
+
+### Supported tags
+
+| Alias         | Description                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| read_only     | Determines if the field should be "read-only". It will only be editable the first time it is created.                             |
+| hidden        | Hide or show the field.                                                                                                           |
+| default_value | Allows you to set a default value for the field when the entry is created. For matrix fields this must be set for each sub field. |
+| max_items     | Sets a limit to how many items a matrix field can contain.                                                                        |
+| query_append  | For entry, entries, customer and customers fields, this appends the given query when searching for items                          |
+
+### default_value
+
+The `default_value` tags also supports a few magic keywords that can be used to insert dynamic data at creation time.
+The values follows this format: `{keyword}` and `{keyword:parameters}`
+
+| Keyword | Parameters | Example | Description |
+|---------|------------|---------|-------------|
+| uuid    | *None*     | `{uuid}`| Inserts a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) |
+| date    | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{date:+4 days}` | Inserts a date in the format `YYYY-MM-DD` |
+| datetime | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{datetime:-16 hours}` | Inserts a date and time in the format `YYYY-MM-DD HH:MM` |
+| time | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{time:-16 hours}` | Inserts time in the format `HH:MM` |
+| random | `min,max` or `[...]` | `random:1,6` `random:['red', 'green']` | Picks a random integer between min and max (inclusive), or picks a random item from the specified array |
+
+> [!TIP]
+> The various keywords can be combined and mixed with static text e.g: `item-{uuid}-created-{datetime}-{random:1,10000}`

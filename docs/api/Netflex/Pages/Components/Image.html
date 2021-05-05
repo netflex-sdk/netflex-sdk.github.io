@@ -224,7 +224,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>($area = null, $size = null, $width = null, $height = null, $mode = Image::MODE_EXACT, $color = &#039;0,0,0&#039;, $direction = null, $src = null, $alt = null, $title = null, $class = null, $style = null)
+                    <a href="#method___construct">__construct</a>($area = null, $size = null, $width = null, $height = null, $mode = Image::MODE_EXACT, $color = &#039;0,0,0&#039;, $direction = null, $src = null, $alt = null, $title = null, $class = null, $style = null, $preset = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -413,9 +413,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 35</div>
+        <div class="location">at line 36</div>
         <code>                    
-    <strong>__construct</strong>($area = null, $size = null, $width = null, $height = null, $mode = Image::MODE_EXACT, $color = &#039;0,0,0&#039;, $direction = null, $src = null, $alt = null, $title = null, $class = null, $style = null)
+    <strong>__construct</strong>($area = null, $size = null, $width = null, $height = null, $mode = Image::MODE_EXACT, $color = &#039;0,0,0&#039;, $direction = null, $src = null, $alt = null, $title = null, $class = null, $style = null, $preset = null)
         </code>
     </h3>
     <div class="details">
@@ -486,6 +486,11 @@
                 <td>$style</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$preset</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -497,7 +502,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_id">
-        <div class="location">at line 101</div>
+        <div class="location">at line 112</div>
         <code>                    
     <strong>id</strong>()
         </code>
@@ -516,7 +521,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_width">
-        <div class="location">at line 108</div>
+        <div class="location">at line 119</div>
         <code>                    
     <strong>width</strong>()
         </code>
@@ -535,7 +540,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_height">
-        <div class="location">at line 119</div>
+        <div class="location">at line 130</div>
         <code>                    
     <strong>height</strong>()
         </code>
@@ -554,7 +559,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_inline">
-        <div class="location">at line 130</div>
+        <div class="location">at line 141</div>
         <code>                    
     <strong>inline</strong>()
         </code>
@@ -573,7 +578,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_size">
-        <div class="location">at line 135</div>
+        <div class="location">at line 146</div>
         <code>                    
     <strong>size</strong>()
         </code>
@@ -592,7 +597,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mode">
-        <div class="location">at line 166</div>
+        <div class="location">at line 177</div>
         <code>                    
     <strong>mode</strong>()
         </code>
@@ -611,7 +616,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_direction">
-        <div class="location">at line 177</div>
+        <div class="location">at line 188</div>
         <code>                    
     <strong>direction</strong>()
         </code>
@@ -630,7 +635,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_color">
-        <div class="location">at line 183</div>
+        <div class="location">at line 194</div>
         <code>                    
     <strong>color</strong>()
         </code>
@@ -649,7 +654,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_path">
-        <div class="location">at line 189</div>
+        <div class="location">at line 200</div>
         <code>                    
     <strong>path</strong>()
         </code>
@@ -668,7 +673,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_src">
-        <div class="location">at line 220</div>
+        <div class="location">at line 231</div>
         <code>                    
     <strong>src</strong>()
         </code>
@@ -687,7 +692,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_alt">
-        <div class="location">at line 239</div>
+        <div class="location">at line 250</div>
         <code>                    
     <strong>alt</strong>()
         </code>
@@ -706,7 +711,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_title">
-        <div class="location">at line 244</div>
+        <div class="location">at line 255</div>
         <code>                    
     <strong>title</strong>()
         </code>
@@ -725,7 +730,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_class">
-        <div class="location">at line 249</div>
+        <div class="location">at line 260</div>
         <code>                    
     <strong>class</strong>()
         </code>
@@ -744,7 +749,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_style">
-        <div class="location">at line 254</div>
+        <div class="location">at line 265</div>
         <code>                    
     <strong>style</strong>()
         </code>
@@ -763,7 +768,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldRender">
-        <div class="location">at line 259</div>
+        <div class="location">at line 270</div>
         <code>                    
     <strong>shouldRender</strong>()
         </code>
@@ -782,7 +787,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at line 269</div>
+        <div class="location">at line 280</div>
         <code>                    <abbr title="Illuminate\View\View">View</abbr>|string
     <strong>render</strong>()
         </code>

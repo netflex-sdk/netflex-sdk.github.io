@@ -87,6 +87,13 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td>ROUTE_CACHE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
                 <td>HOME</td>
                 <td class="last">
                     <p><em>The path to the "home" route for your application.</em></p>
@@ -268,6 +275,17 @@
                     
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_getSitemapPages">getSitemapPages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getSitemapEntries">getSitemapEntries</a>()
         
                                             <p class="no-description">No description</p>
@@ -282,7 +300,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_boot">
-        <div class="location">at line 55</div>
+        <div class="location">at line 60</div>
         <code>                    void
     <strong>boot</strong>()
         </code>
@@ -312,7 +330,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerMiddlewareGroups">
-        <div class="location">at line 65</div>
+        <div class="location">at line 70</div>
         <code>            protected        
     <strong>registerMiddlewareGroups</strong>()
         </code>
@@ -331,7 +349,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_map">
-        <div class="location">at line 85</div>
+        <div class="location">at line 90</div>
         <code>                    void
     <strong>map</strong>()
         </code>
@@ -361,7 +379,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapWebRoutes">
-        <div class="location">at line 103</div>
+        <div class="location">at line 108</div>
         <code>            protected        void
     <strong>mapWebRoutes</strong>()
         </code>
@@ -391,7 +409,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapApiRoutes">
-        <div class="location">at line 117</div>
+        <div class="location">at line 122</div>
         <code>            protected        void
     <strong>mapApiRoutes</strong>()
         </code>
@@ -421,7 +439,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapRedirects">
-        <div class="location">at line 125</div>
+        <div class="location">at line 130</div>
         <code>            protected        
     <strong>mapRedirects</strong>()
         </code>
@@ -440,7 +458,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handlePage">
-        <div class="location">at line 137</div>
+        <div class="location">at line 142</div>
         <code>            protected        
     <strong>handlePage</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../Netflex/Pages/JwtPayload.html"><abbr title="Netflex\Pages\JwtPayload">JwtPayload</abbr></a> $payload)
         </code>
@@ -474,7 +492,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleEntry">
-        <div class="location">at line 164</div>
+        <div class="location">at line 169</div>
         <code>            protected        
     <strong>handleEntry</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a href="../../../Netflex/Pages/JwtPayload.html"><abbr title="Netflex\Pages\JwtPayload">JwtPayload</abbr></a> $payload)
         </code>
@@ -508,7 +526,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleExtension">
-        <div class="location">at line 193</div>
+        <div class="location">at line 198</div>
         <code>            protected        
     <strong>handleExtension</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, $payload)
         </code>
@@ -542,7 +560,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_callWithInjectedDependencies">
-        <div class="location">at line 204</div>
+        <div class="location">at line 209</div>
         <code>            protected        
     <strong>callWithInjectedDependencies</strong>($controller, $method = &#039;index&#039;, $arguments = [])
         </code>
@@ -581,7 +599,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_injectDependencies">
-        <div class="location">at line 215</div>
+        <div class="location">at line 220</div>
         <code>            protected        array
     <strong>injectDependencies</strong>(<abbr title="Illuminate\Routing\Controller">Controller</abbr> $class, string $method = &#039;index&#039;, array $arguments = [])
         </code>
@@ -629,7 +647,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapNetflexRoutes">
-        <div class="location">at line 232</div>
+        <div class="location">at line 237</div>
         <code>            protected        
     <strong>mapNetflexRoutes</strong>()
         </code>
@@ -648,7 +666,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapRobots">
-        <div class="location">at line 356</div>
+        <div class="location">at line 393</div>
         <code>            protected        
     <strong>mapRobots</strong>()
         </code>
@@ -667,7 +685,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_mapSitemap">
-        <div class="location">at line 365</div>
+        <div class="location">at line 402</div>
         <code>            protected        
     <strong>mapSitemap</strong>()
         </code>
@@ -685,8 +703,27 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getSitemapPages">
+        <div class="location">at line 430</div>
+        <code>            protected        
+    <strong>getSitemapPages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getSitemapEntries">
-        <div class="location">at line 378</div>
+        <div class="location">at line 438</div>
         <code>            protected        
     <strong>getSitemapEntries</strong>()
         </code>

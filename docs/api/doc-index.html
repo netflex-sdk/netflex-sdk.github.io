@@ -250,7 +250,9 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Structure\JSON">JSON</abbr>#attributes</a> &mdash; <em>Property in class <a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_autoPublishes">
 <abbr title="Netflex\Structure\Model">Model</abbr>#autoPublishes</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
-                    <dd>Indicates if we should automatically publish the model on save.</dd><dt>$<a href="Netflex/Structure/Model.html#property_author">
+                    <dd>Indicates if we should automatically publish the model on save.</dd><dt>$<a href="Netflex/Structure/Model.html#property_applySEO">
+<abbr title="Netflex\Structure\Model">Model</abbr>#applySEO</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
+                    <dd>Indicates if we should automatically apply SEO tags when resolving model by URL</dd><dt>$<a href="Netflex/Structure/Model.html#property_author">
 <abbr title="Netflex\Structure\Model">Model</abbr>#author</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_authgroups">
 <abbr title="Netflex\Structure\Model">Model</abbr>#authgroups</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
@@ -308,6 +310,7 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
                     <dd></dd><dt><a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Components.html">Netflex\Pages\Components</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/Blocks.html#property_blocks">
 <abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr>#blocks</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Components.html">Netflex\Pages\Components</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Middleware/BindPage.html"><abbr title="Netflex\Pages\Middleware\BindPage">BindPage</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Middleware.html">Netflex\Pages\Middleware</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/MixServiceProvider.html#method_boot">
@@ -454,9 +457,8 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\MessageChannel\Client">Client</abbr>#channel</a> &mdash; <em>Property in class <a href="Netflex/MessageChannel/Client.html"><abbr title="Netflex\MessageChannel\Client">Client</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/MessageChannel/Client.html#property_client">
 <abbr title="Netflex\MessageChannel\Client">Client</abbr>#client</a> &mdash; <em>Property in class <a href="Netflex/MessageChannel/Client.html"><abbr title="Netflex\MessageChannel\Client">Client</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Components/Component.html"><abbr title="Netflex\Pages\Components\Component">Component</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Components.html">Netflex\Pages\Components</a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Pages/Components/Component.html#property_component">
-<abbr title="Netflex\Pages\Components\Component">Component</abbr>#component</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Component.html"><abbr title="Netflex\Pages\Components\Component">Component</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Components/Breadcrumbs.html#property_current">
+<abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr>#current</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_class">
 <abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr>#class</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/EditorButton.html"><abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_config">
@@ -480,10 +482,31 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/StaticContent.html#property_content">
 <abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr>#content</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/StaticContent.html"><abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method_cast">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::cast</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/ContentImage.html"><abbr title="Netflex\Pages\ContentImage">ContentImage</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Contracts/CompilesException.html"><abbr title="Netflex\Pages\Contracts\CompilesException">CompilesException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Contracts.html">Netflex\Pages\Contracts</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Contracts/CompilesException.html#method_compile">
+<abbr title="Netflex\Pages\Contracts\CompilesException">CompilesException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Contracts/CompilesException.html"><abbr title="Netflex\Pages\Contracts\CompilesException">CompilesException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Controllers.html">Netflex\Pages\Controllers</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Exceptions/InvalidControllerException.html#property_controller">
+<abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr>#controller</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidPresetException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidPresetException.html"><abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#property_class">
 <abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr>#class</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html"><abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html"><abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Exceptions/NotImplementedException.html#property_class">
+<abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr>#class</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/NotImplementedException.html"><abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/NotImplementedException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/NotImplementedException.html"><abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/PageNotBoundException.html#method_compile">
+<abbr title="Netflex\Pages\Exceptions\PageNotBoundException">PageNotBoundException</abbr>::compile</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/PageNotBoundException.html"><abbr title="Netflex\Pages\Exceptions\PageNotBoundException">PageNotBoundException</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/NavigationData.html#property_children">
 <abbr title="Netflex\Pages\NavigationData">NavigationData</abbr>#children</a> &mdash; <em>Property in class <a href="Netflex/Pages/NavigationData.html"><abbr title="Netflex\Pages\NavigationData">NavigationData</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_created">
@@ -563,7 +586,9 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Scraper\Metadata">Metadata</abbr>#canonical</a> &mdash; <em>Property in class <a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a></em></dt>
                     <dd>The document canonical URL, if none found, the original request URL</dd><dt>$<a href="Netflex/Scraper/Metadata.html#property_copyright">
 <abbr title="Netflex\Scraper\Metadata">Metadata</abbr>#copyright</a> &mdash; <em>Property in class <a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a></em></dt>
-                    <dd>The document copyright</dd><dt>$<a href="Netflex/Structure/Model.html#property_castsCustomFields">
+                    <dd>The document copyright</dd><dt><a href="Netflex/Structure/File.html#method_cast">
+<abbr title="Netflex\Structure\File">File</abbr>::cast</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_castsCustomFields">
 <abbr title="Netflex\Structure\Model">Model</abbr>#castsCustomFields</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd>Indicates if the model should automatically resolve and cast the fields to the correct types</dd><dt>$<a href="Netflex/Structure/Model.html#property_cachesResults">
 <abbr title="Netflex\Structure\Model">Model</abbr>#cachesResults</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
@@ -786,6 +811,10 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>#file</a> &mdash; <em>Property in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_fallbackIndex">
 <abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::fallbackIndex</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html#method_find">
+<abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr>::find</a>() &mdash; <em>Method in class <a href="Netflex/Pages/MediaPreset.html"><abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html#method_findOrFail">
+<abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr>::findOrFail</a>() &mdash; <em>Method in class <a href="Netflex/Pages/MediaPreset.html"><abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_fillable">
 <abbr title="Netflex\Pages\Page">Page</abbr>#fillable</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd>The attributes that are mass assignable.</dd><dt><a href="Netflex/Pages/Page.html#method_find">
@@ -1070,6 +1099,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr>::getPathAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Contracts/MediaUrlResolvable.html"><abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_getRoutes">
 <abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::getRoutes</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html#method_getSolution">
+<abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#method_getSolution">
 <abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html"><abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Facades/JwtPayload.html#method_getFacadeAccessor">
@@ -1119,8 +1150,12 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\Page">Page</abbr>::getParentAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd>Gets the parent page</dd><dt><a href="Netflex/Pages/Page.html#method_getChildrenAttribute">
 <abbr title="Netflex\Pages\Page">Page</abbr>::getChildrenAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd>Gets this page's children</dd><dt><a href="Netflex/Pages/PreviewRequest.html#method_get">
+                    <dd>Gets this page's children</dd><dt><a href="Netflex/Pages/Page.html#method_getConfigAttribute">
+<abbr title="Netflex\Pages\Page">Page</abbr>::getConfigAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
+                    <dd>Gets the config array as a object</dd><dt><a href="Netflex/Pages/PreviewRequest.html#method_get">
 <abbr title="Netflex\Pages\PreviewRequest">PreviewRequest</abbr>::get</a>() &mdash; <em>Method in class <a href="Netflex/Pages/PreviewRequest.html"><abbr title="Netflex\Pages\PreviewRequest">PreviewRequest</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_getSitemapPages">
+<abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::getSitemapPages</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_getSitemapEntries">
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::getSitemapEntries</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Traits/CastsDefaultFields.html#method_getContentAttribute">
@@ -1327,6 +1362,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\MessageChannel\Client">Client</abbr>#incomingMessageHandler</a> &mdash; <em>Property in class <a href="Netflex/MessageChannel/Client.html"><abbr title="Netflex\MessageChannel\Client">Client</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/BackgroundImage.html#property_is">
 <abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr>#is</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/BackgroundImage.html"><abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Components/Breadcrumbs.html#property_items">
+<abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr>#items</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_items">
 <abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr>#items</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/EditorButton.html"><abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_icon">
@@ -1349,18 +1386,25 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\Components\Seo">Seo</abbr>#images</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Seo.html"><abbr title="Netflex\Pages\Components\Seo">Seo</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/ContentFile.html#property_id">
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidPresetException.html"><abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html"><abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/NavigationData.html#property_id">
 <abbr title="Netflex\Pages\NavigationData">NavigationData</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Pages/NavigationData.html"><abbr title="Netflex\Pages\NavigationData">NavigationData</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_id">
 <abbr title="Netflex\Pages\Page">Page</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_injectDependencies">
+                    <dd></dd><dt><a href="Netflex/Pages/Page.html#method_isSubPageOf">
+<abbr title="Netflex\Pages\Page">Page</abbr>::isSubPageOf</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
+                    <dd>Traverses the page graph and determines if the page is a subpage of another pzsage.</dd><dt><a href="Netflex/Pages/Page.html#method_isParentPageOf">
+<abbr title="Netflex\Pages\Page">Page</abbr>::isParentPageOf</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
+                    <dd>Traverses the page graph and determines if the page is a subpage of another pzsage.</dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_injectDependencies">
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::injectDependencies</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Builder.html#method_ignorePublishingStatus">
 <abbr title="Netflex\Query\Builder">Builder</abbr>::ignorePublishingStatus</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd>Also include unpublished results
-Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptions/IndexNotFoundException.html"><abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Exceptions.html">Netflex\Query\Exceptions</a></em></dt>
+Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.html#method_if">
+<abbr title="Netflex\Query\Builder">Builder</abbr>::if</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
+                    <dd>Conditional query</dd><dt><a href="Netflex/Query/Exceptions/IndexNotFoundException.html"><abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Exceptions.html">Netflex\Query\Exceptions</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Query/Exceptions/IndexNotFoundException.html#property_index">
 <abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr>#index</a> &mdash; <em>Property in class <a href="Netflex/Query/Exceptions/IndexNotFoundException.html"><abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Exceptions/InvalidAssignmentException.html"><abbr title="Netflex\Query\Exceptions\InvalidAssignmentException">InvalidAssignmentException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Exceptions.html">Netflex\Query\Exceptions</a></em></dt>
@@ -1389,7 +1433,11 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\SDK">SDK</abbr>#instance</a> &mdash; <em>Property in class <a href="Netflex/SDK.html"><abbr title="Netflex\SDK">SDK</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/SDK.html#method_init">
 <abbr title="Netflex\SDK">SDK</abbr>::init</a>() &mdash; <em>Method in class <a href="Netflex/SDK.html"><abbr title="Netflex\SDK">SDK</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Scraper/Metadata.html#property_image">
+                    <dd></dd><dt><a href="Netflex/SDK/Application.html#method_isLocal">
+<abbr title="Netflex\SDK\Application">Application</abbr>::isLocal</a>() &mdash; <em>Method in class <a href="Netflex/SDK/Application.html"><abbr title="Netflex\SDK\Application">Application</abbr></a></em></dt>
+                    <dd>Determine if the application is in the local environment.</dd><dt><a href="Netflex/SDK/Application.html#method_isProduction">
+<abbr title="Netflex\SDK\Application">Application</abbr>::isProduction</a>() &mdash; <em>Method in class <a href="Netflex/SDK/Application.html"><abbr title="Netflex\SDK\Application">Application</abbr></a></em></dt>
+                    <dd>Determine if the application is in the production environment.</dd><dt>$<a href="Netflex/Scraper/Metadata.html#property_image">
 <abbr title="Netflex\Scraper\Metadata">Metadata</abbr>#image</a> &mdash; <em>Property in class <a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a></em></dt>
                     <dd>The first encountered image, or the og:image if available</dd><dt>$<a href="Netflex/Scraper/Metadata.html#property_icon">
 <abbr title="Netflex\Scraper\Metadata">Metadata</abbr>#icon</a> &mdash; <em>Property in class <a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a></em></dt>
@@ -1406,6 +1454,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Commerce\Properties">Properties</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Commerce/Properties.html"><abbr title="Netflex\Commerce\Properties">Properties</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/MessageChannel/Handler.html#method_jsonSerialize">
 <abbr title="Netflex\MessageChannel\Handler">Handler</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/MessageChannel/Handler.html"><abbr title="Netflex\MessageChannel\Handler">Handler</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method_jsonSerialize">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Facades/JwtPayload.html"><abbr title="Netflex\Pages\Facades\JwtPayload">JwtPayload</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Facades.html">Netflex\Pages\Facades</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/JwtPayload.html"><abbr title="Netflex\Pages\JwtPayload">JwtPayload</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html#method_jsonSerialize">
@@ -1422,6 +1472,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Scraper\Metadata">Metadata</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/EditorBlocks.html#method_jsonSerialize">
 <abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Structure/EditorBlocks.html"><abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/File.html#method_jsonSerialize">
+<abbr title="Netflex\Structure\File">File</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/JSON.html#method_jsonSerialize">
 <abbr title="Netflex\Structure\JSON">JSON</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a></em></dt>
@@ -1523,11 +1575,15 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/Picture.html#property_mode">
 <abbr title="Netflex\Pages\Components\Picture">Picture</abbr>#mode</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Picture.html"><abbr title="Netflex\Pages\Components\Picture">Picture</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Contracts/MediaUrlResolvable.html"><abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Contracts.html">Netflex\Pages\Contracts</a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Exceptions/NotImplementedException.html#property_method">
+<abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr>#method</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/NotImplementedException.html"><abbr title="Netflex\Pages\Exceptions\NotImplementedException">NotImplementedException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html"><abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Mix.html"><abbr title="Netflex\Pages\Mix">Mix</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_master">
 <abbr title="Netflex\Pages\Page">Page</abbr>#master</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Providers/MixServiceProvider.html"><abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Providers.html">Netflex\Pages\Providers</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Page.html#method_model">
+<abbr title="Netflex\Pages\Page">Page</abbr>::model</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
+                    <dd>Resolves the registered Page model class</dd><dt><a href="Netflex/Pages/Providers/MixServiceProvider.html"><abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Providers.html">Netflex\Pages\Providers</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_map">
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::map</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
                     <dd>Define the routes for the application.</dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_mapWebRoutes">
@@ -1611,9 +1667,7 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt><a href="Netflex/Pages/NavigationData.html"><abbr title="Netflex\Pages\NavigationData">NavigationData</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages.html">Netflex\Pages</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_name">
 <abbr title="Netflex\Pages\Page">Page</abbr>#name</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Page.html#method_newFromBuilder">
-<abbr title="Netflex\Pages\Page">Page</abbr>::newFromBuilder</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd>Create a new model instance that is existing.</dd><dt><a href="Netflex/Pages/Page.html#method_navigationData">
+                    <dd></dd><dt><a href="Netflex/Pages/Page.html#method_navigationData">
 <abbr title="Netflex\Pages\Page">Page</abbr>::navigationData</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd>Resolves navigation data for this page</dd><dt>$<a href="Netflex/Pages/Providers/RouteServiceProvider.html#property_namespace">
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>#namespace</a> &mdash; <em>Property in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
@@ -1679,6 +1733,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr>::orderBy</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></em></dt>
                     <dd>Sets the field which to order the results by</dd><dt><a href="Netflex/Query/Traits/SoftDeletes.html#method_onlyTrashed">
 <abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr>::onlyTrashed</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Structure/JSON.html#property_original">
+<abbr title="Netflex\Structure\JSON">JSON</abbr>#original</a> &mdash; <em>Property in class <a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Accessors.html#method_offsetExists">
 <abbr title="Netflex\Support\Accessors">Accessors</abbr>::offsetExists</a>() &mdash; <em>Method in class <a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Accessors.html#method_offsetGet">
@@ -1768,6 +1824,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt>$<a href="Netflex/Pages/Contracts/MediaUrlResolvable.html#property_path">
 <abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr>#path</a> &mdash; <em>Property in class <a href="Netflex/Pages/Contracts/MediaUrlResolvable.html"><abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Controllers/PageController.html"><abbr title="Netflex\Pages\Controllers\PageController">PageController</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Controllers.html">Netflex\Pages\Controllers</a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Pages/Exceptions/InvalidPresetException.html#property_preset">
+<abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr>#preset</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/InvalidPresetException.html"><abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/PageNotBoundException.html"><abbr title="Netflex\Pages\Exceptions\PageNotBoundException">PageNotBoundException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/NavigationData.html#property_page">
 <abbr title="Netflex\Pages\NavigationData">NavigationData</abbr>#page</a> &mdash; <em>Property in class <a href="Netflex/Pages/NavigationData.html"><abbr title="Netflex\Pages\NavigationData">NavigationData</abbr></a></em></dt>
@@ -1877,6 +1935,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt><a href="Netflex/Query/Providers/QueryBuilderServiceProvider.html"><abbr title="Netflex\Query\Providers\QueryBuilderServiceProvider">QueryBuilderServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Providers.html">Netflex\Query\Providers</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query.html">Netflex\Query</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Traits.html">Netflex\Query\Traits</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Traits/Queryable.html#method_query">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr>::query</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></em></dt>
                     <dd></dd>        </dl><h2 id="letterR">R</h2>
         <dl id="indexR"><dt><a href="Netflex/API/Providers/APIServiceProvider.html#method_register">
 <abbr title="Netflex\API\Providers\APIServiceProvider">APIServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Netflex/API/Providers/APIServiceProvider.html"><abbr title="Netflex\API\Providers\APIServiceProvider">APIServiceProvider</abbr></a></em></dt>
@@ -2079,9 +2139,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/BackgroundImage.html"><abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr></a></em></dt>
                     <dd>Get the view / contents that represent the component.</dd><dt><a href="Netflex/Pages/Components/Blocks.html#method_render">
 <abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a></em></dt>
-                    <dd>Get the view / contents that represent the component.</dd><dt><a href="Netflex/Pages/Components/Component.html#method_render">
-<abbr title="Netflex\Pages\Components\Component">Component</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Component.html"><abbr title="Netflex\Pages\Components\Component">Component</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_relationId">
+                    <dd>Get the view / contents that represent the component.</dd><dt><a href="Netflex/Pages/Components/Breadcrumbs.html#method_render">
+<abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a></em></dt>
+                    <dd>Get the view / contents that represent the component.</dd><dt>$<a href="Netflex/Pages/Components/EditorButton.html#property_relationId">
 <abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr>#relationId</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/EditorButton.html"><abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Components/EditorButton.html#method_render">
 <abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/EditorButton.html"><abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr></a></em></dt>
@@ -2121,14 +2181,18 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Page">Page</abbr>#respectPublishingStatus</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd>Indicates if we should respect the models publishing status when retrieving it.</dd><dt>$<a href="Netflex/Pages/Page.html#property_revision">
 <abbr title="Netflex\Pages\Page">Page</abbr>#revision</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Page.html#method_route">
+<abbr title="Netflex\Pages\Page">Page</abbr>::route</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Page.html#method_resolve">
 <abbr title="Netflex\Pages\Page">Page</abbr>::resolve</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
                     <dd>Resolves an instance</dd><dt><a href="Netflex/Pages/Providers/MixServiceProvider.html#method_register">
 <abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/MixServiceProvider.html"><abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/PagesServiceProvider.html#method_register">
 <abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/PagesServiceProvider.html"><abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Providers/PagesServiceProvider.html#method_registerBladeDirectives">
-<abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr>::registerBladeDirectives</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/PagesServiceProvider.html"><abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Providers/PagesServiceProvider.html#method_registerComponents">
+<abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr>::registerComponents</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/PagesServiceProvider.html"><abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Providers/PagesServiceProvider.html#method_registerDirectives">
+<abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr>::registerDirectives</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/PagesServiceProvider.html"><abbr title="Netflex\Pages\Providers\PagesServiceProvider">PagesServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Providers.html">Netflex\Pages\Providers</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/RouteServiceProvider.html#method_registerMiddlewareGroups">
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::registerMiddlewareGroups</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
@@ -2219,6 +2283,14 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Scheduler\Providers\SchedulerServiceProvider">SchedulerServiceProvider</abbr>::registerRoutes</a>() &mdash; <em>Method in class <a href="Netflex/Scheduler/Providers/SchedulerServiceProvider.html"><abbr title="Netflex\Scheduler\Providers\SchedulerServiceProvider">SchedulerServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Scraper/Providers/ScraperServiceProvider.html#method_register">
 <abbr title="Netflex\Scraper\Providers\ScraperServiceProvider">ScraperServiceProvider</abbr>::register</a>() &mdash; <em>Method in class <a href="Netflex/Scraper/Providers/ScraperServiceProvider.html"><abbr title="Netflex\Scraper\Providers\ScraperServiceProvider">ScraperServiceProvider</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/Contracts/StructureField.html#method_raw">
+<abbr title="Netflex\Structure\Contracts\StructureField">StructureField</abbr>::raw</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Contracts/StructureField.html"><abbr title="Netflex\Structure\Contracts\StructureField">StructureField</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/EditorBlocks.html#method_raw">
+<abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr>::raw</a>() &mdash; <em>Method in class <a href="Netflex/Structure/EditorBlocks.html"><abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/File.html#method_raw">
+<abbr title="Netflex\Structure\File">File</abbr>::raw</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/JSON.html#method_raw">
+<abbr title="Netflex\Structure\JSON">JSON</abbr>::raw</a>() &mdash; <em>Method in class <a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_relation">
 <abbr title="Netflex\Structure\Model">Model</abbr>#relation</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd>The relation associated with the model.</dd><dt>$<a href="Netflex/Structure/Model.html#property_relationId">
@@ -2231,7 +2303,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Structure\Model">Model</abbr>#revision</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Model.html#method_resolveRouteBinding">
 <abbr title="Netflex\Structure\Model">Model</abbr>::resolveRouteBinding</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
-                    <dd>Retrieve the model for a bound value.</dd><dt><a href="Netflex/Structure/Model.html#method_register">
+                    <dd>Retrieve the model for a bound value.</dd><dt><a href="Netflex/Structure/Model.html#method_resolvedRouteBinding">
+<abbr title="Netflex\Structure\Model">Model</abbr>::resolvedRouteBinding</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/Model.html#method_register">
 <abbr title="Netflex\Structure\Model">Model</abbr>::register</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd>Register the model</dd><dt><a href="Netflex/Structure/Structure.html#method_registerModel">
 <abbr title="Netflex\Structure\Structure">Structure</abbr>::registerModel</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a></em></dt>
@@ -2246,7 +2320,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt><a href="Netflex/Support/Retrievable.html#method_retrieve">
 <abbr title="Netflex\Support\Retrievable">Retrievable</abbr>::retrieve</a>() &mdash; <em>Method in class <a href="Netflex/Support/Retrievable.html"><abbr title="Netflex\Support\Retrievable">Retrievable</abbr></a></em></dt>
                     <dd></dd>        </dl><h2 id="letterS">S</h2>
-        <dl id="indexS"><dt>$<a href="Netflex/Commerce/Checkout.html#property_surname">
+        <dl id="indexS"><dt><a href="Netflex/API/Client.html#method_setCredentials">
+<abbr title="Netflex\API\Client">Client</abbr>::setCredentials</a>() &mdash; <em>Method in class <a href="Netflex/API/Client.html"><abbr title="Netflex\API\Client">Client</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Commerce/Checkout.html#property_surname">
 <abbr title="Netflex\Commerce\Checkout">Checkout</abbr>#surname</a> &mdash; <em>Property in class <a href="Netflex/Commerce/Checkout.html"><abbr title="Netflex\Commerce\Checkout">Checkout</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Commerce/Checkout.html#property_shipping_firstname">
 <abbr title="Netflex\Commerce\Checkout">Checkout</abbr>#shipping_firstname</a> &mdash; <em>Property in class <a href="Netflex/Commerce/Checkout.html"><abbr title="Netflex\Commerce\Checkout">Checkout</abbr></a></em></dt>
@@ -2437,6 +2513,7 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt><a href="Netflex/Scraper/Scraper.html#method_scrape">
 <abbr title="Netflex\Scraper\Scraper">Scraper</abbr>::scrape</a>() &mdash; <em>Method in class <a href="Netflex/Scraper/Scraper.html"><abbr title="Netflex\Scraper\Scraper">Scraper</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Signups/Exceptions/SignupNotFoundException.html"><abbr title="Netflex\Signups\Exceptions\SignupNotFoundException">SignupNotFoundException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Signups/Exceptions.html">Netflex\Signups\Exceptions</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/Contracts/StructureField.html"><abbr title="Netflex\Structure\Contracts\StructureField">StructureField</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure/Contracts.html">Netflex\Structure\Contracts</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Field.html#method_set">
 <abbr title="Netflex\Structure\Field">Field</abbr>::set</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Field.html"><abbr title="Netflex\Structure\Field">Field</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_start">
@@ -2526,6 +2603,10 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Components\Seo">Seo</abbr>::tags</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Seo.html"><abbr title="Netflex\Pages\Components\Seo">Seo</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/ContentFile.html#property_title">
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>#title</a> &mdash; <em>Property in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method_toArray">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method_toJson">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Extension.html#method_toResponse">
 <abbr title="Netflex\Pages\Extension">Extension</abbr>::toResponse</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Extension.html"><abbr title="Netflex\Pages\Extension">Extension</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/NavigationData.html#property_target">
@@ -2570,6 +2651,10 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr>::toHtml</a>() &mdash; <em>Method in class <a href="Netflex/Structure/EditorBlocks.html"><abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr></a></em></dt>
                     <dd>Get content as a string of HTML.</dd><dt>$<a href="Netflex/Structure/Field.html#property_type">
 <abbr title="Netflex\Structure\Field">Field</abbr>#type</a> &mdash; <em>Property in class <a href="Netflex/Structure/Field.html"><abbr title="Netflex\Structure\Field">Field</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/File.html#method_toArray">
+<abbr title="Netflex\Structure\File">File</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/File.html#method_toJson">
+<abbr title="Netflex\Structure\File">File</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/JSON.html#method_toJson">
 <abbr title="Netflex\Structure\JSON">JSON</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Structure/JSON.html"><abbr title="Netflex\Structure\JSON">JSON</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/JSON.html#method_toHtml">
@@ -2626,7 +2711,13 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#use_time</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Customers/Providers/AuthServiceProvider.html#method_updateRememberToken">
 <abbr title="Netflex\Customers\Providers\AuthServiceProvider">AuthServiceProvider</abbr>::updateRememberToken</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Providers/AuthServiceProvider.html"><abbr title="Netflex\Customers\Providers\AuthServiceProvider">AuthServiceProvider</abbr></a></em></dt>
-                    <dd>Update the "remember me" token for the given user in storage.</dd><dt><a href="Netflex/Pages/Middleware/JwtProxy.html#method_unauthenticated">
+                    <dd>Update the "remember me" token for the given user in storage.</dd><dt><a href="Netflex/Pages/ContentFile.html#method_url">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::url</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentImage.html#method_url">
+<abbr title="Netflex\Pages\ContentImage">ContentImage</abbr>::url</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentImage.html"><abbr title="Netflex\Pages\ContentImage">ContentImage</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Contracts/MediaUrlResolvable.html#method_url">
+<abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr>::url</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Contracts/MediaUrlResolvable.html"><abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Middleware/JwtProxy.html#method_unauthenticated">
 <abbr title="Netflex\Pages\Middleware\JwtProxy">JwtProxy</abbr>::unauthenticated</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Middleware/JwtProxy.html"><abbr title="Netflex\Pages\Middleware\JwtProxy">JwtProxy</abbr></a></em></dt>
                     <dd>Handle an unauthenticated user.</dd><dt>$<a href="Netflex/Pages/NavigationData.html#property_url">
 <abbr title="Netflex\Pages\NavigationData">NavigationData</abbr>#url</a> &mdash; <em>Property in class <a href="Netflex/Pages/NavigationData.html"><abbr title="Netflex\Pages\NavigationData">NavigationData</abbr></a></em></dt>
@@ -2650,7 +2741,11 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr>::updateOrCreate</a>() &mdash; <em>Method in class <a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></em></dt>
                     <dd>Updates an exisisting model or creates it</dd><dt>$<a href="Netflex/Scheduler/Scheduler.html#property_url">
 <abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr>#url</a> &mdash; <em>Property in class <a href="Netflex/Scheduler/Scheduler.html"><abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr></a></em></dt>
-                    <dd>The URL endpoints to dispatch the job to</dd><dt>$<a href="Netflex/Structure/Model.html#property_url">
+                    <dd>The URL endpoints to dispatch the job to</dd><dt><a href="Netflex/Structure/File.html#method_url">
+<abbr title="Netflex\Structure\File">File</abbr>::url</a>() &mdash; <em>Method in class <a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Structure/Image.html#method_url">
+<abbr title="Netflex\Structure\Image">Image</abbr>::url</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Image.html"><abbr title="Netflex\Structure\Image">Image</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_url">
 <abbr title="Netflex\Structure\Model">Model</abbr>#url</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_updated">
 <abbr title="Netflex\Structure\Model">Model</abbr>#updated</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
@@ -2682,8 +2777,6 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\MessageChannel\Broadcaster">Broadcaster</abbr>::validAuthenticationResponse</a>() &mdash; <em>Method in class <a href="Netflex/MessageChannel/Broadcaster.html"><abbr title="Netflex\MessageChannel\Broadcaster">Broadcaster</abbr></a></em></dt>
                     <dd>Return the valid authentication response.</dd><dt>$<a href="Netflex/Pages/Components/Blocks.html#property_variables">
 <abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr>#variables</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Pages/Components/Component.html#property_variables">
-<abbr title="Netflex\Pages\Components\Component">Component</abbr>#variables</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Component.html"><abbr title="Netflex\Pages\Components\Component">Component</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Components/Inline.html#method_value">
 <abbr title="Netflex\Pages\Components\Inline">Inline</abbr>::value</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Inline.html"><abbr title="Netflex\Pages\Components\Inline">Inline</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Extension.html#property_view">
@@ -2757,9 +2850,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/BackgroundImage.html"><abbr title="Netflex\Pages\Components\BackgroundImage">BackgroundImage</abbr></a></em></dt>
                     <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/Components/Blocks.html#method___construct">
 <abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a></em></dt>
-                    <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/Components/Component.html#method___construct">
-<abbr title="Netflex\Pages\Components\Component">Component</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Component.html"><abbr title="Netflex\Pages\Components\Component">Component</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Components/EditorButton.html#method___construct">
+                    <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/Components/Breadcrumbs.html#method___construct">
+<abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a></em></dt>
+                    <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/Components/EditorButton.html#method___construct">
 <abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/EditorButton.html"><abbr title="Netflex\Pages\Components\EditorButton">EditorButton</abbr></a></em></dt>
                     <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/Components/Image.html#method___construct">
 <abbr title="Netflex\Pages\Components\Image">Image</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Image.html"><abbr title="Netflex\Pages\Components\Image">Image</abbr></a></em></dt>
@@ -2775,8 +2868,12 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/StaticContent.html"><abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr></a></em></dt>
                     <dd>Create a new component instance.</dd><dt><a href="Netflex/Pages/ContentFile.html#method___construct">
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method___debugInfo">
+<abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::__debugInfo</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html#method___construct">
 <abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html#method___construct">
+<abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidPresetException.html#method___construct">
 <abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidPresetException.html"><abbr title="Netflex\Pages\Exceptions\InvalidPresetException">InvalidPresetException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#method___construct">

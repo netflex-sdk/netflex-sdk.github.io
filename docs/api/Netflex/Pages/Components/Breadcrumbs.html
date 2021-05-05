@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Netflex\Pages\Providers\PagesServiceProvider | Netflex SDK</title>
+    <title>Netflex\Pages\Components\Breadcrumbs | Netflex SDK</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:Netflex_Pages_Providers_PagesServiceProvider" data-root-path="../../../">
+    <body id="class" data-name="class:Netflex_Pages_Components_Breadcrumbs" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -62,20 +62,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages.html">Pages</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages/Providers.html">Providers</a></li><li class="backslash">\</li><li>PagesServiceProvider</li>
+                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages.html">Pages</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Pages/Components.html">Components</a></li><li class="backslash">\</li><li>Breadcrumbs</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            PagesServiceProvider
+            Breadcrumbs
                 
         </h1>
     </div>
 
     <p>        class
-    <strong>PagesServiceProvider</strong>        extends <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
+    <strong>Breadcrumbs</strong>        extends <abbr title="Illuminate\View\Component">Component</abbr>
 </p>
 
         
@@ -84,6 +84,27 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_items">
+                                                                                
+                </td>
+                <td>$items</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_current">
+                                        protected                                        
+                </td>
+                <td>$current</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -93,43 +114,19 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_register">register</a>()
+                    <a href="#method___construct">__construct</a>($current = null, $root = true, $parent = null, $homeLabel = null, $prepend = [], $append = [])
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Create a new component instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Contracts\View\View">View</abbr>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_boot">boot</a>()
+                    <a href="#method_render">render</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_registerComponents">registerComponents</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_registerDirectives">registerDirectives</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Get the view / contents that represent the component.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -139,17 +136,54 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_register">
-        <div class="location">at line 26</div>
+                    <h3 id="method___construct">
+        <div class="location">at line 19</div>
         <code>                    void
-    <strong>register</strong>()
+    <strong>__construct</strong>($current = null, $root = true, $parent = null, $homeLabel = null, $prepend = [], $append = [])
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Create a new component instance.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$current</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$root</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$homeLabel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$prepend</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -167,56 +201,29 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_boot">
-        <div class="location">at line 32</div>
-        <code>                    
-    <strong>boot</strong>()
+                    <h3 id="method_render">
+        <div class="location">at line 123</div>
+        <code>                    <abbr title="Illuminate\Contracts\View\View">View</abbr>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string
+    <strong>render</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Get the view / contents that represent the component.</p>                                                </div>
                 <div class="tags">
             
-            
-            
-                    </div>
-    </div>
+                            <h4>Return Value</h4>
 
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_registerComponents">
-        <div class="location">at line 59</div>
-        <code>            protected        
-    <strong>registerComponents</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\View\View">View</abbr>|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|string</td>
+            <td></td>
+        </tr>
+    </table>
 
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_registerDirectives">
-        <div class="location">at line 85</div>
-        <code>            protected        
-    <strong>registerDirectives</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
             
             
                     </div>
