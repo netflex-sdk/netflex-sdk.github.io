@@ -1009,7 +1009,7 @@
         {"type":"Method","fromName":"Netflex\\Render\\PDF","fromLink":"Netflex/Render/PDF.html","link":"Netflex/Render/PDF.html#method_formats","name":"Netflex\\Render\\PDF::formats","doc":"Get a list of supported paper formats"},
             
                                                 {"type":"Class","fromName":"Netflex\\Render","fromLink":"Netflex/Render.html","link":"Netflex/Render/PNG.html","name":"Netflex\\Render\\PNG","doc":null},
-                                {"type":"Method","fromName":"Netflex\\Render\\PNG","fromLink":"Netflex/Render/PNG.html","link":"Netflex/Render/PNG.html#method_transparent","name":"Netflex\\Render\\PNG::transparent","doc":null},
+                                {"type":"Method","fromName":"Netflex\\Render\\PNG","fromLink":"Netflex/Render/PNG.html","link":"Netflex/Render/PNG.html#method_transparent","name":"Netflex\\Render\\PNG::transparent","doc":"Preserves transparancy in output"},
             
                                                 {"type":"Class","fromName":"Netflex\\Render\\Providers","fromLink":"Netflex/Render/Providers.html","link":"Netflex/Render/Providers/RenderServiceProvider.html","name":"Netflex\\Render\\Providers\\RenderServiceProvider","doc":null},
                                 {"type":"Method","fromName":"Netflex\\Render\\Providers\\RenderServiceProvider","fromLink":"Netflex/Render/Providers/RenderServiceProvider.html","link":"Netflex/Render/Providers/RenderServiceProvider.html#method_register","name":"Netflex\\Render\\Providers\\RenderServiceProvider::register","doc":null},
