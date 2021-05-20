@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Netflex\Structure\Traits\CastsDefaultFields | Netflex SDK</title>
+    <title>Netflex\Render\Providers\RenderServiceProvider | Netflex SDK</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:Netflex_Structure_Traits_CastsDefaultFields" data-root-path="../../../">
+    <body id="class" data-name="class:Netflex_Render_Providers_RenderServiceProvider" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -61,21 +61,21 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Structure.html">Structure</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Structure/Traits.html">Traits</a></li><li class="backslash">\</li><li>CastsDefaultFields</li>
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Render.html">Render</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Render/Providers.html">Providers</a></li><li class="backslash">\</li><li>RenderServiceProvider</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            CastsDefaultFields
+            RenderServiceProvider
                 
         </h1>
     </div>
 
-    <p>        trait
-    <strong>CastsDefaultFields</strong>
+    <p>        class
+    <strong>RenderServiceProvider</strong>        extends <abbr title="Illuminate\Support\ServiceProvider">ServiceProvider</abbr>
 </p>
 
         
@@ -90,10 +90,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_customFieldCasts">customFieldCasts</a>(<a href="../../../Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a> $model)
+                    <a href="#method_register">register</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -101,10 +101,32 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_bootCastsDefaultFields">bootCastsDefaultFields</a>()
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerMacros">registerMacros</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerDirectives">registerDirectives</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -117,10 +139,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_customFieldCasts">
-        <div class="location">at line 16</div>
-        <code>        static            array
-    <strong>customFieldCasts</strong>(<a href="../../../Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a> $model)
+                    <h3 id="method_register">
+        <div class="location">at line 17</div>
+        <code>                    
+    <strong>register</strong>()
         </code>
     </h3>
     <div class="details">
@@ -128,26 +150,7 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-            </table>
-
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -155,10 +158,48 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bootCastsDefaultFields">
-        <div class="location">at line 43</div>
-        <code>        static            
-    <strong>bootCastsDefaultFields</strong>()
+                    <h3 id="method_boot">
+        <div class="location">at line 22</div>
+        <code>                    
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerMacros">
+        <div class="location">at line 28</div>
+        <code>                    
+    <strong>registerMacros</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerDirectives">
+        <div class="location">at line 47</div>
+        <code>                    
+    <strong>registerDirectives</strong>()
         </code>
     </h3>
     <div class="details">

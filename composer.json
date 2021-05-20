@@ -13,7 +13,8 @@
         "netflex/scraper": "^1.0",
         "netflex/sdk": "^3.1",
         "netflex/support": "^3.0",
-        "netflex/structures": "^3.0"
+        "netflex/structures": "^3.0",
+        "netflex/renderer": "^1.0"
     },
     "require-dev": {
         "code-lts/doctum": "^5.3"
