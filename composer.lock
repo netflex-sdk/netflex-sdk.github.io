@@ -2538,16 +2538,16 @@
         },
         {
             "name": "netflex/renderer",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netflex-sdk/renderer.git",
-                "reference": "eab5c008140f3cd20bda1592ad039a34abd743ac"
+                "reference": "595feb15459976b60514571fc9ead9ceaf450e0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netflex-sdk/renderer/zipball/eab5c008140f3cd20bda1592ad039a34abd743ac",
-                "reference": "eab5c008140f3cd20bda1592ad039a34abd743ac",
+                "url": "https://api.github.com/repos/netflex-sdk/renderer/zipball/595feb15459976b60514571fc9ead9ceaf450e0b",
+                "reference": "595feb15459976b60514571fc9ead9ceaf450e0b",
                 "shasum": ""
             },
             "require": {
@@ -2600,7 +2600,7 @@
                 "issues": "https://github.com/netflex-sdk/renderer/issues",
                 "source": "https://github.com/netflex-sdk/renderer"
             },
-            "time": "2021-05-20T16:43:42+00:00"
+            "time": "2021-05-20T22:08:46+00:00"
         },
         {
             "name": "netflex/scheduler",

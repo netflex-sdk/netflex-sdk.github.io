@@ -87,6 +87,20 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td>DEFAULT_CREATOR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_MARGIN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
                 <td>UNIT_PX</td>
                 <td class="last">
                     <p><em></em></p>
@@ -223,6 +237,14 @@
                 <td><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#property_options">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></td>
             </tr>
+                    <tr>
+                <td class="type" id="property_tags">
+                                        protected                                        array
+                </td>
+                <td>$tags</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
             </table>
 
     
@@ -348,8 +370,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_stream">stream</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Get the rendered content as a file handle (resource)</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_stream">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
@@ -360,8 +381,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_blob">blob</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Get the rendered content as a blob</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_blob">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
@@ -372,8 +392,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_download">download</a>(string $filename = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Retrieve the rendered content as a download response</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_download">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
@@ -395,10 +414,19 @@
                 <div class="col-md-8 type">
                     <a href="#method_link">link</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Retrieve URL to the rendered content</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_link">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_postProcess">postProcess</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Postprocessing stage</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -491,6 +519,16 @@
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_toJson">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersion">getVersion</a>()
+        
+                                            <p>Gets the application version string</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -712,6 +750,106 @@
                                             <p>Get a list of supported paper formats</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTag">setTag</a>(string $tag, string|null $value)
+        
+                                            <p>Sets a PDF meta tag</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTag">getTag</a>(string $tag, string|null $default = null)
+        
+                                            <p>Gets a PDF meta tag value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_author">author</a>(string $author)
+        
+                                            <p>Sets the PDF author meta</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_description">description</a>(string $description)
+        
+                                            <p>Sets the PDF description meta</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keywords">keywords</a>(array $keywords)
+        
+                                            <p>Sets the PDF keywords meta</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_keyword">keyword</a>(string $keyword)
+        
+                                            <p>Adds a PDF meta keyword</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_creator">creator</a>(string $creator)
+        
+                                            <p>Sets the PDF content creator meta</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_application">application</a>(string $application)
+        
+                                            <p>Sets the PDF application meta</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_created">created</a>(<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $date)
+        
+                                            <p>Sets the PDF creation date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modified">modified</a>(<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $date)
+        
+                                            <p>Sets the PDF last modified date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -720,7 +858,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 63</div>
+        <div class="location">at line 80</div>
         <code>            protected        
     <strong>__construct</strong>(string $url, array $options = [])
         </code>
@@ -755,7 +893,7 @@
                     <div class="method-item">
                     <h3 id="method_fetch">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_fetch">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 61</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 62</div>
         <code>            protected        ResponseInterface
     <strong>fetch</strong>()
         </code>
@@ -784,7 +922,7 @@
                     <div class="method-item">
                     <h3 id="method_setOption">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_setOption">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 82</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 89</div>
         <code>            protected        <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>setOption</strong>(string $key, mixed $value)
         </code>
@@ -830,7 +968,7 @@
                     <div class="method-item">
                     <h3 id="method_getOption">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_getOption">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 97</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 104</div>
         <code>            protected        
     <strong>getOption</strong>(string $key, $default = null)
         </code>
@@ -865,7 +1003,7 @@
                     <div class="method-item">
                     <h3 id="method_devicePixelRatio">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_devicePixelRatio">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 112</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 119</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>devicePixelRatio</strong>(float $pixelRatio = 1.0)
         </code>
@@ -906,7 +1044,7 @@
                     <div class="method-item">
                     <h3 id="method_waitUntilLoaded">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntilLoaded">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 122</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 129</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntilLoaded</strong>()
         </code>
@@ -937,7 +1075,7 @@
                     <div class="method-item">
                     <h3 id="method_waitUntiDOMContentLoaded">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiDOMContentLoaded">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 132</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 139</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiDOMContentLoaded</strong>()
         </code>
@@ -968,7 +1106,7 @@
                     <div class="method-item">
                     <h3 id="method_waitUntiNetworkIdle">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkIdle">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 142</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 149</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiNetworkIdle</strong>()
         </code>
@@ -999,7 +1137,7 @@
                     <div class="method-item">
                     <h3 id="method_waitUntiNetworkSettled">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkSettled">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 152</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 159</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiNetworkSettled</strong>()
         </code>
@@ -1030,7 +1168,7 @@
                     <div class="method-item">
                     <h3 id="method_timeout">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_timeout">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 163</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 170</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>timeout</strong>(int $timeout)
         </code>
@@ -1071,7 +1209,7 @@
                     <div class="method-item">
                     <h3 id="method_stream">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_stream">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 173</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 180</div>
         <code>                    resource
     <strong>stream</strong>()
         </code>
@@ -1080,6 +1218,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Get the rendered content as a file handle (resource)</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1100,7 +1240,7 @@
                     <div class="method-item">
                     <h3 id="method_blob">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_blob">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 186</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 193</div>
         <code>                    string|null
     <strong>blob</strong>()
         </code>
@@ -1109,6 +1249,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Get the rendered content as a blob</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1129,7 +1271,7 @@
                     <div class="method-item">
                     <h3 id="method_download">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_download">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 201</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 208</div>
         <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
     <strong>download</strong>(string $filename = null)
         </code>
@@ -1138,6 +1280,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Retrieve the rendered content as a download response</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1168,7 +1312,7 @@
                     <div class="method-item">
                     <h3 id="method_toResponse">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_toResponse">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 226</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 233</div>
         <code>                    Response
     <strong>toResponse</strong>(Request $request = null)
         </code>
@@ -1209,7 +1353,7 @@
                     <div class="method-item">
                     <h3 id="method_link">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_link">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 246</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 253</div>
         <code>                    string
     <strong>link</strong>()
         </code>
@@ -1218,6 +1362,8 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Retrieve URL to the rendered content</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -1236,9 +1382,49 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_postProcess">
+        <div class="location">at line 597</div>
+        <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>postProcess</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Postprocessing stage</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_url">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_url">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 262</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 280</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>url</strong>(string $url)
         </code>
@@ -1279,7 +1465,7 @@
                     <div class="method-item">
                     <h3 id="method_from">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_from">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 277</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 295</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>from</strong>(HtmlString|string $html)
         </code>
@@ -1320,7 +1506,7 @@
                     <div class="method-item">
                     <h3 id="method_view">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_view">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 294</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 312</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>view</strong>(View|string $view, <abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|array $data = [], array $mergeData = [])
         </code>
@@ -1371,7 +1557,7 @@
                     <div class="method-item">
                     <h3 id="method_route">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_route">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 311</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 329</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>route</strong>(array|string $name = null, mixed $parameters = [], bool $absolute = true)
         </code>
@@ -1422,7 +1608,7 @@
                     <div class="method-item">
                     <h3 id="method___debugInfo">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method___debugInfo">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 319</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 337</div>
         <code>                    array
     <strong>__debugInfo</strong>()
         </code>
@@ -1451,7 +1637,7 @@
                     <div class="method-item">
                     <h3 id="method___toString">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method___toString">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 327</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 345</div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -1480,7 +1666,7 @@
                     <div class="method-item">
                     <h3 id="method_jsonSerialize">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_jsonSerialize">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 335</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 353</div>
         <code>                    string
     <strong>jsonSerialize</strong>()
         </code>
@@ -1509,7 +1695,7 @@
                     <div class="method-item">
                     <h3 id="method_toJson">
         <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_toJson">
-<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 344</div>
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 362</div>
         <code>                    string
     <strong>toJson</strong>(int $options = 0)
         </code>
@@ -1546,8 +1732,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getVersion">
+        <div class="location">at line 94</div>
+        <code>final            protected        string
+    <strong>getVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the application version string</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_displayHeaderFooter">
-        <div class="location">at line 76</div>
+        <div class="location">at line 107</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>displayHeaderFooter</strong>(bool $displayHeaderFooter = true)
         </code>
@@ -1587,7 +1803,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_headerTemplateFrom">
-        <div class="location">at line 87</div>
+        <div class="location">at line 118</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>headerTemplateFrom</strong>(HtmlString|string $template)
         </code>
@@ -1627,7 +1843,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_headerTemplate">
-        <div class="location">at line 106</div>
+        <div class="location">at line 137</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>headerTemplate</strong>(View|string $view, <abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|array $data = [], array $mergeData = [])
         </code>
@@ -1677,7 +1893,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_footerTemplateFrom">
-        <div class="location">at line 123</div>
+        <div class="location">at line 154</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>footerTemplateFrom</strong>(HtmlString|string $template)
         </code>
@@ -1717,7 +1933,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_footerTemplate">
-        <div class="location">at line 142</div>
+        <div class="location">at line 173</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>footerTemplate</strong>(View|string $view, <abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|array $data = [], array $mergeData = [])
         </code>
@@ -1767,7 +1983,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pageRanges">
-        <div class="location">at line 159</div>
+        <div class="location">at line 190</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>pageRanges</strong>(array|int ...$ranges)
         </code>
@@ -1807,7 +2023,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_printBackground">
-        <div class="location">at line 181</div>
+        <div class="location">at line 212</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>printBackground</strong>(bool $printBackground = true)
         </code>
@@ -1847,7 +2063,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_marginTop">
-        <div class="location">at line 193</div>
+        <div class="location">at line 224</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>marginTop</strong>(int|string $marginTop, string $unit = PDF::UNIT_CM)
         </code>
@@ -1892,7 +2108,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_marginRight">
-        <div class="location">at line 207</div>
+        <div class="location">at line 238</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>marginRight</strong>(int|string $marginRight, string $unit = PDF::UNIT_CM)
         </code>
@@ -1937,7 +2153,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_marginBottom">
-        <div class="location">at line 221</div>
+        <div class="location">at line 252</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>marginBottom</strong>(int|string $marginBottom, string $unit = PDF::UNIT_CM)
         </code>
@@ -1982,7 +2198,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_marginLeft">
-        <div class="location">at line 235</div>
+        <div class="location">at line 266</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>marginLeft</strong>(int|string $marginLeft, string $unit = PDF::UNIT_CM)
         </code>
@@ -2027,7 +2243,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_margin">
-        <div class="location">at line 248</div>
+        <div class="location">at line 279</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>margin</strong>(int|string ...$values)
         </code>
@@ -2067,7 +2283,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_format">
-        <div class="location">at line 281</div>
+        <div class="location">at line 312</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>format</strong>(string $format = PDF::FORMAT_A4)
         </code>
@@ -2107,7 +2323,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_appendUnit">
-        <div class="location">at line 302</div>
+        <div class="location">at line 333</div>
         <code>        static    protected        int|string
     <strong>appendUnit</strong>(int|string $value, string|null $unit = null)
         </code>
@@ -2152,7 +2368,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_emulatedMedia">
-        <div class="location">at line 325</div>
+        <div class="location">at line 356</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>emulatedMedia</strong>(string|null $media = null)
         </code>
@@ -2192,7 +2408,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_width">
-        <div class="location">at line 340</div>
+        <div class="location">at line 371</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>width</strong>(int $width)
         </code>
@@ -2232,7 +2448,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_height">
-        <div class="location">at line 359</div>
+        <div class="location">at line 390</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>height</strong>(int $height)
         </code>
@@ -2272,7 +2488,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_preferCSSPageSize">
-        <div class="location">at line 378</div>
+        <div class="location">at line 409</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>preferCSSPageSize</strong>(bool $preferCSSPageSize = true)
         </code>
@@ -2312,7 +2528,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_landscape">
-        <div class="location">at line 389</div>
+        <div class="location">at line 420</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>landscape</strong>(bool $landscape = true)
         </code>
@@ -2352,7 +2568,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scale">
-        <div class="location">at line 400</div>
+        <div class="location">at line 431</div>
         <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
     <strong>scale</strong>(float $scale = 1.0)
         </code>
@@ -2392,7 +2608,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_units">
-        <div class="location">at line 410</div>
+        <div class="location">at line 441</div>
         <code>        static            string[]
     <strong>units</strong>()
         </code>
@@ -2422,7 +2638,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_formats">
-        <div class="location">at line 425</div>
+        <div class="location">at line 456</div>
         <code>        static            string[]
     <strong>formats</strong>()
         </code>
@@ -2440,6 +2656,416 @@
                     <table class="table table-condensed">
         <tr>
             <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTag">
+        <div class="location">at line 480</div>
+        <code>            protected        <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>setTag</strong>(string $tag, string|null $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a PDF meta tag</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTag">
+        <div class="location">at line 493</div>
+        <code>            protected        string|null
+    <strong>getTag</strong>(string $tag, string|null $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a PDF meta tag value</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_author">
+        <div class="location">at line 504</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>author</strong>(string $author)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF author meta</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$author</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_description">
+        <div class="location">at line 515</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>description</strong>(string $description)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF description meta</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keywords">
+        <div class="location">at line 526</div>
+        <code>                    void
+    <strong>keywords</strong>(array $keywords)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF keywords meta</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$keywords</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_keyword">
+        <div class="location">at line 537</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>keyword</strong>(string $keyword)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a PDF meta keyword</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$keyword</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_creator">
+        <div class="location">at line 551</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>creator</strong>(string $creator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF content creator meta</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$creator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_application">
+        <div class="location">at line 562</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>application</strong>(string $application)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF application meta</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$application</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_created">
+        <div class="location">at line 573</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>created</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $date)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF creation date</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modified">
+        <div class="location">at line 585</div>
+        <code>                    <a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a>
+    <strong>modified</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $date)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the PDF last modified date</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></td>
             <td></td>
         </tr>
     </table>
