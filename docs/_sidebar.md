@@ -7,6 +7,7 @@
   * [Netflex API](/docs/api.md)
   * [Media Preset](/docs/media.md)
   * [Netflex Components](/docs/components.md)
+  * [PDF Generator](/docs/pdf.md)
   * [Routing](/docs/routing.md)
   * [Navigation](/docs/nav.md)
   * [Models](/docs/models.md)
