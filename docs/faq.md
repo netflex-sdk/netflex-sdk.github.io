@@ -37,6 +37,10 @@ To permanently fix this for future updates, add the follow as the first item in 
 "rm -f storage/sdk/cache/*.php"
 ```
 
+## Root composer.json required facade/ignition ^2.37
+
+The ignition package broke semver. To fix this, pin `facade/ignition` to `^2.10` in your `composer.json` file, and run `composer update`
+
 ## MissingCredentialsException when serving project.
 
 See: [Netflex API/Configuration](/docs/api.md?id=configuration)
