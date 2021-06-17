@@ -21,9 +21,7 @@
   * [Configuring environment variables](/docs/dotenv.md)
 <br>
 * Tutorials
-  * [Writing a plugin](/docs/plugin-guide.md)
-  * [Writing Component packages](/docs/plugin-guide.md)
-  * [Migration Guide](/docs/migration-guide.md)
+  * [Creating Emails](/docs/mailable.md)
 <br>
 * Other
   * [FAQ](/docs/faq.md)
