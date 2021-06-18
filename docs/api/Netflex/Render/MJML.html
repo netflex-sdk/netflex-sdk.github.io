@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Netflex\Render\Renderer | Netflex SDK</title>
+    <title>Netflex\Render\MJML | Netflex SDK</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:Netflex_Render_Renderer" data-root-path="../../">
+    <body id="class" data-name="class:Netflex_Render_MJML" data-root-path="../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -62,21 +62,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../Netflex/Render.html">Render</a></li><li class="backslash">\</li><li>Renderer</li>
+                        <li><a href="../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../Netflex/Render.html">Render</a></li><li class="backslash">\</li><li>MJML</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Renderer
+            MJML
                 
         </h1>
     </div>
 
-    <p>    abstract     class
-    <strong>Renderer</strong>        implements
-        <a href="../../Netflex/Render/Contracts/Renderable.html"><abbr title="Netflex\Render\Contracts\Renderable">Renderable</abbr></a>, <abbr title="Illuminate\Contracts\Support\Jsonable">Jsonable</abbr>, <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>
+    <p>        class
+    <strong>MJML</strong>        extends <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
 </p>
 
         
@@ -110,6 +109,15 @@
                 </td>
                 <td>$options</td>
                 <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#property_options">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_blob">
+                                        protected                                        
+                </td>
+                <td>$blob</td>
+                <td class="last"></td>
                 <td></td>
             </tr>
             </table>
@@ -127,7 +135,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method___construct">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -138,7 +147,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_fetch">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -148,7 +158,8 @@
                     <a href="#method_setOption">setOption</a>(string $key, mixed $value)
         
                                             <p>Set option</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_setOption">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -159,7 +170,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_getOption">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -169,7 +181,8 @@
                     <a href="#method_devicePixelRatio">devicePixelRatio</a>(float $pixelRatio = 1.0)
         
                                             <p>Sets the devicePixelRatio of the viewport</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_devicePixelRatio">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -179,7 +192,8 @@
                     <a href="#method_waitUntilLoaded">waitUntilLoaded</a>()
         
                                             <p>Waits until the entire document, including resources are fully loaded.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_waitUntilLoaded">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -189,7 +203,8 @@
                     <a href="#method_waitUntiDOMContentLoaded">waitUntiDOMContentLoaded</a>()
         
                                             <p>Waits until the 'DOMContentLoaded' event is fired.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_waitUntiDOMContentLoaded">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -199,7 +214,8 @@
                     <a href="#method_waitUntiNetworkIdle">waitUntiNetworkIdle</a>()
         
                                             <p>Waits until there has not been any network requests for at least 500ms</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkIdle">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -209,7 +225,8 @@
                     <a href="#method_waitUntiNetworkSettled">waitUntiNetworkSettled</a>()
         
                                             <p>Waits until there has not been more than 2 network requests for at least 500ms</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkSettled">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -219,7 +236,8 @@
                     <a href="#method_timeout">timeout</a>(int $timeout)
         
                                             <p>Maximum amount of time to wait before timing out in milliseconds. Defaults to 30000</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_timeout">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -229,7 +247,8 @@
                     <a href="#method_stream">stream</a>()
         
                                             <p>Get the rendered content as a file handle (resource)</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_stream">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -249,7 +268,8 @@
                     <a href="#method_download">download</a>(string $filename = null)
         
                                             <p>Retrieve the rendered content as a download response</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_download">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -259,7 +279,8 @@
                     <a href="#method_toResponse">toResponse</a>(Request $request = null)
         
                                             <p>Retrieve the rendered content as a response</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_toResponse">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -269,7 +290,8 @@
                     <a href="#method_link">link</a>()
         
                                             <p>Retrieve URL to the rendered content</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_link">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -279,7 +301,8 @@
                     <a href="#method_postProcess">postProcess</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
         
                                             <p>Postprocessing stage</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_postProcess">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -289,7 +312,8 @@
                     <a href="#method_url">url</a>(string $url)
         
                                             <p>Render from url external or interal</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_url">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -319,7 +343,8 @@
                     <a href="#method_route">route</a>(array|string $name = null, mixed $parameters = [], bool $absolute = true)
         
                                             <p>Render from named route.</p>                </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_route">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -330,7 +355,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method___debugInfo">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -341,7 +367,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method___toString">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -352,7 +379,8 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_jsonSerialize">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -360,6 +388,18 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_toJson">toJson</a>(int $options = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Render/Renderer.html#method_toJson">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withBlob">withBlob</a>($blob)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -373,7 +413,8 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 50</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method___construct">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 50</div>
         <code>            protected        
     <strong>__construct</strong>(string $url, array $options = [])
         </code>
@@ -407,7 +448,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fetch">
-        <div class="location">at line 62</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_fetch">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 62</div>
         <code>            protected        ResponseInterface
     <strong>fetch</strong>()
         </code>
@@ -435,7 +477,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setOption">
-        <div class="location">at line 93</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_setOption">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 93</div>
         <code>            protected        <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>setOption</strong>(string $key, mixed $value)
         </code>
@@ -480,7 +523,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOption">
-        <div class="location">at line 108</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_getOption">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 108</div>
         <code>            protected        
     <strong>getOption</strong>(string $key, $default = null)
         </code>
@@ -514,7 +558,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_devicePixelRatio">
-        <div class="location">at line 123</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_devicePixelRatio">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 123</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>devicePixelRatio</strong>(float $pixelRatio = 1.0)
         </code>
@@ -554,7 +599,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_waitUntilLoaded">
-        <div class="location">at line 133</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntilLoaded">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 133</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntilLoaded</strong>()
         </code>
@@ -584,7 +630,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_waitUntiDOMContentLoaded">
-        <div class="location">at line 143</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiDOMContentLoaded">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 143</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiDOMContentLoaded</strong>()
         </code>
@@ -614,7 +661,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_waitUntiNetworkIdle">
-        <div class="location">at line 153</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkIdle">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 153</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiNetworkIdle</strong>()
         </code>
@@ -644,7 +692,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_waitUntiNetworkSettled">
-        <div class="location">at line 163</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_waitUntiNetworkSettled">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 163</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>waitUntiNetworkSettled</strong>()
         </code>
@@ -674,7 +723,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_timeout">
-        <div class="location">at line 174</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_timeout">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 174</div>
         <code>                    <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>timeout</strong>(int $timeout)
         </code>
@@ -714,7 +764,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_stream">
-        <div class="location">at line 184</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_stream">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 184</div>
         <code>                    resource
     <strong>stream</strong>()
         </code>
@@ -744,7 +795,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_blob">
-        <div class="location">at line 197</div>
+        <div class="location">at line 34</div>
         <code>                    string|null
     <strong>blob</strong>()
         </code>
@@ -774,7 +825,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_download">
-        <div class="location">at line 212</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_download">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 212</div>
         <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>
     <strong>download</strong>(string $filename = null)
         </code>
@@ -814,7 +866,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toResponse">
-        <div class="location">at line 237</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_toResponse">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 237</div>
         <code>                    Response
     <strong>toResponse</strong>(Request $request = null)
         </code>
@@ -854,7 +907,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_link">
-        <div class="location">at line 260</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_link">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 260</div>
         <code>                    string
     <strong>link</strong>()
         </code>
@@ -884,7 +938,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_postProcess">
-        <div class="location">at line 276</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_postProcess">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 276</div>
         <code>            protected        <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
     <strong>postProcess</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
         </code>
@@ -924,7 +979,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_url">
-        <div class="location">at line 287</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_url">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 287</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>url</strong>(string $url)
         </code>
@@ -964,7 +1020,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_from">
-        <div class="location">at line 302</div>
+        <div class="location">at line 117</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>from</strong>(HtmlString|string $html)
         </code>
@@ -1004,7 +1060,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_view">
-        <div class="location">at line 319</div>
+        <div class="location">at line 51</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>view</strong>(View|string $view, <abbr title="Illuminate\Contracts\Support\Arrayable">Arrayable</abbr>|array $data = [], array $mergeData = [])
         </code>
@@ -1054,7 +1110,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_route">
-        <div class="location">at line 336</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_route">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 336</div>
         <code>        static            <a href="../../Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a>
     <strong>route</strong>(array|string $name = null, mixed $parameters = [], bool $absolute = true)
         </code>
@@ -1104,7 +1161,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___debugInfo">
-        <div class="location">at line 344</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method___debugInfo">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 344</div>
         <code>                    array
     <strong>__debugInfo</strong>()
         </code>
@@ -1132,7 +1190,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">at line 352</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method___toString">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 352</div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -1160,7 +1219,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_jsonSerialize">
-        <div class="location">at line 360</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_jsonSerialize">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 360</div>
         <code>                    string
     <strong>jsonSerialize</strong>()
         </code>
@@ -1188,7 +1248,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_toJson">
-        <div class="location">at line 369</div>
+        <div class="location">in <a href="../../Netflex/Render/Renderer.html#method_toJson">
+<abbr title="Netflex\Render\Renderer">Renderer</abbr></a> at line 369</div>
         <code>                    string
     <strong>toJson</strong>(int $options = 0)
         </code>
@@ -1218,6 +1279,35 @@
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withBlob">
+        <div class="location">at line 26</div>
+        <code>        static    protected        
+    <strong>withBlob</strong>($blob)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$blob</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>

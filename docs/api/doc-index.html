@@ -133,9 +133,17 @@
                     <dd></dd><dt><a href="Netflex/Console/ArtisanServiceProvider.html"><abbr title="Netflex\Console\ArtisanServiceProvider">ArtisanServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console.html">Netflex\Console</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/ServeCommand.html#method_addProxy">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::addProxy</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_all">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::all</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_assignment_id">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#assignment_id</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_active">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#active</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Customers/Customer.html#method_authenticate">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>::authenticate</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
-                    <dd>Attempts to authenticate with the given credentials.</dd><dt>$<a href="Netflex/Customers/Group.html#property_alias">
+                    <dd>Attempts to authenticate with the given credentials.</dd><dt><a href="Netflex/Customers/Customer.html#method_addConsent">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::addConsent</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd>If customer already has an active consent assignment for the given consent, the previous assignment will get revoked</dd><dt>$<a href="Netflex/Customers/Group.html#property_alias">
 <abbr title="Netflex\Customers\Group">Group</abbr>#alias</a> &mdash; <em>Property in class <a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Customers/Providers/AuthServiceProvider.html"><abbr title="Netflex\Customers\Providers\AuthServiceProvider">AuthServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers/Providers.html">Netflex\Customers\Providers</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Foundation/GlobalContent.html#property_alias">
@@ -215,7 +223,9 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Query\Builder">Builder</abbr>#assoc</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Query/Builder.html#property_appends">
 <abbr title="Netflex\Query\Builder">Builder</abbr>#appends</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Query/Builder.html#method_andWhere">
+                    <dd></dd><dt><a href="Netflex/Query/Builder.html#method_append">
+<abbr title="Netflex\Query\Builder">Builder</abbr>::append</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
+                    <dd>Append a query modifier</dd><dt><a href="Netflex/Query/Builder.html#method_andWhere">
 <abbr title="Netflex\Query\Builder">Builder</abbr>::andWhere</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd>Performs a 'andWhere' query</dd><dt><a href="Netflex/Query/Builder.html#method_assoc">
 <abbr title="Netflex\Query\Builder">Builder</abbr>::assoc</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
@@ -261,7 +271,9 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
                     <dd></dd><dt><a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Support/Accessors.html#property_attributes">
 <abbr title="Netflex\Support\Accessors">Accessors</abbr>#attributes</a> &mdash; <em>Property in class <a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/Events.html#method_addEvent">
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_addObservableEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::addObservableEvents</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Add an observable event name.</dd><dt><a href="Netflex/Support/Events.html#method_addEvent">
 <abbr title="Netflex\Support\Events">Events</abbr>::addEvent</a>() &mdash; <em>Method in class <a href="Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a></em></dt>
                     <dd>Attaches an Event directly</dd><dt><a href="Netflex/Support/Hooks.html#method_addHook">
 <abbr title="Netflex\Support\Hooks">Hooks</abbr>::addHook</a>() &mdash; <em>Method in class <a href="Netflex/Support/Hooks.html"><abbr title="Netflex\Support\Hooks">Hooks</abbr></a></em></dt>
@@ -283,7 +295,9 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr>::buildClass</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ControllerMakeCommand.html"><abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr></a></em></dt>
                     <dd>Build the class with the given name.</dd><dt><a href="Netflex/Console/Commands/ControllerMakeCommand.html#method_buildCustomReplacements">
 <abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr>::buildCustomReplacements</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ControllerMakeCommand.html"><abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr></a></em></dt>
-                    <dd>Build the custom replacement values.</dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html#method_buildClass">
+                    <dd>Build the custom replacement values.</dd><dt><a href="Netflex/Console/Commands/MailMakeCommand.html#method_buildClass">
+<abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr>::buildClass</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a></em></dt>
+                    <dd>Build the class with the given name.</dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html#method_buildClass">
 <abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr>::buildClass</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a></em></dt>
                     <dd>Build the class with the given name.</dd><dt>$<a href="Netflex/Customers/Group.html#property_base_path">
 <abbr title="Netflex\Customers\Group">Group</abbr>#base_path</a> &mdash; <em>Property in class <a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a></em></dt>
@@ -311,7 +325,12 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
                     <dd></dd><dt>$<a href="Netflex/Pages/Components/Blocks.html#property_blocks">
 <abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr>#blocks</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Blocks.html"><abbr title="Netflex\Pages\Components\Blocks">Blocks</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Components/Breadcrumbs.html"><abbr title="Netflex\Pages\Components\Breadcrumbs">Breadcrumbs</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Components.html">Netflex\Pages\Components</a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Controllers/BaseController.html"><abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Controllers.html">Netflex\Pages\Controllers</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_booting">
+<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::booting</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd>Register an updated model event with the dispatcher.</dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_booted">
+<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::booted</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd>Register an updated model event with the dispatcher.</dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Exceptions.html">Netflex\Pages\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Middleware/BindPage.html"><abbr title="Netflex\Pages\Middleware\BindPage">BindPage</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Pages/Middleware.html">Netflex\Pages\Middleware</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Providers/MixServiceProvider.html#method_boot">
 <abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr>::boot</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/MixServiceProvider.html"><abbr title="Netflex\Pages\Providers\MixServiceProvider">MixServiceProvider</abbr></a></em></dt>
@@ -340,9 +359,15 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr>::booted</a>() &mdash; <em>Method in class <a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></em></dt>
                     <dd>Register a booted model event with the dispatcher.</dd><dt><a href="Netflex/Query/Traits/SoftDeletes.html#method_bootSoftDeletes">
 <abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr>::bootSoftDeletes</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/Concerns/ServerSideRender.html#method_bootServerSideRender">
+<abbr title="Netflex\Render\Concerns\ServerSideRender">ServerSideRender</abbr>::bootServerSideRender</a>() &mdash; <em>Method in class <a href="Netflex/Render/Concerns/ServerSideRender.html"><abbr title="Netflex\Render\Concerns\ServerSideRender">ServerSideRender</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/Contracts/Renderable.html#method_blob">
 <abbr title="Netflex\Render\Contracts\Renderable">Renderable</abbr>::blob</a>() &mdash; <em>Method in class <a href="Netflex/Render/Contracts/Renderable.html"><abbr title="Netflex\Render\Contracts\Renderable">Renderable</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Render/Providers/RenderServiceProvider.html#method_boot">
+                    <dd></dd><dt>$<a href="Netflex/Render/MJML.html#property_blob">
+<abbr title="Netflex\Render\MJML">MJML</abbr>#blob</a> &mdash; <em>Property in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/MJML.html#method_blob">
+<abbr title="Netflex\Render\MJML">MJML</abbr>::blob</a>() &mdash; <em>Method in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd>Get the rendered content as a blob</dd><dt><a href="Netflex/Render/Providers/RenderServiceProvider.html#method_boot">
 <abbr title="Netflex\Render\Providers\RenderServiceProvider">RenderServiceProvider</abbr>::boot</a>() &mdash; <em>Method in class <a href="Netflex/Render/Providers/RenderServiceProvider.html"><abbr title="Netflex\Render\Providers\RenderServiceProvider">RenderServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/Renderer.html#method_blob">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr>::blob</a>() &mdash; <em>Method in class <a href="Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a></em></dt>
@@ -360,7 +385,15 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Structure\Traits\CastsDefaultFields">CastsDefaultFields</abbr>::bootCastsDefaultFields</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Traits/CastsDefaultFields.html"><abbr title="Netflex\Structure\Traits\CastsDefaultFields">CastsDefaultFields</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Traits/HidesDefaultFields.html#method_bootHidesDefaultFields">
 <abbr title="Netflex\Structure\Traits\HidesDefaultFields">HidesDefaultFields</abbr>::bootHidesDefaultFields</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Traits/HidesDefaultFields.html"><abbr title="Netflex\Structure\Traits\HidesDefaultFields">HidesDefaultFields</abbr></a></em></dt>
-                    <dd></dd>        </dl><h2 id="letterC">C</h2>
+                    <dd></dd><dt>$<a href="Netflex/Support/Concerns/HasEvents.html#property_booted">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>#booted</a> &mdash; <em>Property in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>The array of booted instances.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_bootIfNotBooted">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::bootIfNotBooted</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Check if we needs to be booted and if so, do it.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_boot">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::boot</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Bootstrap traits.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_bootTraits">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::bootTraits</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Boot all of the bootable traits.</dd>        </dl><h2 id="letterC">C</h2>
         <dl id="indexC"><dt><a href="Netflex/API/Client.html"><abbr title="Netflex\API\Client">Client</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/API.html">Netflex\API</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/API/Client.html#property_client">
 <abbr title="Netflex\API\Client">Client</abbr>#client</a> &mdash; <em>Property in class <a href="Netflex/API/Client.html"><abbr title="Netflex\API\Client">Client</abbr></a></em></dt>
@@ -424,13 +457,27 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
                     <dd>The file holding the Netflex credentials</dd><dt><a href="Netflex/Console/Commands/ServeCommand.html#method_client">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::client</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/ConsoleSupportServiceProvider.html"><abbr title="Netflex\Console\ConsoleSupportServiceProvider">ConsoleSupportServiceProvider</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console.html">Netflex\Console</a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_created">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#created</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_customer_id">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#customer_id</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_consent">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#consent</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_comment">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#comment</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_create">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::create</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd>Creates a assignment</dd><dt><a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_company">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#company</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_companyId">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#companyId</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_created">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#created</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_consents">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>#consents</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/SegmentData.html#property_city">
 <abbr title="Netflex\Customers\SegmentData">SegmentData</abbr>#city</a> &mdash; <em>Property in class <a href="Netflex/Customers/SegmentData.html"><abbr title="Netflex\Customers\SegmentData">SegmentData</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/SegmentData.html#property_countryName">
@@ -652,6 +699,8 @@ Avoids recursive resolution of pages</dd><dt>$<a href="Netflex/Pages/Page.html#p
 <abbr title="Netflex\Console\Commands\NetflexSetupCommand">NetflexSetupCommand</abbr>#description</a> &mdash; <em>Property in class <a href="Netflex/Console/Commands/NetflexSetupCommand.html"><abbr title="Netflex\Console\Commands\NetflexSetupCommand">NetflexSetupCommand</abbr></a></em></dt>
                     <dd>The console command description.</dd><dt><a href="Netflex/Console/Commands/ServeCommand.html#method_deleteCredentials">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::deleteCredentials</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_description">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#description</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Group.html#property_description">
 <abbr title="Netflex\Customers\Group">Group</abbr>#description</a> &mdash; <em>Property in class <a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Foundation/GlobalContent.html#property_description">
@@ -713,6 +762,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr>::disregardingPublishingStatus</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></em></dt>
                     <dd>Override the publishing status for the model</dd><dt><a href="Netflex/Render/Contracts/Renderable.html#method_download">
 <abbr title="Netflex\Render\Contracts\Renderable">Renderable</abbr>::download</a>() &mdash; <em>Method in class <a href="Netflex/Render/Contracts/Renderable.html"><abbr title="Netflex\Render\Contracts\Renderable">Renderable</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Render/Exceptions/RenderException.html#property_description">
+<abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr>#description</a> &mdash; <em>Property in class <a href="Netflex/Render/Exceptions/RenderException.html"><abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/PDF.html#method_displayHeaderFooter">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::displayHeaderFooter</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Enable the display of header and footer</dd><dt><a href="Netflex/Render/PDF.html#method_description">
@@ -736,7 +787,11 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Structure\Model">Model</abbr>#dates</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd>The attributes that should be mutated to dates.</dd><dt>$<a href="Netflex/Structure/Model.html#property_directory_id">
 <abbr title="Netflex\Structure\Model">Model</abbr>#directory_id</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/JWT.html#method_decodeAndVerify">
+                    <dd></dd><dt>$<a href="Netflex/Support/Concerns/HasEvents.html#property_dispatchesEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>#dispatchesEvents</a> &mdash; <em>Property in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>The event map.</dd><dt>$<a href="Netflex/Support/Concerns/HasEvents.html#property_dispatcher">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>#dispatcher</a> &mdash; <em>Property in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Event dispatcher instance</dd><dt><a href="Netflex/Support/JWT.html#method_decodeAndVerify">
 <abbr title="Netflex\Support\JWT">JWT</abbr>::decodeAndVerify</a>() &mdash; <em>Method in class <a href="Netflex/Support/JWT.html"><abbr title="Netflex\Support\JWT">JWT</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/JWT.html#method_decode">
 <abbr title="Netflex\Support\JWT">JWT</abbr>::decode</a>() &mdash; <em>Method in class <a href="Netflex/Support/JWT.html"><abbr title="Netflex\Support\JWT">JWT</abbr></a></em></dt>
@@ -783,12 +838,18 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Query\Exceptions\QueryException">QueryException</abbr>#error</a> &mdash; <em>Property in class <a href="Netflex/Query/Exceptions/QueryException.html"><abbr title="Netflex\Query\Exceptions\QueryException">QueryException</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Query/QueryableModel.html#property_exists">
 <abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr>#exists</a> &mdash; <em>Property in class <a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></em></dt>
-                    <dd>Indicates if the model exists.</dd><dt><a href="Netflex/Render/PDF.html#method_emulatedMedia">
+                    <dd>Indicates if the model exists.</dd><dt>$<a href="Netflex/Render/Exceptions/RenderException.html#property_errors">
+<abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr>#errors</a> &mdash; <em>Property in class <a href="Netflex/Render/Exceptions/RenderException.html"><abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Render/MJML.html#property_extension">
+<abbr title="Netflex\Render\MJML">MJML</abbr>#extension</a> &mdash; <em>Property in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/PDF.html#method_emulatedMedia">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::emulatedMedia</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Sets the media emulation. Defaults to NULL</dd><dt><a href="Netflex/Render/PSR7/Stream.html#method_eof">
 <abbr title="Netflex\Render\PSR7\Stream">Stream</abbr>::eof</a>() &mdash; <em>Method in class <a href="Netflex/Render/PSR7/Stream.html"><abbr title="Netflex\Render\PSR7\Stream">Stream</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Render/Renderer.html#property_extension">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr>#extension</a> &mdash; <em>Property in class <a href="Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Render/View/MjmlViewFinder.html#property_extensions">
+<abbr title="Netflex\Render\View\MjmlViewFinder">MjmlViewFinder</abbr>#extensions</a> &mdash; <em>Property in class <a href="Netflex/Render/View/MjmlViewFinder.html"><abbr title="Netflex\Render\View\MjmlViewFinder">MjmlViewFinder</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/EditorBlocks.html"><abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Entry.html"><abbr title="Netflex\Structure\Entry">Entry</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
@@ -802,6 +863,10 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Commerce\Checkout">Checkout</abbr>#firstname</a> &mdash; <em>Property in class <a href="Netflex/Commerce/Checkout.html"><abbr title="Netflex\Commerce\Checkout">Checkout</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Commerce/Traits/API/OrderAPI.html#method_forgetInCache">
 <abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr>::forgetInCache</a>() &mdash; <em>Method in class <a href="Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_find">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::find</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_findOrFail">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::findOrFail</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_firstname">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#firstname</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/SegmentData.html#property_familyName">
@@ -816,8 +881,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\Components\Picture">Picture</abbr>#fill</a> &mdash; <em>Property in class <a href="Netflex/Pages/Components/Picture.html"><abbr title="Netflex\Pages\Components\Picture">Picture</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/ContentFile.html#property_file">
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>#file</a> &mdash; <em>Property in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_fallbackIndex">
-<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::fallbackIndex</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Controllers/BaseController.html#method_fallbackIndex">
+<abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr>::fallbackIndex</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/BaseController.html"><abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html#method_find">
 <abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr>::find</a>() &mdash; <em>Method in class <a href="Netflex/Pages/MediaPreset.html"><abbr title="Netflex\Pages\MediaPreset">MediaPreset</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/MediaPreset.html#method_findOrFail">
@@ -838,7 +903,9 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Query\Builder">Builder</abbr>::first</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd>Retrieves the first result</dd><dt><a href="Netflex/Query/Builder.html#method_firstOrFail">
 <abbr title="Netflex\Query\Builder">Builder</abbr>::firstOrFail</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
-                    <dd>Retrieves the first result</dd><dt><a href="Netflex/Query/PaginatedResult.html#method_fromBuilder">
+                    <dd>Retrieves the first result</dd><dt>$<a href="Netflex/Query/Exceptions/NotFoundException.html#property_field">
+<abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr>#field</a> &mdash; <em>Property in class <a href="Netflex/Query/Exceptions/NotFoundException.html"><abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/PaginatedResult.html#method_fromBuilder">
 <abbr title="Netflex\Query\PaginatedResult">PaginatedResult</abbr>::fromBuilder</a>() &mdash; <em>Method in class <a href="Netflex/Query/PaginatedResult.html"><abbr title="Netflex\Query\PaginatedResult">PaginatedResult</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/QueryableModel.html#method_fresh">
 <abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr>::fresh</a>() &mdash; <em>Method in class <a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></em></dt>
@@ -876,7 +943,11 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Render\HTML">HTML</abbr>#format</a> &mdash; <em>Property in class <a href="Netflex/Render/HTML.html"><abbr title="Netflex\Render\HTML">HTML</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Render/JPG.html#property_format">
 <abbr title="Netflex\Render\JPG">JPG</abbr>#format</a> &mdash; <em>Property in class <a href="Netflex/Render/JPG.html"><abbr title="Netflex\Render\JPG">JPG</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Render/PDF.html#property_format">
+                    <dd></dd><dt>$<a href="Netflex/Render/MJML.html#property_format">
+<abbr title="Netflex\Render\MJML">MJML</abbr>#format</a> &mdash; <em>Property in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/MJML.html#method_from">
+<abbr title="Netflex\Render\MJML">MJML</abbr>::from</a>() &mdash; <em>Method in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd>Render from raw markup</dd><dt>$<a href="Netflex/Render/PDF.html#property_format">
 <abbr title="Netflex\Render\PDF">PDF</abbr>#format</a> &mdash; <em>Property in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/PDF.html#method_footerTemplateFrom">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::footerTemplateFrom</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
@@ -900,7 +971,15 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
                     <dd></dd><dt><a href="Netflex/Structure/File.html"><abbr title="Netflex\Structure\File">File</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Image.html#property_file">
 <abbr title="Netflex\Structure\Image">Image</abbr>#file</a> &mdash; <em>Property in class <a href="Netflex/Structure/Image.html"><abbr title="Netflex\Structure\Image">Image</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/ItemCollection.html#method_factory">
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_fireEvent">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::fireEvent</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Fire the given event.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_fireCustomEvent">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::fireCustomEvent</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Fire a custom event for the given event.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_filterEventResults">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::filterEventResults</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Filter the event results.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_flushEventListeners">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::flushEventListeners</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Remove all of the event listeners.</dd><dt><a href="Netflex/Support/ItemCollection.html#method_factory">
 <abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr>::factory</a>() &mdash; <em>Method in class <a href="Netflex/Support/ItemCollection.html"><abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/ReactiveObject.html#method_factory">
 <abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr>::factory</a>() &mdash; <em>Method in class <a href="Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></em></dt>
@@ -1039,6 +1118,10 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr>::getStub</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ControllerMakeCommand.html"><abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr></a></em></dt>
                     <dd>Get the stub file for the generator.</dd><dt><a href="Netflex/Console/Commands/ControllerMakeCommand.html#method_getOptions">
 <abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr>::getOptions</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ControllerMakeCommand.html"><abbr title="Netflex\Console\Commands\ControllerMakeCommand">ControllerMakeCommand</abbr></a></em></dt>
+                    <dd>Get the console command options.</dd><dt><a href="Netflex/Console/Commands/MailMakeCommand.html#method_getStub">
+<abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr>::getStub</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a></em></dt>
+                    <dd>Get the stub file for the generator.</dd><dt><a href="Netflex/Console/Commands/MailMakeCommand.html#method_getOptions">
+<abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr>::getOptions</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a></em></dt>
                     <dd>Get the console command options.</dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html#method_getPath">
 <abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr>::getPath</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a></em></dt>
                     <dd>Get the destination class path.</dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html#method_getStub">
@@ -1051,7 +1134,25 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::getOptions</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd>Get the console command options.</dd><dt><a href="Netflex/Console/Kernel.html#method_getArtisan">
 <abbr title="Netflex\Console\Kernel">Kernel</abbr>::getArtisan</a>() &mdash; <em>Method in class <a href="Netflex/Console/Kernel.html"><abbr title="Netflex\Console\Kernel">Kernel</abbr></a></em></dt>
-                    <dd>Get the Artisan application instance.</dd><dt>$<a href="Netflex/Customers/Customer.html#property_group_id">
+                    <dd>Get the Artisan application instance.</dd><dt><a href="Netflex/Customers/Consent.html#method_getIdAttribute">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::getIdAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_getCreatedAttribute">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::getCreatedAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_getIsPublicAttribute">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::getIsPublicAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getIdAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getIdAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getConsentAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getConsentAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd>Undocumented function</dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getAssignmentIdAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getAssignmentIdAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getActiveAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getActiveAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getTimestampAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getTimestampAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_getRevokedTimestampAttribute">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::getRevokedTimestampAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_group_id">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#group_id</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_groups">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#groups</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
@@ -1069,7 +1170,13 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Customers\Customer">Customer</abbr>::getEmailAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd>Alias for mail field</dd><dt><a href="Netflex/Customers/Customer.html#method_getChannelsAttribute">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>::getChannelsAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Customer.html#method_getConsents">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::getConsents</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd>Retrives all consent assignment of the given consent, or all assignments if none specified</dd><dt><a href="Netflex/Customers/Customer.html#method_getConsentsAttribute">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::getConsentsAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Customer.html#method_getConsent">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::getConsent</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd>Retrives the currently active consent assignment for the given consent (or null if none)</dd><dt><a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Customers.html">Netflex\Customers</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/SegmentData.html#property_gender">
 <abbr title="Netflex\Customers\SegmentData">SegmentData</abbr>#gender</a> &mdash; <em>Property in class <a href="Netflex/Customers/SegmentData.html"><abbr title="Netflex\Customers\SegmentData">SegmentData</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/SegmentData.html#property_givenName">
@@ -1118,8 +1225,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::getPathAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Contracts/MediaUrlResolvable.html#method_getPathAttribute">
 <abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr>::getPathAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Contracts/MediaUrlResolvable.html"><abbr title="Netflex\Pages\Contracts\MediaUrlResolvable">MediaUrlResolvable</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method_getRoutes">
-<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::getRoutes</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Controllers/BaseController.html#method_getRoutes">
+<abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr>::getRoutes</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/BaseController.html"><abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html#method_getSolution">
 <abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/InvalidControllerException.html"><abbr title="Netflex\Pages\Exceptions\InvalidControllerException">InvalidControllerException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#method_getSolution">
@@ -1189,6 +1296,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Pages\Traits\CastsDefaultFields">CastsDefaultFields</abbr>::getUrlAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Traits/CastsDefaultFields.html"><abbr title="Netflex\Pages\Traits\CastsDefaultFields">CastsDefaultFields</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Traits/CastsDefaultFields.html#method_getAuthGroupsAttribute">
 <abbr title="Netflex\Pages\Traits\CastsDefaultFields">CastsDefaultFields</abbr>::getAuthGroupsAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Traits/CastsDefaultFields.html"><abbr title="Netflex\Pages\Traits\CastsDefaultFields">CastsDefaultFields</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Builder.html#method_getModel">
+<abbr title="Netflex\Query\Builder">Builder</abbr>::getModel</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Builder.html#method_getQuery">
 <abbr title="Netflex\Query\Builder">Builder</abbr>::getQuery</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd>Compiles the query and retrieves the query string.</dd><dt><a href="Netflex/Query/Builder.html#method_getRequest">
@@ -1201,6 +1310,10 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Query\Builder">Builder</abbr>::getSize</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Exceptions/IndexNotFoundException.html#method_getSolution">
 <abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Query/Exceptions/IndexNotFoundException.html"><abbr title="Netflex\Query\Exceptions\IndexNotFoundException">IndexNotFoundException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Exceptions/NotFoundException.html#method_getField">
+<abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr>::getField</a>() &mdash; <em>Method in class <a href="Netflex/Query/Exceptions/NotFoundException.html"><abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Exceptions/NotFoundException.html#method_getSolution">
+<abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Query/Exceptions/NotFoundException.html"><abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Exceptions/QueryException.html#method_getSolution">
 <abbr title="Netflex\Query\Exceptions\QueryException">QueryException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Query/Exceptions/QueryException.html"><abbr title="Netflex\Query\Exceptions\QueryException">QueryException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Facades/QueryBuilderAssocFacade.html#method_getFacadeAccessor">
@@ -1239,7 +1352,9 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr>::getDeletedAtColumn</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a></em></dt>
                     <dd>Get the name of the "deleted at" column.</dd><dt><a href="Netflex/Render/Exceptions/RenderException.html#method_getSolution">
 <abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr>::getSolution</a>() &mdash; <em>Method in class <a href="Netflex/Render/Exceptions/RenderException.html"><abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Render/PDF.html#method_getVersion">
+                    <dd></dd><dt><a href="Netflex/Render/Facades/MjmlView.html#method_getFacadeAccessor">
+<abbr title="Netflex\Render\Facades\MjmlView">MjmlView</abbr>::getFacadeAccessor</a>() &mdash; <em>Method in class <a href="Netflex/Render/Facades/MjmlView.html"><abbr title="Netflex\Render\Facades\MjmlView">MjmlView</abbr></a></em></dt>
+                    <dd>Get the registered name of the component.</dd><dt><a href="Netflex/Render/PDF.html#method_getVersion">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::getVersion</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Gets the application version string</dd><dt><a href="Netflex/Render/PDF.html#method_getTag">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::getTag</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
@@ -1299,7 +1414,11 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Structure\Structure">Structure</abbr>::getPublishedAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Structure.html#method_getFieldsAttribute">
 <abbr title="Netflex\Structure\Structure">Structure</abbr>::getFieldsAttribute</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/ItemCollection.html#method_getRootParent">
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_getObservableEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::getObservableEvents</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Get the observable event names.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_getEventDispatcher">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::getEventDispatcher</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Get the event dispatcher instance.</dd><dt><a href="Netflex/Support/ItemCollection.html#method_getRootParent">
 <abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr>::getRootParent</a>() &mdash; <em>Method in class <a href="Netflex/Support/ItemCollection.html"><abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/ReactiveObject.html#method_getParent">
 <abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr>::getParent</a>() &mdash; <em>Method in class <a href="Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></em></dt>
@@ -1312,6 +1431,8 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Breadcrumbs\Breadcrumb">Breadcrumb</abbr>#hideCurrentPage</a> &mdash; <em>Property in class <a href="Netflex/Breadcrumbs/Breadcrumb.html"><abbr title="Netflex\Breadcrumbs\Breadcrumb">Breadcrumb</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/CacheClearCommand.html#method_handle">
 <abbr title="Netflex\Console\Commands\CacheClearCommand">CacheClearCommand</abbr>::handle</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/CacheClearCommand.html"><abbr title="Netflex\Console\Commands\CacheClearCommand">CacheClearCommand</abbr></a></em></dt>
+                    <dd>Execute the console command.</dd><dt><a href="Netflex/Console/Commands/MailMakeCommand.html#method_handle">
+<abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr>::handle</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a></em></dt>
                     <dd>Execute the console command.</dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html#method_handle">
 <abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr>::handle</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a></em></dt>
                     <dd>Execute the console command.</dd><dt><a href="Netflex/Console/Commands/NetflexSetupCommand.html#method_handle">
@@ -1320,7 +1441,9 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::handle</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd>Execute the console command.</dd><dt>$<a href="Netflex/Customers/Customer.html#property_has_error">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#has_error</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Foundation/GlobalContent.html#property_has_subpages">
+                    <dd></dd><dt><a href="Netflex/Customers/Customer.html#method_hasConsent">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::hasConsent</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd>Determines if the customer has a currently active consent assignment for the given consent</dd><dt>$<a href="Netflex/Foundation/GlobalContent.html#property_has_subpages">
 <abbr title="Netflex\Foundation\GlobalContent">GlobalContent</abbr>#has_subpages</a> &mdash; <em>Property in class <a href="Netflex/Foundation/GlobalContent.html"><abbr title="Netflex\Foundation\GlobalContent">GlobalContent</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Foundation/Redirect.html#property_has_subpages">
 <abbr title="Netflex\Foundation\Redirect">Redirect</abbr>#has_subpages</a> &mdash; <em>Property in class <a href="Netflex/Foundation/Redirect.html"><abbr title="Netflex\Foundation\Redirect">Redirect</abbr></a></em></dt>
@@ -1371,6 +1494,7 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
                     <dd>Indicates if the model should hide default fields</dd><dt>$<a href="Netflex/Structure/Model.html#property_hidden">
 <abbr title="Netflex\Structure\Model">Model</abbr>#hidden</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd>The attributes that should be hidden for arrays.</dd><dt><a href="Netflex/Structure/Traits/HidesDefaultFields.html"><abbr title="Netflex\Structure\Traits\HidesDefaultFields">HidesDefaultFields</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure/Traits.html">Netflex\Structure\Traits</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support/Concerns.html">Netflex\Support\Concerns</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Support/Event.html#property_handler">
 <abbr title="Netflex\Support\Event">Event</abbr>#handler</a> &mdash; <em>Property in class <a href="Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Event.html#method_handle">
@@ -1394,6 +1518,12 @@ Making the API reflect the compiled query in the output</dd><dt>$<a href="Netfle
 <abbr title="Netflex\Commerce\Order">Order</abbr>#ip</a> &mdash; <em>Property in class <a href="Netflex/Commerce/Order.html"><abbr title="Netflex\Commerce\Order">Order</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Commerce/Payments.html#property_items">
 <abbr title="Netflex\Commerce\Payments">Payments</abbr>#items</a> &mdash; <em>Property in class <a href="Netflex/Commerce/Payments.html"><abbr title="Netflex\Commerce\Payments">Payments</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_id">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_is_public">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#is_public</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_ip">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#ip</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Foundation/GlobalContent.html#property_id">
 <abbr title="Netflex\Foundation\GlobalContent">GlobalContent</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Foundation/GlobalContent.html"><abbr title="Netflex\Foundation\GlobalContent">GlobalContent</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Foundation/Redirect.html#property_id">
@@ -1485,7 +1615,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
                     <dd>The document favicon</dd><dt><a href="Netflex/Structure/Image.html"><abbr title="Netflex\Structure\Image">Image</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_id">
 <abbr title="Netflex\Structure\Model">Model</abbr>#id</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/ItemCollection.html"><abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_initializeTraits">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::initializeTraits</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Initialize any initializable traits.</dd><dt><a href="Netflex/Support/ItemCollection.html"><abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
                     <dd></dd>        </dl><h2 id="letterJ">J</h2>
         <dl id="indexJ"><dt><a href="Netflex/Commerce/CartItem.html#method_jsonSerialize">
 <abbr title="Netflex\Commerce\CartItem">CartItem</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Commerce/CartItem.html"><abbr title="Netflex\Commerce\CartItem">CartItem</abbr></a></em></dt>
@@ -1493,6 +1625,10 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Commerce\PaymentItem">PaymentItem</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Commerce/PaymentItem.html"><abbr title="Netflex\Commerce\PaymentItem">PaymentItem</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Commerce/Properties.html#method_jsonSerialize">
 <abbr title="Netflex\Commerce\Properties">Properties</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Commerce/Properties.html"><abbr title="Netflex\Commerce\Properties">Properties</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_jsonSerialize">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_jsonSerialize">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/MessageChannel/Handler.html#method_jsonSerialize">
 <abbr title="Netflex\MessageChannel\Handler">Handler</abbr>::jsonSerialize</a>() &mdash; <em>Method in class <a href="Netflex/MessageChannel/Handler.html"><abbr title="Netflex\MessageChannel\Handler">Handler</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method_jsonSerialize">
@@ -1600,6 +1736,7 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Commerce\LogItem">LogItem</abbr>#msg</a> &mdash; <em>Property in class <a href="Netflex/Commerce/LogItem.html"><abbr title="Netflex\Commerce\LogItem">LogItem</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Commerce/LogItem.html#property_mail_sent_time">
 <abbr title="Netflex\Commerce\LogItem">LogItem</abbr>#mail_sent_time</a> &mdash; <em>Property in class <a href="Netflex/Commerce/LogItem.html"><abbr title="Netflex\Commerce\LogItem">LogItem</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console/Commands.html">Netflex\Console\Commands</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console/Commands.html">Netflex\Console\Commands</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_mail">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#mail</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
@@ -1642,6 +1779,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr>::mapSitemap</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Providers/RouteServiceProvider.html"><abbr title="Netflex\Pages\Providers\RouteServiceProvider">RouteServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Query/Builder.html#property_mapper">
 <abbr title="Netflex\Query\Builder">Builder</abbr>#mapper</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Query/Builder.html#property_model">
+<abbr title="Netflex\Query\Builder">Builder</abbr>#model</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Exceptions/MassAssignmentException.html"><abbr title="Netflex\Query\Exceptions\MassAssignmentException">MassAssignmentException</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Exceptions.html">Netflex\Query\Exceptions</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Traits/ModelMapper.html"><abbr title="Netflex\Query\Traits\ModelMapper">ModelMapper</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Traits.html">Netflex\Query\Traits</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Traits/Queryable.html#method_makeQueryBuilder">
@@ -1652,7 +1791,14 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr>::maybeCacheResults</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></em></dt>
                     <dd>Cache the results with the given key if $shouldCache is true</dd><dt><a href="Netflex/Query/Traits/SoftDeletes.html#method_makeQueryBuilder">
 <abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr>::makeQueryBuilder</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Render/PDF.html#method_marginTop">
+                    <dd></dd><dt>$<a href="Netflex/Render/Exceptions/RenderException.html#property_message">
+<abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr>#message</a> &mdash; <em>Property in class <a href="Netflex/Render/Exceptions/RenderException.html"><abbr title="Netflex\Render\Exceptions\RenderException">RenderException</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/Facades/MjmlView.html"><abbr title="Netflex\Render\Facades\MjmlView">MjmlView</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Render/Facades.html">Netflex\Render\Facades</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Render.html">Netflex\Render</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/Mail/MJML.html"><abbr title="Netflex\Render\Mail\MJML">MJML</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Render/Mail.html">Netflex\Render\Mail</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/Mail/MJML.html#method_mjml">
+<abbr title="Netflex\Render\Mail\MJML">MJML</abbr>::mjml</a>() &mdash; <em>Method in class <a href="Netflex/Render/Mail/MJML.html"><abbr title="Netflex\Render\Mail\MJML">MJML</abbr></a></em></dt>
+                    <dd>Set the view and view data for the message.</dd><dt><a href="Netflex/Render/PDF.html#method_marginTop">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::marginTop</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Paper top margin</dd><dt><a href="Netflex/Render/PDF.html#method_marginRight">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::marginRight</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
@@ -1666,7 +1812,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Render\PDF">PDF</abbr>::modified</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Sets the PDF last modified date</dd><dt><a href="Netflex/Render/PSR7/Stream.html#method_make">
 <abbr title="Netflex\Render\PSR7\Stream">Stream</abbr>::make</a>() &mdash; <em>Method in class <a href="Netflex/Render/PSR7/Stream.html"><abbr title="Netflex\Render\PSR7\Stream">Stream</abbr></a></em></dt>
-                    <dd>Creates a Stream from string</dd><dt><a href="Netflex/SDK.html#method_make">
+                    <dd>Creates a Stream from string</dd><dt><a href="Netflex/Render/View/MjmlViewFinder.html"><abbr title="Netflex\Render\View\MjmlViewFinder">MjmlViewFinder</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Render/View.html">Netflex\Render\View</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/SDK.html#method_make">
 <abbr title="Netflex\SDK">SDK</abbr>::make</a>() &mdash; <em>Method in class <a href="Netflex/SDK.html"><abbr title="Netflex\SDK">SDK</abbr></a></em></dt>
                     <dd>Resolve the given type from the container.</dd><dt><a href="Netflex/Scraper/Metadata.html"><abbr title="Netflex\Scraper\Metadata">Metadata</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Scraper.html">Netflex\Scraper</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
@@ -1684,6 +1831,12 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
                     <dd></dd><dt>$<a href="Netflex/Console/Commands/ModelMakeCommand.html#property_name">
 <abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr>#name</a> &mdash; <em>Property in class <a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a></em></dt>
                     <dd>The console command name.</dd><dt><a href="Netflex/Console/Commands/NetflexSetupCommand.html"><abbr title="Netflex\Console\Commands\NetflexSetupCommand">NetflexSetupCommand</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console/Commands.html">Netflex\Console\Commands</a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_name">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#name</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_newFromBuilder">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::newFromBuilder</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_newFromBuilder">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::newFromBuilder</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_name">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#name</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_no_newsletter">
@@ -1773,7 +1926,11 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Support\Accessors">Accessors</abbr>::offsetSet</a>() &mdash; <em>Method in class <a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Accessors.html#method_offsetUnset">
 <abbr title="Netflex\Support\Accessors">Accessors</abbr>::offsetUnset</a>() &mdash; <em>Method in class <a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/Events.html#method_on">
+                    <dd></dd><dt>$<a href="Netflex/Support/Concerns/HasEvents.html#property_observables">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>#observables</a> &mdash; <em>Property in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>User exposed observable events.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_observe">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::observe</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Register observers.</dd><dt><a href="Netflex/Support/Events.html#method_on">
 <abbr title="Netflex\Support\Events">Events</abbr>::on</a>() &mdash; <em>Method in class <a href="Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a></em></dt>
                     <dd>Attaches an event handler for a given event</dd><dt><a href="Netflex/Support/ItemCollection.html#method_offsetSet">
 <abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr>::offsetSet</a>() &mdash; <em>Method in class <a href="Netflex/Support/ItemCollection.html"><abbr title="Netflex\Support\ItemCollection">ItemCollection</abbr></a></em></dt>
@@ -1820,7 +1977,11 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::promptCredentials</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Console/ConsoleSupportServiceProvider.html#property_providers">
 <abbr title="Netflex\Console\ConsoleSupportServiceProvider">ConsoleSupportServiceProvider</abbr>#providers</a> &mdash; <em>Property in class <a href="Netflex/Console/ConsoleSupportServiceProvider.html"><abbr title="Netflex\Console\ConsoleSupportServiceProvider">ConsoleSupportServiceProvider</abbr></a></em></dt>
-                    <dd>The provider class names.</dd><dt>$<a href="Netflex/Customers/Customer.html#property_phone">
+                    <dd>The provider class names.</dd><dt>$<a href="Netflex/Customers/Consent.html#property_public_name">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#public_name</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_public_description">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#public_description</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_phone">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#phone</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_phone_countrycode">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#phone_countrycode</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
@@ -1919,6 +2080,16 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Render\Renderer">Renderer</abbr>::postProcess</a>() &mdash; <em>Method in class <a href="Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a></em></dt>
                     <dd>Postprocessing stage</dd><dt><a href="Netflex/Render/View/Directives.html#method_page_number">
 <abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_number</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/View/Directives.html#method_page_break">
+<abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_break</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/View/Directives.html#method_page_break_before">
+<abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_break_before</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/View/Directives.html#method_page_break_before_avoid">
+<abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_break_before_avoid</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/View/Directives.html#method_page_break_after">
+<abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_break_after</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/View/Directives.html#method_page_break_after_avoid">
+<abbr title="Netflex\Render\View\Directives">Directives</abbr>::page_break_after_avoid</a>() &mdash; <em>Method in class <a href="Netflex/Render/View/Directives.html"><abbr title="Netflex\Render\View\Directives">Directives</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Scheduler/Scheduler.html#method_push">
 <abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr>::push</a>() &mdash; <em>Method in class <a href="Netflex/Scheduler/Scheduler.html"><abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr></a></em></dt>
                     <dd>Push a new job onto the queue.</dd><dt><a href="Netflex/Scheduler/Scheduler.html#method_pushOn">
@@ -2122,13 +2293,19 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
                     <dd></dd><dt><a href="Netflex/Console/Commands/RouteListCommand.html"><abbr title="Netflex\Console\Commands\RouteListCommand">RouteListCommand</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Console/Commands.html">Netflex\Console\Commands</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/ServeCommand.html#method_removeProxy">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::removeProxy</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_relation">
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_revoked_timestamp">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#revoked_timestamp</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_revoke">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::revoke</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd>Revokes the assignment</dd><dt>$<a href="Netflex/Customers/Customer.html#property_relation">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#relation</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_relationId">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#relationId</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_resolvableField">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#resolvableField</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
-                    <dd></dd><dt>$<a href="Netflex/Customers/Group.html#property_relation">
+                    <dd></dd><dt><a href="Netflex/Customers/Customer.html#method_revokeConsent">
+<abbr title="Netflex\Customers\Customer">Customer</abbr>::revokeConsent</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
+                    <dd>If the customer has an active consent assignment for the given consent, the assignment gets revoked</dd><dt>$<a href="Netflex/Customers/Group.html#property_relation">
 <abbr title="Netflex\Customers\Group">Group</abbr>#relation</a> &mdash; <em>Property in class <a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Group.html#property_relation_id">
 <abbr title="Netflex\Customers\Group">Group</abbr>#relation_id</a> &mdash; <em>Property in class <a href="Netflex/Customers/Group.html"><abbr title="Netflex\Customers\Group">Group</abbr></a></em></dt>
@@ -2189,8 +2366,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Builder.
 <abbr title="Netflex\Pages\Components\Seo">Seo</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Seo.html"><abbr title="Netflex\Pages\Components\Seo">Seo</abbr></a></em></dt>
                     <dd>Get the view / contents that represent the component.</dd><dt><a href="Netflex/Pages/Components/StaticContent.html#method_render">
 <abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr>::render</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/StaticContent.html"><abbr title="Netflex\Pages\Components\StaticContent">StaticContent</abbr></a></em></dt>
-                    <dd>Get the view / contents that represent the component.</dd><dt>$<a href="Netflex/Pages/Controllers/Controller.html#property_routes">
-<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>#routes</a> &mdash; <em>Property in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
+                    <dd>Get the view / contents that represent the component.</dd><dt>$<a href="Netflex/Pages/Controllers/BaseController.html#property_routes">
+<abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr>#routes</a> &mdash; <em>Property in class <a href="Netflex/Pages/Controllers/BaseController.html"><abbr title="Netflex\Pages\Controllers\BaseController">BaseController</abbr></a></em></dt>
                     <dd>Additional Netflex page routes</dd><dt>$<a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html#property_routeDefinition">
 <abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr>#routeDefinition</a> &mdash; <em>Property in class <a href="Netflex/Pages/Exceptions/InvalidRouteDefintionException.html"><abbr title="Netflex\Pages\Exceptions\InvalidRouteDefintionException">InvalidRouteDefintionException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Extension.html#method_render">
@@ -2349,7 +2526,13 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Structure\Structure">Structure</abbr>::resolveModel</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Structure.html#method_retrieve">
 <abbr title="Netflex\Structure\Structure">Structure</abbr>::retrieve</a>() &mdash; <em>Method in class <a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_registerObserver">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::registerObserver</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Register a single observer.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_removeObservableEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::removeObservableEvents</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Remove an observable event name.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_registerEvent">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::registerEvent</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Register a event with the dispatcher.</dd><dt><a href="Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Support/ReactiveObject.html#property_readOnlyAttributes">
 <abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr>#readOnlyAttributes</a> &mdash; <em>Property in class <a href="Netflex/Support/ReactiveObject.html"><abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Retrievable.html"><abbr title="Netflex\Support\Retrievable">Retrievable</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Support.html">Netflex\Support</a></em></dt>
@@ -2407,6 +2590,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::siteAlias</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/ServeCommand.html#method_saveProxyConfiguration">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>::saveProxyConfiguration</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_source">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#source</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_surname">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#surname</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_start">
@@ -2488,6 +2673,10 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Query\Builder">Builder</abbr>#sortDir</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Query/Builder.html#property_shouldCache">
 <abbr title="Netflex\Query\Builder">Builder</abbr>#shouldCache</a> &mdash; <em>Property in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Builder.html#method_setModel">
+<abbr title="Netflex\Query\Builder">Builder</abbr>::setModel</a>() &mdash; <em>Method in class <a href="Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Query/Exceptions/NotFoundException.html#method_setField">
+<abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr>::setField</a>() &mdash; <em>Method in class <a href="Netflex/Query/Exceptions/NotFoundException.html"><abbr title="Netflex\Query\Exceptions\NotFoundException">NotFoundException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Query/Facades/QueryBuilderAssocFacade.html#method_static">
 <abbr title="Netflex\Query\Facades\QueryBuilderAssocFacade">QueryBuilderAssocFacade</abbr>::static</a>() &mdash; <em>Method in class <a href="Netflex/Query/Facades/QueryBuilderAssocFacade.html"><abbr title="Netflex\Query\Facades\QueryBuilderAssocFacade">QueryBuilderAssocFacade</abbr></a></em></dt>
                     <dd>?object first()</dd><dt><a href="Netflex/Query/Facades/QueryBuilderFacade.html#method_static">
@@ -2505,6 +2694,7 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd>Set the primary key for the model.</dd><dt><a href="Netflex/Query/QueryableModel.html#method_setKeyType">
 <abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr>::setKeyType</a>() &mdash; <em>Method in class <a href="Netflex/Query/QueryableModel.html"><abbr title="Netflex\Query\QueryableModel">QueryableModel</abbr></a></em></dt>
                     <dd>Set the data type for the primary key.</dd><dt><a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Query/Traits.html">Netflex\Query\Traits</a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/Concerns/ServerSideRender.html"><abbr title="Netflex\Render\Concerns\ServerSideRender">ServerSideRender</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Render/Concerns.html">Netflex\Render\Concerns</a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/Contracts/ImageRenderer.html#method_selector">
 <abbr title="Netflex\Render\Contracts\ImageRenderer">ImageRenderer</abbr>::selector</a>() &mdash; <em>Method in class <a href="Netflex/Render/Contracts/ImageRenderer.html"><abbr title="Netflex\Render\Contracts\ImageRenderer">ImageRenderer</abbr></a></em></dt>
                     <dd>Specifies a CSS selector for capturing a specific element.</dd><dt><a href="Netflex/Render/Contracts/Renderable.html#method_stream">
@@ -2551,7 +2741,11 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_stop">
 <abbr title="Netflex\Structure\Model">Model</abbr>#stop</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Structure/Structure.html"><abbr title="Netflex\Structure\Structure">Structure</abbr></a> &mdash; <em>Class in namespace <a href="Netflex/Structure.html">Netflex\Structure</a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Support/Event.html#method_setName">
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_setObservableEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::setObservableEvents</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Set the observable event names.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_setEventDispatcher">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::setEventDispatcher</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Set the event dispatcher instance.</dd><dt><a href="Netflex/Support/Event.html#method_setName">
 <abbr title="Netflex\Support\Event">Event</abbr>::setName</a>() &mdash; <em>Method in class <a href="Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Event.html#method_setHandler">
 <abbr title="Netflex\Support\Event">Event</abbr>::setHandler</a>() &mdash; <em>Method in class <a href="Netflex/Support/Event.html"><abbr title="Netflex\Support\Event">Event</abbr></a></em></dt>
@@ -2591,7 +2785,19 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Commerce\ReservationItemCollection">ReservationItemCollection</abbr>#type</a> &mdash; <em>Property in class <a href="Netflex/Commerce/ReservationItemCollection.html"><abbr title="Netflex\Commerce\ReservationItemCollection">ReservationItemCollection</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Console/Commands/ModelMakeCommand.html#property_type">
 <abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr>#type</a> &mdash; <em>Property in class <a href="Netflex/Console/Commands/ModelMakeCommand.html"><abbr title="Netflex\Console\Commands\ModelMakeCommand">ModelMakeCommand</abbr></a></em></dt>
-                    <dd>The type of class being generated.</dd><dt>$<a href="Netflex/Customers/Customer.html#property_tokenField">
+                    <dd>The type of class being generated.</dd><dt>$<a href="Netflex/Customers/Consent.html#property_type">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#type</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_terms">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#terms</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Consent.html#property_terms_link">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>#terms_link</a> &mdash; <em>Property in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method_toJson">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/ConsentAssignment.html#property_timestamp">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>#timestamp</a> &mdash; <em>Property in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method_toJson">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_tokenField">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#tokenField</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Customers/Customer.html#property_tags">
 <abbr title="Netflex\Customers\Customer">Customer</abbr>#tags</a> &mdash; <em>Property in class <a href="Netflex/Customers/Customer.html"><abbr title="Netflex\Customers\Customer">Customer</abbr></a></em></dt>
@@ -2703,7 +2909,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Structure\Model">Model</abbr>#tags</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Support/Accessors.html#method_toArray">
 <abbr title="Netflex\Support\Accessors">Accessors</abbr>::toArray</a>() &mdash; <em>Method in class <a href="Netflex/Support/Accessors.html"><abbr title="Netflex\Support\Accessors">Accessors</abbr></a></em></dt>
-                    <dd>Get the raw attributes</dd><dt><a href="Netflex/Support/Events.html#method_trigger">
+                    <dd>Get the raw attributes</dd><dt>$<a href="Netflex/Support/Concerns/HasEvents.html#property_traitInitializers">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>#traitInitializers</a> &mdash; <em>Property in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>The array of trait initializers that will be called on each new instance.</dd><dt><a href="Netflex/Support/Events.html#method_trigger">
 <abbr title="Netflex\Support\Events">Events</abbr>::trigger</a>() &mdash; <em>Method in class <a href="Netflex/Support/Events.html"><abbr title="Netflex\Support\Events">Events</abbr></a></em></dt>
                     <dd>Invokes the event handlers for the given event</dd><dt><a href="Netflex/Support/HtmlString.html#method_toJson">
 <abbr title="Netflex\Support\HtmlString">HtmlString</abbr>::toJson</a>() &mdash; <em>Method in class <a href="Netflex/Support/HtmlString.html"><abbr title="Netflex\Support\HtmlString">HtmlString</abbr></a></em></dt>
@@ -2793,7 +3001,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Structure\Model">Model</abbr>#userid</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Structure/Model.html#property_use_time">
 <abbr title="Netflex\Structure\Model">Model</abbr>#use_time</a> &mdash; <em>Property in class <a href="Netflex/Structure/Model.html"><abbr title="Netflex\Structure\Model">Model</abbr></a></em></dt>
-                    <dd></dd>        </dl><h2 id="letterV">V</h2>
+                    <dd></dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_unsetEventDispatcher">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::unsetEventDispatcher</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Unset the event dispatcher.</dd>        </dl><h2 id="letterV">V</h2>
         <dl id="indexV"><dt>$<a href="Netflex/Commerce/CartItem.html#property_variant_id">
 <abbr title="Netflex\Commerce\CartItem">CartItem</abbr>#variant_id</a> &mdash; <em>Property in class <a href="Netflex/Commerce/CartItem.html"><abbr title="Netflex\Commerce\CartItem">CartItem</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Commerce/CartItem.html#property_variant_value">
@@ -2823,7 +3033,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\Extension">Extension</abbr>#view</a> &mdash; <em>Property in class <a href="Netflex/Pages/Extension.html"><abbr title="Netflex\Pages\Extension">Extension</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Netflex/Pages/Page.html#property_variants">
 <abbr title="Netflex\Pages\Page">Page</abbr>#variants</a> &mdash; <em>Property in class <a href="Netflex/Pages/Page.html"><abbr title="Netflex\Pages\Page">Page</abbr></a></em></dt>
-                    <dd></dd><dt><a href="Netflex/Render/Renderer.html#method_view">
+                    <dd></dd><dt><a href="Netflex/Render/MJML.html#method_view">
+<abbr title="Netflex\Render\MJML">MJML</abbr>::view</a>() &mdash; <em>Method in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd>Render from a view</dd><dt><a href="Netflex/Render/Renderer.html#method_view">
 <abbr title="Netflex\Render\Renderer">Renderer</abbr>::view</a>() &mdash; <em>Method in class <a href="Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a></em></dt>
                     <dd>Render from a view</dd><dt>$<a href="Netflex/Structure/EditorBlocks.html#property_version">
 <abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr>#version</a> &mdash; <em>Property in class <a href="Netflex/Structure/EditorBlocks.html"><abbr title="Netflex\Structure\EditorBlocks">EditorBlocks</abbr></a></em></dt>
@@ -2832,7 +3044,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
                     <dd></dd><dt><a href="Netflex/Support/JWT.html#method_verify">
 <abbr title="Netflex\Support\JWT">JWT</abbr>::verify</a>() &mdash; <em>Method in class <a href="Netflex/Support/JWT.html"><abbr title="Netflex\Support\JWT">JWT</abbr></a></em></dt>
                     <dd></dd>        </dl><h2 id="letterW">W</h2>
-        <dl id="indexW"><dt>$<a href="Netflex/Console/Commands/ServeCommand.html#property_webService">
+        <dl id="indexW"><dt><a href="Netflex/Console/Commands/MailMakeCommand.html#method_writeMjmlTemplate">
+<abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr>::writeMjmlTemplate</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/MailMakeCommand.html"><abbr title="Netflex\Console\Commands\MailMakeCommand">MailMakeCommand</abbr></a></em></dt>
+                    <dd>Write the Markdown template for the mailable.</dd><dt>$<a href="Netflex/Console/Commands/ServeCommand.html#property_webService">
 <abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr>#webService</a> &mdash; <em>Property in class <a href="Netflex/Console/Commands/ServeCommand.html"><abbr title="Netflex\Console\Commands\ServeCommand">ServeCommand</abbr></a></em></dt>
                     <dd>Web service.</dd><dt><a href="Netflex/Pages/Components/Image.html#method_width">
 <abbr title="Netflex\Pages\Components\Image">Image</abbr>::width</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Components/Image.html"><abbr title="Netflex\Pages\Components\Image">Image</abbr></a></em></dt>
@@ -2866,7 +3080,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr>::withoutTrashed</a>() &mdash; <em>Method in class <a href="Netflex/Query/Traits/SoftDeletes.html"><abbr title="Netflex\Query\Traits\SoftDeletes">SoftDeletes</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Render/Contracts/ImageRenderer.html#method_width">
 <abbr title="Netflex\Render\Contracts\ImageRenderer">ImageRenderer</abbr>::width</a>() &mdash; <em>Method in class <a href="Netflex/Render/Contracts/ImageRenderer.html"><abbr title="Netflex\Render\Contracts\ImageRenderer">ImageRenderer</abbr></a></em></dt>
-                    <dd>Viewport width. Default 1920</dd><dt><a href="Netflex/Render/PDF.html#method_width">
+                    <dd>Viewport width. Default 1920</dd><dt><a href="Netflex/Render/MJML.html#method_withBlob">
+<abbr title="Netflex\Render\MJML">MJML</abbr>::withBlob</a>() &mdash; <em>Method in class <a href="Netflex/Render/MJML.html"><abbr title="Netflex\Render\MJML">MJML</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Render/PDF.html#method_width">
 <abbr title="Netflex\Render\PDF">PDF</abbr>::width</a>() &mdash; <em>Method in class <a href="Netflex/Render/PDF.html"><abbr title="Netflex\Render\PDF">PDF</abbr></a></em></dt>
                     <dd>Paper width</dd><dt><a href="Netflex/Render/PSR7/Stream.html#method_write">
 <abbr title="Netflex\Render\PSR7\Stream">Stream</abbr>::write</a>() &mdash; <em>Method in class <a href="Netflex/Render/PSR7/Stream.html"><abbr title="Netflex\Render\PSR7\Stream">Stream</abbr></a></em></dt>
@@ -2880,7 +3096,9 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Render\Renderer">Renderer</abbr>::waitUntiNetworkSettled</a>() &mdash; <em>Method in class <a href="Netflex/Render/Renderer.html"><abbr title="Netflex\Render\Renderer">Renderer</abbr></a></em></dt>
                     <dd>Waits until there has not been more than 2 network requests for at least 500ms</dd><dt><a href="Netflex/Scheduler/Scheduler.html#method_withCreatePayloadHooks">
 <abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr>::withCreatePayloadHooks</a>() &mdash; <em>Method in class <a href="Netflex/Scheduler/Scheduler.html"><abbr title="Netflex\Scheduler\Scheduler">Scheduler</abbr></a></em></dt>
-                    <dd>Create the given payload using any registered payload hooks.</dd>        </dl><h2 id="letter_">_</h2>
+                    <dd>Create the given payload using any registered payload hooks.</dd><dt><a href="Netflex/Support/Concerns/HasEvents.html#method_withoutEvents">
+<abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr>::withoutEvents</a>() &mdash; <em>Method in class <a href="Netflex/Support/Concerns/HasEvents.html"><abbr title="Netflex\Support\Concerns\HasEvents">HasEvents</abbr></a></em></dt>
+                    <dd>Execute a callback without firing any events.</dd>        </dl><h2 id="letter_">_</h2>
         <dl id="index_"><dt><a href="Netflex/API/Client.html#method___construct">
 <abbr title="Netflex\API\Client">Client</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/API/Client.html"><abbr title="Netflex\API\Client">Client</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/API/Exceptions/MissingCredentialsException.html#method___construct">
@@ -2889,7 +3107,15 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Breadcrumbs\Breadcrumb">Breadcrumb</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Breadcrumbs/Breadcrumb.html"><abbr title="Netflex\Breadcrumbs\Breadcrumb">Breadcrumb</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Console/Commands/NetflexSetupCommand.html#method___construct">
 <abbr title="Netflex\Console\Commands\NetflexSetupCommand">NetflexSetupCommand</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Console/Commands/NetflexSetupCommand.html"><abbr title="Netflex\Console\Commands\NetflexSetupCommand">NetflexSetupCommand</abbr></a></em></dt>
-                    <dd>Create a new command instance.</dd><dt><a href="Netflex/Customers/Providers/AuthServiceProvider.html#method___construct">
+                    <dd>Create a new command instance.</dd><dt><a href="Netflex/Customers/Consent.html#method___construct">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Consent.html#method___debugInfo">
+<abbr title="Netflex\Customers\Consent">Consent</abbr>::__debugInfo</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Consent.html"><abbr title="Netflex\Customers\Consent">Consent</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method___construct">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/ConsentAssignment.html#method___debugInfo">
+<abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr>::__debugInfo</a>() &mdash; <em>Method in class <a href="Netflex/Customers/ConsentAssignment.html"><abbr title="Netflex\Customers\ConsentAssignment">ConsentAssignment</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Customers/Providers/AuthServiceProvider.html#method___construct">
 <abbr title="Netflex\Customers\Providers\AuthServiceProvider">AuthServiceProvider</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Customers/Providers/AuthServiceProvider.html"><abbr title="Netflex\Customers\Providers\AuthServiceProvider">AuthServiceProvider</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/MessageChannel/Client.html#method___construct">
 <abbr title="Netflex\MessageChannel\Client">Client</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/MessageChannel/Client.html"><abbr title="Netflex\MessageChannel\Client">Client</abbr></a></em></dt>
@@ -2921,6 +3147,8 @@ Only applies to entry and page relations</dd><dt><a href="Netflex/Query/Exceptio
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/ContentFile.html#method___debugInfo">
 <abbr title="Netflex\Pages\ContentFile">ContentFile</abbr>::__debugInfo</a>() &mdash; <em>Method in class <a href="Netflex/Pages/ContentFile.html"><abbr title="Netflex\Pages\ContentFile">ContentFile</abbr></a></em></dt>
+                    <dd></dd><dt><a href="Netflex/Pages/Controllers/Controller.html#method___construct">
+<abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Controllers/Controller.html"><abbr title="Netflex\Pages\Controllers\Controller">Controller</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html#method___construct">
 <abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr>::__construct</a>() &mdash; <em>Method in class <a href="Netflex/Pages/Exceptions/BreakpointsMissingException.html"><abbr title="Netflex\Pages\Exceptions\BreakpointsMissingException">BreakpointsMissingException</abbr></a></em></dt>
                     <dd></dd><dt><a href="Netflex/Pages/Exceptions/InvalidControllerException.html#method___construct">

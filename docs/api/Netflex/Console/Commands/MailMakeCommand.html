@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>Netflex\Render\Exceptions\RenderException | Netflex SDK</title>
+    <title>Netflex\Console\Commands\MailMakeCommand | Netflex SDK</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:Netflex_Render_Exceptions_RenderException" data-root-path="../../../">
+    <body id="class" data-name="class:Netflex_Console_Commands_MailMakeCommand" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -62,104 +62,80 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Render.html">Render</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Render/Exceptions.html">Exceptions</a></li><li class="backslash">\</li><li>RenderException</li>
+                        <li><a href="../../../Netflex.html">Netflex</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Console.html">Console</a></li><li class="backslash">\</li><li><a href="../../../Netflex/Console/Commands.html">Commands</a></li><li class="backslash">\</li><li>MailMakeCommand</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            RenderException
+            MailMakeCommand
                 
         </h1>
     </div>
 
     <p>        class
-    <strong>RenderException</strong>        extends <a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a>        implements
-        <abbr title="Facade\IgnitionContracts\ProvidesSolution">ProvidesSolution</abbr>
+    <strong>MailMakeCommand</strong>        extends <abbr title="Illuminate\Foundation\Console\MailMakeCommand">MailMakeCommand</abbr>
 </p>
 
         
     
 
     
-            <h2>Traits</h2>
-
-        
-    <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-6">
-                    <a href="../../../Netflex/API/Traits/ParsesResponse.html"><abbr title="Netflex\API\Traits\ParsesResponse">ParsesResponse</abbr></a>    </div>
-                <div class="col-md-6"></div>
-            </div>
-            </div>
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_message">
-                                        protected                                        string
-                </td>
-                <td>$message</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_description">
-                                        protected                                        string
-                </td>
-                <td>$description</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_errors">
-                                        protected                                        
-                </td>
-                <td>$errors</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_parseResponse">parseResponse</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, $assoc = false)
+                    <a href="#method_handle">handle</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../Netflex/API/Traits/ParsesResponse.html#method_parseResponse">
-<abbr title="Netflex\API\Traits\ParsesResponse">ParsesResponse</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Execute the console command.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="Facade\IgnitionContracts\Solution">Solution</abbr>
+                    void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSolution">getSolution</a>()
+                    <a href="#method_writeMjmlTemplate">writeMjmlTemplate</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Write the Markdown template for the mailable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildClass">buildClass</a>(string $name)
+        
+                                            <p>Build the class with the given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStub">getStub</a>()
+        
+                                            <p>Get the stub file for the generator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Get the console command options.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -169,39 +145,25 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_parseResponse">
-        <div class="location">in <a href="../../../Netflex/API/Traits/ParsesResponse.html#method_parseResponse">
-<abbr title="Netflex\API\Traits\ParsesResponse">ParsesResponse</abbr></a> at line 13</div>
-        <code>            protected        mixed
-    <strong>parseResponse</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, $assoc = false)
+                    <h3 id="method_handle">
+        <div class="location">at line 15</div>
+        <code>                    void
+    <strong>handle</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Execute the console command.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$assoc</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
@@ -213,28 +175,29 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at line 260</div>
-        <code>                    
-    <strong>__construct</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+                    <h3 id="method_writeMjmlTemplate">
+        <div class="location">at line 31</div>
+        <code>            protected        void
+    <strong>writeMjmlTemplate</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Write the Markdown template for the mailable.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+                            <h4>Return Value</h4>
 
                     <table class="table table-condensed">
-                    <tr>
-                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
-                <td>$response</td>
-                <td></td>
-            </tr>
-            </table>
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
 
-            
             
             
                     </div>
@@ -242,23 +205,95 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSolution">
-        <div class="location">at line 303</div>
-        <code>                    <abbr title="Facade\IgnitionContracts\Solution">Solution</abbr>
-    <strong>getSolution</strong>()
+                    <h3 id="method_buildClass">
+        <div class="location">at line 50</div>
+        <code>            protected        string
+    <strong>buildClass</strong>(string $name)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Build the class with the given name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStub">
+        <div class="location">at line 66</div>
+        <code>            protected        string
+    <strong>getStub</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the stub file for the generator.</p>                                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="Facade\IgnitionContracts\Solution">Solution</abbr></td>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at line 84</div>
+        <code>            protected        array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the console command options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
             <td></td>
         </tr>
     </table>
