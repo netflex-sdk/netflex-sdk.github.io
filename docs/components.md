@@ -127,8 +127,8 @@ The EditorButton component creates a menu that lets the user customize a content
 |contentlist||
 |contentlist_advanced||
 |datetime||
-|editor_large||
-|editor_small||
+|editor-large||
+|editor-small||
 |entries||
 |file||
 |gallery||
