@@ -1,6 +1,6 @@
 
 ![logo](/assets/logo.svg)
-# Netflex SDK <small>3.0</small>
+# Netflex SDK <small>4.0</small>
 
 > SDK for the Netflex platform
 
