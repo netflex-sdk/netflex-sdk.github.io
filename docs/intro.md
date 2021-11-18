@@ -1,11 +1,15 @@
 # Netflex SDK
 
-Documentation for the Netflex SDK version 3.0.
+Documentation for the Netflex SDK version 4.0.
 
 ## What is Netflex SDK?
 The [Netflex SDK](https://github.com/netflex-sdk) is a collection of libraries that enables you to work with the [Netflex API](https://documenter.getpostman.com/view/1198765/7159G1N?version=latest).
 
 It superseeds the legacy Netflex SDK v1.3.x.
+
+## Migrating from Netflex SDK v3
+
+Simply bump you netflex/* dependencies to ^4.0
 
 ## Migrating from Netflex SDK v2
 
