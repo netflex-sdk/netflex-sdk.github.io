@@ -16,7 +16,7 @@ Simply bump you netflex/* dependencies to ^4.0
 See this [FAQ](/docs/faq.md?id=how-do-i-migrate-from-netflex-sdk-v2).
 
 ## Legacy
-v1.3.x will be supported for the forseeable future, but will only receive compatibility and security patches. If feasible, you should consider upgrading your legacy project. See the [migration guide](/docs/migration-guide.md).
+[v1.x](https://github.com/netflex-sdk/sdk/tree/1.x) will be supported for the forseeable future, but will only receive compatibility and security patches. If feasible, you should consider upgrading your legacy project. See the [migration guide](/docs/migration-guide.md).
 
 ## Purpose
 The Netflex SDK is built on top of the excellent PHP framework, [Laravel](http://laravel.com) version 8. This enables you to leverage much of the existing documentation and tools built around the Laravel ecosystem.
