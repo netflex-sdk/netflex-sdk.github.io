@@ -275,6 +275,14 @@
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_respectPublishingStatus">
+                                        protected                                        
+                </td>
+                <td>$respectPublishingStatus</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_relation">
                                         protected                                        
                 </td>
@@ -737,6 +745,30 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___serialize">__serialize</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___serialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unserialize">__unserialize</a>(array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___unserialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     <a href="../../Netflex/Commerce/Traits/API/OrderAddAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAddAPI">OrderAddAPI</abbr></a>
                 </div>
                 <div class="col-md-8 type">
@@ -1172,6 +1204,17 @@
                     static&nbsp;Builder
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_publishedAt">publishedAt</a>(...$args)
+        
+                                            <p>Performs a 'publishedAt' query</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_publishedAt">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_where">where</a>(...$args)
         
                                             <p>Performs a 'where' query</p>                </div>
@@ -1226,7 +1269,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;PaginatedResult
+                    static&nbsp;Paginator
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_paginate">paginate</a>(...$args)
@@ -1288,6 +1331,18 @@
         
                                             <p>Picks random items</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_random">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Builder
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>(string $query = &#039;*&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Query/Traits/Queryable.html#method_query">
 <abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -2517,6 +2572,65 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method___serialize">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___serialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 150</div>
+        <code>                    array
+    <strong>__serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unserialize">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___unserialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 158</div>
+        <code>                    
+    <strong>__unserialize</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_addCart">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAddAPI.html#method_addCart">
 <abbr title="Netflex\Commerce\Traits\API\OrderAddAPI">OrderAddAPI</abbr></a> at line 15</div>
@@ -2966,7 +3080,7 @@
                     <div class="method-item">
                     <h3 id="method_saveStatus">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_saveStatus">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 18</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 21</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>saveStatus</strong>($status)
         </code>
@@ -3014,7 +3128,7 @@
                     <div class="method-item">
                     <h3 id="method_save">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_save">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 28</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 31</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>save</strong>(array $payload = [])
         </code>
@@ -3062,7 +3176,7 @@
                     <div class="method-item">
                     <h3 id="method_refresh">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_refresh">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 61</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 64</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>refresh</strong>()
         </code>
@@ -3100,7 +3214,7 @@
                     <div class="method-item">
                     <h3 id="method_addToSession">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_addToSession">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 77</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 80</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>addToSession</strong>()
         </code>
@@ -3129,7 +3243,7 @@
                     <div class="method-item">
                     <h3 id="method_removeFromSession">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_removeFromSession">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 91</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 90</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>removeFromSession</strong>()
         </code>
@@ -3158,7 +3272,7 @@
                     <div class="method-item">
                     <h3 id="method_checkoutEnd">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_checkoutEnd">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 108</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 105</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>checkoutEnd</strong>(array $payload = [])
         </code>
@@ -3208,7 +3322,7 @@
                     <div class="method-item">
                     <h3 id="method_checkout">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_checkout">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 120</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 117</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>checkout</strong>(array $payload = [])
         </code>
@@ -3256,7 +3370,7 @@
                     <div class="method-item">
                     <h3 id="method_register">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_register">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 131</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 128</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>register</strong>()
         </code>
@@ -3294,7 +3408,7 @@
                     <div class="method-item">
                     <h3 id="method_lock">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_lock">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 143</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 140</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>lock</strong>()
         </code>
@@ -3334,7 +3448,7 @@
                     <div class="method-item">
                     <h3 id="method_emptyCart">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_emptyCart">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 154</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 151</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>emptyCart</strong>()
         </code>
@@ -3372,7 +3486,7 @@
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_delete">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 165</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 162</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>delete</strong>()
         </code>
@@ -3410,7 +3524,7 @@
                     <div class="method-item">
                     <h3 id="method_create">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_create">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 179</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 176</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>create</strong>(array $order = [])
         </code>
@@ -3460,7 +3574,7 @@
                     <div class="method-item">
                     <h3 id="method_retrieveBySessionOrCreate">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_retrieveBySessionOrCreate">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 193</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 190</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>retrieveBySessionOrCreate</strong>(string|null $key = null)
         </code>
@@ -3510,7 +3624,7 @@
                     <div class="method-item">
                     <h3 id="method_retrieveBySession">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_retrieveBySession">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 212</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 209</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>retrieveBySession</strong>(string|null $key = null)
         </code>
@@ -3560,7 +3674,7 @@
                     <div class="method-item">
                     <h3 id="method_retrieveBySecret">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_retrieveBySecret">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 243</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 240</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>retrieveBySecret</strong>(string $secret)
         </code>
@@ -3608,7 +3722,7 @@
                     <div class="method-item">
                     <h3 id="method_retrieveByRegisterId">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_retrieveByRegisterId">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 263</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 260</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>retrieveByRegisterId</strong>(string $id)
         </code>
@@ -3656,7 +3770,7 @@
                     <div class="method-item">
                     <h3 id="method_retrieve">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_retrieve">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 281</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 278</div>
         <code>        static            <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>retrieve</strong>(string $id)
         </code>
@@ -3704,7 +3818,7 @@
                     <div class="method-item">
                     <h3 id="method_getFromCache">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_getFromCache">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 300</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 297</div>
         <code>        static    protected        array|null
     <strong>getFromCache</strong>(string $key)
         </code>
@@ -3743,7 +3857,7 @@
                     <div class="method-item">
                     <h3 id="method_addToCache">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_addToCache">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 317</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 314</div>
         <code>            protected        <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>addToCache</strong>()
         </code>
@@ -3772,7 +3886,7 @@
                     <div class="method-item">
                     <h3 id="method_forgetInCache">
         <div class="location">in <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html#method_forgetInCache">
-<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 342</div>
+<abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a> at line 339</div>
         <code>                    <a href="../../Netflex/Commerce/Traits/API/OrderAPI.html"><abbr title="Netflex\Commerce\Traits\API\OrderAPI">OrderAPI</abbr></a>
     <strong>forgetInCache</strong>()
         </code>
@@ -3801,7 +3915,7 @@
                     <div class="method-item">
                     <h3 id="method_makeQueryBuilder">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_makeQueryBuilder">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 40</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 39</div>
         <code>        static    protected        Builder
     <strong>makeQueryBuilder</strong>($appends = [])
         </code>
@@ -3849,7 +3963,7 @@
                     <div class="method-item">
                     <h3 id="method_respectPublishingStatus">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_respectPublishingStatus">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 92</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 99</div>
         <code>                    bool
     <strong>respectPublishingStatus</strong>()
         </code>
@@ -3880,7 +3994,7 @@
                     <div class="method-item">
                     <h3 id="method_disregardingPublishingStatus">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_disregardingPublishingStatus">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 103</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 111</div>
         <code>        static            Builder
     <strong>disregardingPublishingStatus</strong>(bool $disregarding = true)
         </code>
@@ -3921,7 +4035,7 @@
                     <div class="method-item">
                     <h3 id="method_field">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_field">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 117</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 125</div>
         <code>        static            Builder
     <strong>field</strong>(...$args)
         </code>
@@ -3982,7 +4096,7 @@
                     <div class="method-item">
                     <h3 id="method_fields">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_fields">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 130</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 138</div>
         <code>        static            Builder
     <strong>fields</strong>(...$args)
         </code>
@@ -4043,7 +4157,7 @@
                     <div class="method-item">
                     <h3 id="method_limit">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_limit">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 143</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 151</div>
         <code>        static            Builder
     <strong>limit</strong>(...$args)
         </code>
@@ -4104,7 +4218,7 @@
                     <div class="method-item">
                     <h3 id="method_orderBy">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_orderBy">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 158</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 166</div>
         <code>        static            Builder
     <strong>orderBy</strong>(...$args)
         </code>
@@ -4169,7 +4283,7 @@
                     <div class="method-item">
                     <h3 id="method_raw">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_raw">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 171</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 179</div>
         <code>        static            Builder
     <strong>raw</strong>(...$args)
         </code>
@@ -4228,9 +4342,70 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_publishedAt">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_publishedAt">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 192</div>
+        <code>        static            Builder
+    <strong>publishedAt</strong>(...$args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Performs a 'publishedAt' query</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td>If object not queryable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="Netflex\Query\Builder::publishedAt">Builder::publishedAt</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_where">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_where">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 189</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 210</div>
         <code>        static            Builder
     <strong>where</strong>(...$args)
         </code>
@@ -4292,7 +4467,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_whereIn">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereIn">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 203</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 224</div>
         <code>        static            Builder
     <strong>whereIn</strong>(...$args)
         </code>
@@ -4353,7 +4528,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_whereNot">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereNot">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 221</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 242</div>
         <code>        static            Builder
     <strong>whereNot</strong>(...$args)
         </code>
@@ -4415,7 +4590,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_whereBetween">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereBetween">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 236</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 257</div>
         <code>        static            
     <strong>whereBetween</strong>(...$args)
         </code>
@@ -4445,7 +4620,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_whereNotBetween">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_whereNotBetween">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 251</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 272</div>
         <code>        static            
     <strong>whereNotBetween</strong>(...$args)
         </code>
@@ -4475,8 +4650,8 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_paginate">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_paginate">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 266</div>
-        <code>        static            PaginatedResult
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 287</div>
+        <code>        static            Paginator
     <strong>paginate</strong>(...$args)
         </code>
     </h3>
@@ -4502,7 +4677,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
 
                     <table class="table table-condensed">
         <tr>
-            <td>PaginatedResult</td>
+            <td>Paginator</td>
             <td></td>
         </tr>
     </table>
@@ -4540,7 +4715,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_maybeMutatesCache">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_maybeMutatesCache">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 282</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 303</div>
         <code>        static            mixed
     <strong>maybeMutatesCache</strong>(string $key, bool $shouldCache, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $action)
         </code>
@@ -4591,7 +4766,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_maybeCacheResults">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_maybeCacheResults">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 299</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 320</div>
         <code>        static            Builder
     <strong>maybeCacheResults</strong>(string $key, bool $shouldCache)
         </code>
@@ -4648,7 +4823,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_cacheResults">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_cacheResults">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 315</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 336</div>
         <code>        static            Builder
     <strong>cacheResults</strong>(string $key)
         </code>
@@ -4700,7 +4875,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_count">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_count">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 328</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 349</div>
         <code>        static            int
     <strong>count</strong>(...$args)
         </code>
@@ -4765,7 +4940,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_random">
         <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_random">
-<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 339</div>
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 360</div>
         <code>        static            <a href="../../Netflex/Query/Traits/Queryable.html"><abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a>|Collection
     <strong>random</strong>(int $amount = 1)
         </code>
@@ -4804,9 +4979,57 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">in <a href="../../Netflex/Query/Traits/Queryable.html#method_query">
+<abbr title="Netflex\Query\Traits\Queryable">Queryable</abbr></a> at line 372</div>
+        <code>        static            Builder
+    <strong>query</strong>(string $query = &#039;*&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Builder</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>NotQueryableException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getRelation">
         <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelation">
-<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 14</div>
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 15</div>
         <code>                    string
     <strong>getRelation</strong>()
         </code>
@@ -4837,7 +5060,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_getRelationId">
         <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getRelationId">
-<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 24</div>
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 26</div>
         <code>                    int|null
     <strong>getRelationId</strong>()
         </code>
@@ -4868,7 +5091,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_getCacheIdentifier">
         <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getCacheIdentifier">
-<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 36</div>
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 39</div>
         <code>            protected        string
     <strong>getCacheIdentifier</strong>(mixed $identifier = null)
         </code>
@@ -4909,7 +5132,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                     <div class="method-item">
                     <h3 id="method_getAllCacheIdentifier">
         <div class="location">in <a href="../../Netflex/Query/Traits/HasRelation.html#method_getAllCacheIdentifier">
-<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 46</div>
+<abbr title="Netflex\Query\Traits\HasRelation">HasRelation</abbr></a> at line 56</div>
         <code>            protected        
     <strong>getAllCacheIdentifier</strong>()
         </code>
@@ -4957,7 +5180,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_newFromBuilder">
-        <div class="location">at line 91</div>
+        <div class="location">at line 93</div>
         <code>                    <a href="../../Netflex/Commerce/Order.html"><abbr title="Netflex\Commerce\Order">Order</abbr></a>
     <strong>newFromBuilder</strong>(array $attributes = [])
         </code>
@@ -4995,7 +5218,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getCustomerIdAttribute">
-        <div class="location">at line 100</div>
+        <div class="location">at line 102</div>
         <code>                    int|null
     <strong>getCustomerIdAttribute</strong>(string|int $id)
         </code>
@@ -5033,7 +5256,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getOrderTaxAttribute">
-        <div class="location">at line 109</div>
+        <div class="location">at line 111</div>
         <code>                    float
     <strong>getOrderTaxAttribute</strong>(string|float|int $tax)
         </code>
@@ -5071,7 +5294,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getOrderCostAttribute">
-        <div class="location">at line 118</div>
+        <div class="location">at line 120</div>
         <code>                    float
     <strong>getOrderCostAttribute</strong>(string|float|int $cost)
         </code>
@@ -5109,7 +5332,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getOrderTotalAttribute">
-        <div class="location">at line 127</div>
+        <div class="location">at line 129</div>
         <code>                    float
     <strong>getOrderTotalAttribute</strong>(string|float|int $total)
         </code>
@@ -5147,7 +5370,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getAbandonedAttribute">
-        <div class="location">at line 136</div>
+        <div class="location">at line 138</div>
         <code>                    bool
     <strong>getAbandonedAttribute</strong>(string|int|bool|null $abandoned)
         </code>
@@ -5185,7 +5408,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getAbandonedReminderSentAttribute">
-        <div class="location">at line 145</div>
+        <div class="location">at line 147</div>
         <code>                    bool
     <strong>getAbandonedReminderSentAttribute</strong>(string|int|bool|null $sent)
         </code>
@@ -5223,7 +5446,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getRegisterAttribute">
-        <div class="location">at line 154</div>
+        <div class="location">at line 156</div>
         <code>                    Register
     <strong>getRegisterAttribute</strong>(object|array|null $register)
         </code>
@@ -5261,7 +5484,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getCartAttribute">
-        <div class="location">at line 163</div>
+        <div class="location">at line 165</div>
         <code>                    Cart
     <strong>getCartAttribute</strong>(object|array|null $cart = [])
         </code>
@@ -5299,7 +5522,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getDataAttribute">
-        <div class="location">at line 175</div>
+        <div class="location">at line 177</div>
         <code>                    Data
     <strong>getDataAttribute</strong>(object|array|null $data = [])
         </code>
@@ -5337,7 +5560,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getPaymentsAttribute">
-        <div class="location">at line 187</div>
+        <div class="location">at line 189</div>
         <code>                    Payments
     <strong>getPaymentsAttribute</strong>(object|array|null $payments = null)
         </code>
@@ -5375,7 +5598,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getCheckoutAttribute">
-        <div class="location">at line 199</div>
+        <div class="location">at line 201</div>
         <code>                    Checkout
     <strong>getCheckoutAttribute</strong>(object|array|null $checkout = null)
         </code>
@@ -5413,7 +5636,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getDiscountsAttribute">
-        <div class="location">at line 211</div>
+        <div class="location">at line 213</div>
         <code>                    DiscountItemCollection
     <strong>getDiscountsAttribute</strong>(array|null $discounts = [])
         </code>
@@ -5451,7 +5674,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogAttribute">
-        <div class="location">at line 223</div>
+        <div class="location">at line 225</div>
         <code>                    LogItemCollection
     <strong>getLogAttribute</strong>(array|null $log = [])
         </code>
@@ -5489,7 +5712,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_dateTimeNow">
-        <div class="location">at line 235</div>
+        <div class="location">at line 237</div>
         <code>        static            string
     <strong>dateTimeNow</strong>()
         </code>
@@ -5519,7 +5742,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_basePath">
-        <div class="location">at line 243</div>
+        <div class="location">at line 245</div>
         <code>        static            string
     <strong>basePath</strong>()
         </code>

@@ -523,6 +523,30 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___serialize">__serialize</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___serialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unserialize">__unserialize</a>(array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Netflex/Support/ReactiveObject.html#method___unserialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;<a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>|void
                 </div>
                 <div class="col-md-8 type">
@@ -534,7 +558,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]
+                    static&nbsp;Collection|<a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_all">all</a>()
@@ -548,7 +572,7 @@
                     static&nbsp;mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>(string $key)
+                    <a href="#method_get">get</a>(string $key, mixed $fallback = null)
         
                                             <p>Retrieve the value of a Setting</p>                </div>
                 <div class="col-md-2"></div>
@@ -1559,8 +1583,67 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method___serialize">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___serialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 150</div>
+        <code>                    array
+    <strong>__serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unserialize">
+        <div class="location">in <a href="../../Netflex/Support/ReactiveObject.html#method___unserialize">
+<abbr title="Netflex\Support\ReactiveObject">ReactiveObject</abbr></a> at line 158</div>
+        <code>                    
+    <strong>__unserialize</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_retrieve">
-        <div class="location">at line 71</div>
+        <div class="location">at line 75</div>
         <code>        static            <a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>|void
     <strong>retrieve</strong>(string $alias)
         </code>
@@ -1598,8 +1681,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">at line 56</div>
-        <code>        static            <a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]
+        <div class="location">at line 60</div>
+        <code>        static            Collection|<a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]
     <strong>all</strong>()
         </code>
     </h3>
@@ -1613,7 +1696,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]</td>
+            <td>Collection|<a href="../../Netflex/Foundation/Variable.html"><abbr title="Netflex\Foundation\Variable">Variable</abbr></a>[]</td>
             <td></td>
         </tr>
     </table>
@@ -1626,9 +1709,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at line 27</div>
+        <div class="location">at line 31</div>
         <code>        static            mixed
-    <strong>get</strong>(string $key)
+    <strong>get</strong>(string $key, mixed $fallback = null)
         </code>
     </h3>
     <div class="details">
@@ -1645,6 +1728,11 @@
                 <td>string</td>
                 <td>$key</td>
                 <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$fallback</td>
+                <td>= null</td>
             </tr>
             </table>
 
@@ -1666,7 +1754,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValueAttribute">
-        <div class="location">at line 37</div>
+        <div class="location">at line 41</div>
         <code>                    mixed
     <strong>getValueAttribute</strong>(mixed $value)
         </code>

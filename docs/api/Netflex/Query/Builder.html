@@ -215,6 +215,14 @@
 
             <table class="table table-condensed">
                     <tr>
+                <td class="type" id="property_connection">
+                                        protected                                        APIClient
+                </td>
+                <td>$connection</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_fields">
                                         protected                                        array
                 </td>
@@ -356,6 +364,50 @@
                     <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
                 </div>
                 <div class="col-md-8 type">
+                    <a href="#method_connection">connection</a>(string|null $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConnectionName">setConnectionName</a>(string|null $connection)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnectionName">getConnectionName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/API/Contracts/APIClient.html"><abbr title="Netflex\API\Contracts\APIClient">APIClient</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnection">getConnection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_append">append</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
         
                                             <p>Append a query modifier</p>                </div>
@@ -409,7 +461,7 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_escapeValue">escapeValue</a>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value, string $operator = null)
+                    <a href="#method_escapeValue">escapeValue</a>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value, string $operator = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -420,7 +472,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_compileTermQuery">compileTermQuery</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+                    <a href="#method_compileTermQuery">compileTermQuery</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -463,7 +515,7 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_compileWhereQuery">compileWhereQuery</a>(string $field, $operator, null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+                    <a href="#method_compileWhereQuery">compileWhereQuery</a>(string $field, $operator, null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -606,7 +658,7 @@ Making the API reflect the compiled query in the output</p>                </div
                     <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_whereBetween">whereBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+                    <a href="#method_whereBetween">whereBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $to)
         
                                             <p>Queries where field is between $from and $to</p>                </div>
                 <div class="col-md-2"></div>
@@ -616,7 +668,7 @@ Making the API reflect the compiled query in the output</p>                </div
                     <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_whereNotBetween">whereNotBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+                    <a href="#method_whereNotBetween">whereNotBetween</a>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $to)
         
                                             <p>Queries where field is not between $from and $to</p>                </div>
                 <div class="col-md-2"></div>
@@ -704,6 +756,17 @@ Making the API reflect the compiled query in the output</p>                </div
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMapper">setMapper</a>(callable $mapper)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     object|null
                 </div>
                 <div class="col-md-8 type">
@@ -776,6 +839,17 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_publishedAt">publishedAt</a>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a>|null $date)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     string
                 </div>
                 <div class="col-md-8 type">
@@ -836,7 +910,7 @@ Only applies to entry and page relations</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 147</div>
+        <div class="location">at line 153</div>
         <code>                    
     <strong>__construct</strong>(bool|null $respectPublishingStatus = true, array|null $query = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $mapper = null, $appends = [])
         </code>
@@ -879,8 +953,131 @@ Only applies to entry and page relations</p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_connection">
+        <div class="location">at line 165</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>connection</strong>(string|null $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConnectionName">
+        <div class="location">at line 174</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>setConnectionName</strong>(string|null $connection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectionName">
+        <div class="location">at line 180</div>
+        <code>                    
+    <strong>getConnectionName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnection">
+        <div class="location">at line 188</div>
+        <code>                    <a href="../../Netflex/API/Contracts/APIClient.html"><abbr title="Netflex\API\Contracts\APIClient">APIClient</abbr></a>
+    <strong>getConnection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/API/Contracts/APIClient.html"><abbr title="Netflex\API\Contracts\APIClient">APIClient</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_append">
-        <div class="location">at line 161</div>
+        <div class="location">at line 199</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>append</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
         </code>
@@ -920,7 +1117,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setModel">
-        <div class="location">at line 171</div>
+        <div class="location">at line 209</div>
         <code>                    void
     <strong>setModel</strong>(string $model)
         </code>
@@ -958,7 +1155,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getModel">
-        <div class="location">at line 179</div>
+        <div class="location">at line 217</div>
         <code>                    string|null
     <strong>getModel</strong>()
         </code>
@@ -986,7 +1183,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_cacheResultsWithKey">
-        <div class="location">at line 190</div>
+        <div class="location">at line 228</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>cacheResultsWithKey</strong>(string $key)
         </code>
@@ -1026,7 +1223,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRelation">
-        <div class="location">at line 202</div>
+        <div class="location">at line 240</div>
         <code>            protected        bool
     <strong>hasRelation</strong>(string $relation)
         </code>
@@ -1064,9 +1261,9 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_escapeValue">
-        <div class="location">at line 212</div>
+        <div class="location">at line 250</div>
         <code>            protected        mixed
-    <strong>escapeValue</strong>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value, string $operator = null)
+    <strong>escapeValue</strong>(null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value, string $operator = null)
         </code>
     </h3>
     <div class="details">
@@ -1078,7 +1275,7 @@ Only applies to entry and page relations</p>                </div>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$value</td>
                 <td></td>
             </tr>
@@ -1107,9 +1304,9 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileTermQuery">
-        <div class="location">at line 240</div>
+        <div class="location">at line 278</div>
         <code>            protected        string
-    <strong>compileTermQuery</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+    <strong>compileTermQuery</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value)
         </code>
     </h3>
     <div class="details">
@@ -1126,7 +1323,7 @@ Only applies to entry and page relations</p>                </div>
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$value</td>
                 <td></td>
             </tr>
@@ -1150,7 +1347,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileNullQuery">
-        <div class="location">at line 249</div>
+        <div class="location">at line 287</div>
         <code>            protected        string
     <strong>compileNullQuery</strong>(string $field)
         </code>
@@ -1188,7 +1385,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileScopedQuery">
-        <div class="location">at line 259</div>
+        <div class="location">at line 297</div>
         <code>            protected        string
     <strong>compileScopedQuery</strong>(array $args, string $operator = &#039;AND&#039;)
         </code>
@@ -1231,7 +1428,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileField">
-        <div class="location">at line 289</div>
+        <div class="location">at line 327</div>
         <code>            protected        string
     <strong>compileField</strong>(string $field)
         </code>
@@ -1271,9 +1468,9 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileWhereQuery">
-        <div class="location">at line 305</div>
+        <div class="location">at line 343</div>
         <code>            protected        string
-    <strong>compileWhereQuery</strong>(string $field, $operator, null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $value)
+    <strong>compileWhereQuery</strong>(string $field, $operator, null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $value)
         </code>
     </h3>
     <div class="details">
@@ -1295,7 +1492,7 @@ Only applies to entry and page relations</p>                </div>
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|Collection|bool|int|QueryableModel|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$value</td>
                 <td></td>
             </tr>
@@ -1328,7 +1525,7 @@ Only applies to entry and page relations</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_debug">
-        <div class="location">at line 404</div>
+        <div class="location">at line 442</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>debug</strong>()
         </code>
@@ -1359,7 +1556,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_getQuery">
-        <div class="location">at line 417</div>
+        <div class="location">at line 455</div>
         <code>                    string
     <strong>getQuery</strong>(bool $scoped = false)
         </code>
@@ -1399,7 +1596,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequest">
-        <div class="location">at line 429</div>
+        <div class="location">at line 467</div>
         <code>                    string
     <strong>getRequest</strong>()
         </code>
@@ -1429,7 +1626,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_raw">
-        <div class="location">at line 440</div>
+        <div class="location">at line 478</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>raw</strong>(string $query)
         </code>
@@ -1469,7 +1666,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_orderBy">
-        <div class="location">at line 454</div>
+        <div class="location">at line 492</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>orderBy</strong>(string $field, string $direction = null)
         </code>
@@ -1523,7 +1720,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_orderDirection">
-        <div class="location">at line 472</div>
+        <div class="location">at line 510</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>orderDirection</strong>(string $direction)
         </code>
@@ -1572,7 +1769,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_relation">
-        <div class="location">at line 489</div>
+        <div class="location">at line 527</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>relation</strong>(string|null $relation, int|null $relation_id = null)
         </code>
@@ -1617,7 +1814,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_relations">
-        <div class="location">at line 504</div>
+        <div class="location">at line 556</div>
         <code>                    
     <strong>relations</strong>(array $relations)
         </code>
@@ -1646,7 +1843,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_limit">
-        <div class="location">at line 519</div>
+        <div class="location">at line 571</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>limit</strong>(int $limit)
         </code>
@@ -1686,7 +1883,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_fields">
-        <div class="location">at line 533</div>
+        <div class="location">at line 585</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>fields</strong>(array $fields)
         </code>
@@ -1726,7 +1923,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_field">
-        <div class="location">at line 548</div>
+        <div class="location">at line 600</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>field</strong>(string $field)
         </code>
@@ -1766,7 +1963,7 @@ Making the API reflect the compiled query in the output</p>                     
             </div>
                     <div class="method-item">
                     <h3 id="method_where">
-        <div class="location">at line 567</div>
+        <div class="location">at line 619</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>where</strong>(...$args)
         </code>
@@ -1807,7 +2004,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_whereIn">
-        <div class="location">at line 595</div>
+        <div class="location">at line 647</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>whereIn</strong>(string $field, array $values)
         </code>
@@ -1852,9 +2049,9 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_whereBetween">
-        <div class="location">at line 608</div>
+        <div class="location">at line 660</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
-    <strong>whereBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+    <strong>whereBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $to)
         </code>
     </h3>
     <div class="details">
@@ -1873,12 +2070,12 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$from</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$to</td>
                 <td></td>
             </tr>
@@ -1902,9 +2099,9 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_whereNotBetween">
-        <div class="location">at line 625</div>
+        <div class="location">at line 677</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
-    <strong>whereNotBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a> $to)
+    <strong>whereNotBetween</strong>(string $field, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $from, null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a> $to)
         </code>
     </h3>
     <div class="details">
@@ -1923,12 +2120,12 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$from</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTime">DateTime</a></td>
+                <td>null|array|bool|int|string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a></td>
                 <td>$to</td>
                 <td></td>
             </tr>
@@ -1952,7 +2149,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_whereNot">
-        <div class="location">at line 645</div>
+        <div class="location">at line 697</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>whereNot</strong>(...$args)
         </code>
@@ -1993,7 +2190,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_orWhere">
-        <div class="location">at line 678</div>
+        <div class="location">at line 730</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>orWhere</strong>(...$args)
         </code>
@@ -2043,7 +2240,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_andWhere">
-        <div class="location">at line 700</div>
+        <div class="location">at line 752</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>andWhere</strong>(...$args)
         </code>
@@ -2093,7 +2290,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_paginate">
-        <div class="location">at line 718</div>
+        <div class="location">at line 770</div>
         <code>                    PaginatedResult
     <strong>paginate</strong>(int $size = 100, int $page = 1)
         </code>
@@ -2147,7 +2344,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_assoc">
-        <div class="location">at line 733</div>
+        <div class="location">at line 785</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>assoc</strong>(bool $assoc)
         </code>
@@ -2187,7 +2384,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_fetch">
-        <div class="location">at line 747</div>
+        <div class="location">at line 799</div>
         <code>                    object
     <strong>fetch</strong>(int $size = null, int $page = null)
         </code>
@@ -2241,7 +2438,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at line 782</div>
+        <div class="location">at line 835</div>
         <code>                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>get</strong>()
         </code>
@@ -2280,7 +2477,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_getMapper">
-        <div class="location">at line 794</div>
+        <div class="location">at line 847</div>
         <code>                    
     <strong>getMapper</strong>()
         </code>
@@ -2298,8 +2495,46 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_setMapper">
+        <div class="location">at line 856</div>
+        <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
+    <strong>setMapper</strong>(callable $mapper)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$mapper</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_first">
-        <div class="location">at line 805</div>
+        <div class="location">at line 868</div>
         <code>                    object|null
     <strong>first</strong>()
         </code>
@@ -2338,7 +2573,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_firstOrFail">
-        <div class="location">at line 822</div>
+        <div class="location">at line 885</div>
         <code>                    object|null
     <strong>firstOrFail</strong>()
         </code>
@@ -2381,7 +2616,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">at line 841</div>
+        <div class="location">at line 904</div>
         <code>                    Collection
     <strong>all</strong>()
         </code>
@@ -2411,7 +2646,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_random">
-        <div class="location">at line 857</div>
+        <div class="location">at line 920</div>
         <code>                    Collection
     <strong>random</strong>(int|null $amount = null)
         </code>
@@ -2460,7 +2695,7 @@ If $value is omitted, $operator is used as the $value, and the $operator will be
             </div>
                     <div class="method-item">
                     <h3 id="method_ignorePublishingStatus">
-        <div class="location">at line 907</div>
+        <div class="location">at line 972</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>ignorePublishingStatus</strong>()
         </code>
@@ -2491,7 +2726,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_respectPublishingStatus">
-        <div class="location">at line 921</div>
+        <div class="location">at line 986</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>respectPublishingStatus</strong>($respect = true)
         </code>
@@ -2532,7 +2767,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_count">
-        <div class="location">at line 933</div>
+        <div class="location">at line 998</div>
         <code>                    int
     <strong>count</strong>()
         </code>
@@ -2570,8 +2805,37 @@ Only applies to entry and page relations</p>                                    
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_publishedAt">
+        <div class="location">at line 1014</div>
+        <code>                    
+    <strong>publishedAt</strong>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a>|null $date)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeInterface">DateTimeInterface</a>|null</td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_compileQuery">
-        <div class="location">at line 950</div>
+        <div class="location">at line 1053</div>
         <code>            protected        string
     <strong>compileQuery</strong>(bool $scoped = false)
         </code>
@@ -2609,7 +2873,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_compileRequest">
-        <div class="location">at line 1009</div>
+        <div class="location">at line 1077</div>
         <code>            protected        string
     <strong>compileRequest</strong>($size = null, $page = null)
         </code>
@@ -2652,7 +2916,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_if">
-        <div class="location">at line 1046</div>
+        <div class="location">at line 1114</div>
         <code>                    <a href="../../Netflex/Query/Builder.html"><abbr title="Netflex\Query\Builder">Builder</abbr></a>
     <strong>if</strong>(bool|<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $clause, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $then, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $else = null)
         </code>
@@ -2702,7 +2966,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method___toString">
-        <div class="location">at line 1066</div>
+        <div class="location">at line 1134</div>
         <code>                    string
     <strong>__toString</strong>()
         </code>
@@ -2730,7 +2994,7 @@ Only applies to entry and page relations</p>                                    
             </div>
                     <div class="method-item">
                     <h3 id="method_getSize">
-        <div class="location">at line 1071</div>
+        <div class="location">at line 1139</div>
         <code>                    
     <strong>getSize</strong>()
         </code>
