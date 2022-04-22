@@ -96,7 +96,7 @@ The values follows this format: `{keyword}` and `{keyword:parameters}`
 | datetime  | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php)  | `{datetime:-16 hours}`                                            | Inserts a date and time in the format `YYYY-MM-DD HH:MM`                                                |
 | time      | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php)  | `{time:-16 hours}`                                                | Inserts time in the format `HH:MM`                                                                      |
 | timestamp | `milliseconds`                                                                        | `{timestamp}` `{timestamp:milliseconds}`                          | Inserts the current [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time)                           |
-| random    | `min,max` or `[...]`                                                                  | `random:1,6` `random:['red', 'green']`                            | Picks a random integer between min and max (inclusive), or picks a random item from the specified array |
+| random    | `min,max` or `[...]`                                                                  | `{random:1,6}` `{random:['red', 'green']}`                        | Picks a random integer between min and max (inclusive), or picks a random item from the specified array |
 
 > [!TIP]
 > The various keywords can be combined and mixed with static text e.g: `item-{uuid}-created-{datetime}-{random:1,10000}`
