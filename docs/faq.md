@@ -89,13 +89,14 @@ Fields in a Structure can be configured by setting configuration tags.
 The `default_value` tags also supports a few magic keywords that can be used to insert dynamic data at creation time.
 The values follows this format: `{keyword}` and `{keyword:parameters}`
 
-| Keyword | Parameters | Example | Description |
-|---------|------------|---------|-------------|
-| uuid    | *None*     | `{uuid}`| Inserts a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) |
-| date    | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{date:+4 days}` | Inserts a date in the format `YYYY-MM-DD` |
-| datetime | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{datetime:-16 hours}` | Inserts a date and time in the format `YYYY-MM-DD HH:MM` |
-| time | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php) | `{time:-16 hours}` | Inserts time in the format `HH:MM` |
-| random | `min,max` or `[...]` | `random:1,6` `random:['red', 'green']` | Picks a random integer between min and max (inclusive), or picks a random item from the specified array |
+| Keyword   | Parameters                                                                            | Example                                | Description                                                                                             |
+|-----------|---------------------------------------------------------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------|
+| uuid      | *None*                                                                                | `{uuid}`                               | Inserts a [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)                           |
+| date      | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php)  | `{date:+4 days}`                       | Inserts a date in the format `YYYY-MM-DD`                                                               |
+| datetime  | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php)  | `{datetime:-16 hours}`                 | Inserts a date and time in the format `YYYY-MM-DD HH:MM`                                                |
+| time      | [Textual datetime description](https://www.php.net/manual/en/function.strtotime.php)  | `{time:-16 hours}`                     | Inserts time in the format `HH:MM`                                                                      |
+| timestamp | *None*                                                                                | `{timestamp}`                          | Inserts the current [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time)                           |
+| random    | `min,max` or `[...]`                                                                  | `random:1,6` `random:['red', 'green']` | Picks a random integer between min and max (inclusive), or picks a random item from the specified array |
 
 > [!TIP]
 > The various keywords can be combined and mixed with static text e.g: `item-{uuid}-created-{datetime}-{random:1,10000}`
