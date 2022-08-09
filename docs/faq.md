@@ -83,6 +83,7 @@ Fields in a Structure can be configured by setting configuration tags.
 | default_value | Allows you to set a default value for the field when the entry is created. For matrix fields this must be set for each sub field. |
 | max_items     | Sets a limit to how many items a matrix field can contain.                                                                        |
 | query_append  | For entry, entries, customer and customers fields, this appends the given query when searching for items                          |
+| slug          | Generates a URL slug from the given field                                                                                         |
 
 ### default_value
 
