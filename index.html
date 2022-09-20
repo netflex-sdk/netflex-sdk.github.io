@@ -57,7 +57,7 @@
 
     window.addEventListener("keydown", function (e) {
       var search = document.querySelector('input[type="search"]')
-      if (search && e.which == 70 && (e.ctrlKey || e.metaKey)) {
+      if (search && e.code === 'KeyK' && (e.ctrlKey || e.metaKey)) {
         e.preventDefault()
         search.focus()
       }
